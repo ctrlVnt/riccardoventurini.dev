@@ -23,8 +23,8 @@
   --bs-gray-700: #495057;
   --bs-gray-800: #343a40;
   --bs-gray-900: #212529;
-  --bs-primary: #737373;
-  --bs-secondary: #262626;
+  --bs-primary: #1abc9c;
+  --bs-secondary: #2c3e50;
   --bs-success: #198754;
   --bs-info: #0dcaf0;
   --bs-warning: #ffc107;
@@ -3021,19 +3021,19 @@ textarea.form-control-lg {
 
 .btn-primary {
   color: #fff;
-  background-color: #A6A6A6;
-  border-color: #A6A6A6;
+  background-color: #1abc9c;
+  border-color: #1abc9c;
 }
 .btn-primary:hover {
   color: #fff;
-  background-color: #A6A6A6;
-  border-color: #A6A6A6;
+  background-color: #16a085;
+  border-color: #15967d;
 }
 .btn-check:focus + .btn-primary, .btn-primary:focus {
   color: #fff;
-  background-color: #A6A6A6;
-  border-color: #A6A6A6;
-  box-shadow: #A6A6A6;
+  background-color: #16a085;
+  border-color: #15967d;
+  box-shadow: 0 0 0 0.25rem rgba(60, 198, 171, 0.5);
 }
 .btn-check:checked + .btn-primary, .btn-check:active + .btn-primary, .btn-primary:active, .btn-primary.active, .show > .btn-primary.dropdown-toggle {
   color: #fff;
@@ -7707,12 +7707,12 @@ textarea.form-control-lg {
 /* rtl:end:remove */
 .text-primary {
   --bs-text-opacity: 1;
-  color: var(--bs-primary) !important;
+  color: rgba(var(--bs-primary-rgb), var(--bs-text-opacity)) !important;
 }
 
 .text-secondary {
   --bs-text-opacity: 1;
-  color: var(--bs-secondary) !important;
+  color: rgba(var(--bs-secondary-rgb), var(--bs-text-opacity)) !important;
 }
 
 .text-success {
@@ -7798,12 +7798,12 @@ textarea.form-control-lg {
 
 .bg-primary {
   --bs-bg-opacity: 1;
-  background-color: var(--bs-primary) !important;
+  background-color: rgba(var(--bs-primary-rgb), var(--bs-bg-opacity)) !important;
 }
 
 .bg-secondary {
   --bs-bg-opacity: 1;
-  background-color: var(--bs-secondary) !important;
+  background-color: rgba(var(--bs-secondary-rgb), var(--bs-bg-opacity)) !important;
 }
 
 .bg-success {
@@ -11456,15 +11456,13 @@ html {
   border-radius: 0.5rem;
   overflow: hidden;
 }
-
-/*COLORE SELEZIONE ITEM*/
 .portfolio .portfolio-item .portfolio-item-caption {
   position: absolute;
   top: 0;
   left: 0;
   transition: all 0.2s ease-in-out;
   opacity: 0;
-  background-color: #A6A6A6;
+  background-color: rgba(26, 188, 156, 0.9);
 }
 .portfolio .portfolio-item .portfolio-item-caption:hover {
   opacity: 1;
@@ -11497,5 +11495,5 @@ html {
 }
 
 .copyright {
-  background-color: #0D0D0D;
+  background-color: #1a252f;
 }
