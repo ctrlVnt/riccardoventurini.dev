@@ -23,14 +23,24 @@
   --bs-gray-700: #495057;
   --bs-gray-800: #343a40;
   --bs-gray-900: #212529;
-  --bs-primary: #1abc9c;
-  --bs-secondary: #2c3e50;
+
+  --bs-primary: #516D73;
+  --bs-secondary: #111D24;
+  --bs-tertiaire: #00090D;
+  --bs-light: #f8f9fa;
+  --bs-dark: #212529;
+
+  /*PALETTA COLORE
+  #00090D
+  #D5FCFE
+  #2D2C2C
+  #516D73
+  #111D24*/
+
   --bs-success: #198754;
   --bs-info: #0dcaf0;
   --bs-warning: #ffc107;
   --bs-danger: #dc3545;
-  --bs-light: #f8f9fa;
-  --bs-dark: #212529;
   --bs-primary-rgb: 26, 188, 156;
   --bs-secondary-rgb: 44, 62, 80;
   --bs-success-rgb: 25, 135, 84;
@@ -3021,8 +3031,8 @@ textarea.form-control-lg {
 
 .btn-primary {
   color: #fff;
-  background-color: #1abc9c;
-  border-color: #1abc9c;
+  background-color: var(--bs-primary);
+  border-color: var(--bs-primary);
 }
 .btn-primary:hover {
   color: #fff;
@@ -3051,8 +3061,8 @@ textarea.form-control-lg {
 
 .btn-secondary {
   color: #fff;
-  background-color: #2c3e50;
-  border-color: #2c3e50;
+  background-color: var(--bs-secondary);
+  border-color: var(--bs-secondary);
 }
 .btn-secondary:hover {
   color: #fff;
@@ -3933,7 +3943,7 @@ textarea.form-control-lg {
 .nav-link {
   display: block;
   padding: 0.5rem 1rem;
-  color: #1abc9c;
+  color: var(--bs-primary);
   text-decoration: none;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
 }
@@ -3943,7 +3953,7 @@ textarea.form-control-lg {
   }
 }
 .nav-link:hover, .nav-link:focus {
-  color: #15967d;
+  color: var(--bs-primary);
 }
 .nav-link.disabled {
   color: #6c757d;
@@ -7707,12 +7717,12 @@ textarea.form-control-lg {
 /* rtl:end:remove */
 .text-primary {
   --bs-text-opacity: 1;
-  color: rgba(var(--bs-primary-rgb), var(--bs-text-opacity)) !important;
+  color: var(--bs-primary) !important;
 }
 
 .text-secondary {
   --bs-text-opacity: 1;
-  color: rgba(var(--bs-secondary-rgb), var(--bs-text-opacity)) !important;
+  color: var(--bs-secondary) !important;
 }
 
 .text-success {
@@ -7798,12 +7808,12 @@ textarea.form-control-lg {
 
 .bg-primary {
   --bs-bg-opacity: 1;
-  background-color: rgba(var(--bs-primary-rgb), var(--bs-bg-opacity)) !important;
+  background-color: var(--bs-primary) !important;
 }
 
 .bg-secondary {
   --bs-bg-opacity: 1;
-  background-color: rgba(var(--bs-secondary-rgb), var(--bs-bg-opacity)) !important;
+  background-color: var(--bs-secondary) !important;
 }
 
 .bg-success {
@@ -11307,9 +11317,9 @@ html {
   width: 100%;
   max-width: 7rem;
   height: 0.25rem;
-  background-color: #2c3e50;
+  background-color: var(--bs-secondary);
   border-radius: 1rem;
-  border-color: #2c3e50;
+  border-color: var(--bs-secondary);
 }
 .divider-custom .divider-custom-line:first-child {
   margin-right: 1rem;
@@ -11318,7 +11328,7 @@ html {
   margin-left: 1rem;
 }
 .divider-custom .divider-custom-icon {
-  color: #2c3e50;
+  color: var(--bs-secondary);
   font-size: 2rem;
 }
 .divider-custom.divider-light .divider-custom-line {
@@ -11359,13 +11369,13 @@ html {
   color: #fff;
 }
 #mainNav .navbar-nav li.nav-item a.nav-link:hover {
-  color: #1abc9c;
+  color: var(--bs-primary);
 }
 #mainNav .navbar-nav li.nav-item a.nav-link:active, #mainNav .navbar-nav li.nav-item a.nav-link:focus {
   color: #fff;
 }
 #mainNav .navbar-nav li.nav-item a.nav-link.active {
-  color: #1abc9c;
+  color: var(--bs-primary);
 }
 #mainNav .navbar-toggler {
   font-size: 80%;
@@ -11387,11 +11397,11 @@ html {
   }
   #mainNav .navbar-nav > li.nav-item > a.nav-link.active {
     color: #fff;
-    background: #1abc9c;
+    background: var(--bs-primary);
   }
   #mainNav .navbar-nav > li.nav-item > a.nav-link.active:active, #mainNav .navbar-nav > li.nav-item > a.nav-link.active:focus, #mainNav .navbar-nav > li.nav-item > a.nav-link.active:hover {
     color: #fff;
-    background: #1abc9c;
+    background: var(--bs-primary);
   }
 
   #mainNav.navbar-shrink {
@@ -11462,7 +11472,7 @@ html {
   left: 0;
   transition: all 0.2s ease-in-out;
   opacity: 0;
-  background-color: rgba(26, 188, 156, 0.9);
+  background-color: var(--bs-primary);
 }
 .portfolio .portfolio-item .portfolio-item-caption:hover {
   opacity: 1;
@@ -11472,7 +11482,7 @@ html {
 }
 
 .portfolio-modal .btn-close {
-  color: #1abc9c;
+  color: var(--bs-primary);
   font-size: 2rem;
   padding: 1rem;
 }
@@ -11490,10 +11500,10 @@ html {
 .footer {
   padding-top: 5rem;
   padding-bottom: 5rem;
-  background-color: #2c3e50;
-  color: #fff;
+  background-color: var(--bs-secondary);
+  color: var(--bs-light);
 }
 
 .copyright {
-  background-color: #1a252f;
+  background-color: var(--bs-tertiaire) !important;
 }
