@@ -112,7 +112,7 @@ function show(value) {
         <i>App available only for Android, below is the link to the Google Play Store.</i>";
 
         document.getElementById("cv").innerHTML = "My CV";
-        document.getElementById("cv").href = "CV/EN/CV Riccardo Venturini.pdf";
+        document.getElementById("cv").href = "https://riccardoventurini.dev/CV/EN/CV Riccardo Venturini - En.pdf";
 
     }else if(value == 'FR'){
 
@@ -133,7 +133,7 @@ function show(value) {
         <i>Application disponible uniquement pour Android, ci-dessous le lien vers le Google Play Store.</i>";
 
         document.getElementById("cv").innerHTML = "Mon CV";
-        document.getElementById("cv").href = "CV/FR/CV Riccardo Venturini.pdf";
+        document.getElementById("cv").href = "https://riccardoventurini.dev/CV/FR/CV Riccardo Venturini - Fr.pdf";
 
     }else if(value == 'IT'){
 
@@ -156,6 +156,6 @@ function show(value) {
         <i>App disponibile solo per Android, di seguito il link al Google Play Store.</i>";
 
         document.getElementById("cv").innerHTML = "Il mio CV";
-        document.getElementById("cv").href = "CV/IT/CV Riccardo Venturini.pdf";
+        document.getElementById("cv").href = "https://riccardoventurini.dev/CV/IT/CV Riccardo Venturini - It.pdf";
     }
   }
