@@ -111,6 +111,9 @@ function show(value) {
         The game consists in reading the question, turning the card and indicating whether or not you guessed right, using the appropriate buttons.<br>\n\
         <i>App available only for Android, below is the link to the Google Play Store.</i>";
 
+        document.getElementById("cv").innerHTML = "My CV";
+        document.getElementById("cv").href = "CV/EN/CV Riccardo Venturini.pdf";
+
     }else if(value == 'FR'){
 
         document.getElementById("demo").innerHTML = " <h5>Bienvenu !</h5>\n\
@@ -128,6 +131,9 @@ function show(value) {
         Ce sera l'utilisateur qui créera les cartes, en effet pour jouer il faut avoir créé au moins une carte.<br>\n\
         Le jeu consiste à lire la question, à tourner la carte et à indiquer si vous avez bien deviné ou non, à l'aide des boutons appropriés.<br>\n\
         <i>Application disponible uniquement pour Android, ci-dessous le lien vers le Google Play Store.</i>";
+
+        document.getElementById("cv").innerHTML = "Mon CV";
+        document.getElementById("cv").href = "CV/FR/CV Riccardo Venturini.pdf";
 
     }else if(value == 'IT'){
 
@@ -148,5 +154,8 @@ function show(value) {
         Sarà l'utente a creare le carte, infatti per poter giocare è necessario aver creato almeno una carta.<br>\n\
         Il gioco consiste nel leggere la domanda, ruotare la carta e indicare se si ha indovinato, o meno, usando gli appositi bottoni.<br>\n\
         <i>App disponibile solo per Android, di seguito il link al Google Play Store.</i>";
+
+        document.getElementById("cv").innerHTML = "Il mio CV";
+        document.getElementById("cv").href = "CV/IT/CV Riccardo Venturini.pdf";
     }
   }
