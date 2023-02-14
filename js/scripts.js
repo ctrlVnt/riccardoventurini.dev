@@ -44,7 +44,7 @@ window.addEventListener('DOMContentLoaded', event => {
 
 });
 
-// function for show drop down language menu
+// function for show dropdown language menu
 function langueges() {
     document.getElementById("myDropdown").classList.toggle("show");
 };
