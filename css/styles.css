@@ -11511,6 +11511,7 @@ html {
 /* Dropdown Button */
 .dropbtn {
   color: var(--bs-white);
+  font-weight: bold;
   padding: 16px;
   font-size: 16px;
   border: none;
@@ -11547,4 +11548,10 @@ html {
 .img-prog-language {
   width: 3rem;
   height: 3rem;
+}
+
+/*Button language*/
+.text-box
+{
+  font-weight: bold;
 }
