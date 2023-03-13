@@ -90,6 +90,34 @@ function updateLinePosition(event) {
   }
 }*/
 
+/* adattamento per schermi touch */
+
+var touchPosition = { x: 0, y: 0 };
+
+function onTouchStart(event) {
+  touchPosition.x = event.touches[0].pageX;
+  touchPosition.y = event.touches[0].pageY;
+}
+
+function onTouchMove(event) {
+  var dx = event.touches[0].pageX - touchPosition.x;
+  var dy = event.touches[0].pageY - touchPosition.y;
+  cube.rotation.x += dy * 0.01;
+  cube.rotation.y += dx * 0.01;
+  touchPosition.x = event.touches[0].pageX;
+  touchPosition.y = event.touches[0].pageY;
+}
+
+function onTouchEnd(event) {
+// non fare niente
+}
+
+var canvas = document.getElementById('home');
+canvas.addEventListener('touchstart', onTouchStart, false);
+canvas.addEventListener('touchmove', onTouchMove, false);
+canvas.addEventListener('touchend', onTouchEnd, false);
+
+
 /* animazione scena */
 function animate() {
 	requestAnimationFrame( animate );
