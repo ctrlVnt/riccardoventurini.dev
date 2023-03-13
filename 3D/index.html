@@ -5,12 +5,17 @@
 		<title>My first three.js app</title>
 		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
 	</head>
-	<body>
-        <div class="d-flex justify-content-center">
-            <div class="position-absolute bg-transparent text-white text-center">
-                <h1 class="mb-0 p-5 display">MyCube</h1>
-            </div>
-            <canvas id = "home"></canvas>
+	<body class="overflow-hidden">
+        <div>
+			<div class="d-flex justify-content-center">
+            	<div class="position-absolute bg-transparent text-white text-center">
+					<h1 class="mb-0 p-5">MyCube</h1>
+				</div>
+				<div class="position-absolute bg-transparent text-white text-center bottom-0">
+					<h3 class="mb-0 p-5">riccardoventurini.dev</h3>
+				</div>
+			</div>
+            <canvas class="w-100" id = "home"></canvas>
         </div>
 		<script src="cube.js" type="module"></script>
 	</body>

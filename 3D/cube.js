@@ -9,11 +9,6 @@ document.body.appendChild( renderer.domElement );
 
 camera.position.z = 5;
 
-/* background */
-/*const textureLoader = new THREE.TextureLoader();
-const backgroundTexture = textureLoader.load('DSC_0304.JPG');
-scene.background = backgroundTexture;*/
-
 /* oggetto cubo */
 {
     const color = 0xFFFFFF;
@@ -52,6 +47,48 @@ function onMouseLeave() {
 window.addEventListener('mouseleave', onMouseLeave, false); 
 
 /*************************************************************/
+
+/* add second object */
+/*
+const curve = new THREE.QuadraticBezierCurve3(
+    new THREE.Vector3(-5, 0, 0), // primo punto di controllo
+    new THREE.Vector3(0, 5, 0), // secondo punto di controllo
+    new THREE.Vector3(10, 0, -10) // terzo punto di controllo
+);
+
+const material_curve = new THREE.LineBasicMaterial({
+    color: 0xffffff,
+    linewidth: 2,
+});
+  
+const points = curve.getPoints(50);
+const geometry_curve = new THREE.BufferGeometry().setFromPoints(points);
+const line = new THREE.Line(geometry_curve, material_curve);
+scene.add(line);
+
+const canvas = document.getElementById("home");
+canvas.addEventListener("mousemove", updateLinePosition);
+
+function updateLinePosition(event) {
+  const mouse = new THREE.Vector2();
+  mouse.x = (event.clientX / window.innerWidth) * 2 - 1;
+  mouse.y = -(event.clientY / window.innerHeight) * 2 + 1;
+
+  const raycaster = new THREE.Raycaster();
+  raycaster.setFromCamera(mouse, camera);
+
+  const intersects = raycaster.intersectObjects(scene.children);
+
+  if (intersects.length > 0) {
+    const point = intersects[0].point;
+    curve.v1.set(point.x - 1, point.y + 2, point.z);
+    curve.v2.set(point.x + 1, point.y + 2, point.z);
+    const points = curve.getPoints(50);
+    const geometry = line.geometry;
+    geometry.setFromPoints(points);
+    geometry.verticesNeedUpdate = true;
+  }
+}*/
 
 /* animazione scena */
 function animate() {
