@@ -18,8 +18,9 @@ camera.position.z = 5;
     scene.add(light);
 }
 const geometry = new THREE.BoxGeometry( 1, 1, 1 );
-const material = new THREE.MeshPhongMaterial( { color: 0xA6032F } );
+const material = new THREE.MeshPhongMaterial( { color: 0xD92B3A } );
 const cube = new THREE.Mesh( geometry, material );
+cube.rotation.set(2.1, 0, 0.8);
 scene.add( cube );
 
 /* comportamento cubo */
@@ -35,16 +36,11 @@ function onMouseMove(event) {
   
 document.addEventListener('mousemove', onMouseMove, false);  
 
-/* NON FUNZIONA */
+const mouseTarget = document.getElementById("main");
+mouseTarget.addEventListener('mouseleave', onMouseLeave, false);
 function onMouseLeave() {
-    console.log('mouse left');
-    new TWEEN.Tween(object.rotation)
-      .to({ x: 0, y: 0, z: 0 }, 1000)
-      .easing(TWEEN.Easing.Quadratic.Out)
-      .start();
-  }
-
-window.addEventListener('mouseleave', onMouseLeave, false); 
+  cube.rotation.set(2.1, 0, 0.8);
+}
 
 /*************************************************************/
 
