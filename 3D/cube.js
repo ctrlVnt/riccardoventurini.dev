@@ -56,50 +56,6 @@ function onMouseLeave() {
   update();
 }
 
-/*************************************************************/
-
-/* add second object */
-/*
-const curve = new THREE.QuadraticBezierCurve3(
-    new THREE.Vector3(-5, 0, 0), // primo punto di controllo
-    new THREE.Vector3(0, 5, 0), // secondo punto di controllo
-    new THREE.Vector3(10, 0, -10) // terzo punto di controllo
-);
-
-const material_curve = new THREE.LineBasicMaterial({
-    color: 0xffffff,
-    linewidth: 2,
-});
-  
-const points = curve.getPoints(50);
-const geometry_curve = new THREE.BufferGeometry().setFromPoints(points);
-const line = new THREE.Line(geometry_curve, material_curve);
-scene.add(line);
-
-const canvas = document.getElementById("home");
-canvas.addEventListener("mousemove", updateLinePosition);
-
-function updateLinePosition(event) {
-  const mouse = new THREE.Vector2();
-  mouse.x = (event.clientX / window.innerWidth) * 2 - 1;
-  mouse.y = -(event.clientY / window.innerHeight) * 2 + 1;
-
-  const raycaster = new THREE.Raycaster();
-  raycaster.setFromCamera(mouse, camera);
-
-  const intersects = raycaster.intersectObjects(scene.children);
-
-  if (intersects.length > 0) {
-    const point = intersects[0].point;
-    curve.v1.set(point.x - 1, point.y + 2, point.z);
-    curve.v2.set(point.x + 1, point.y + 2, point.z);
-    const points = curve.getPoints(50);
-    const geometry = line.geometry;
-    geometry.setFromPoints(points);
-    geometry.verticesNeedUpdate = true;
-  }
-}*/
-
 /* adattamento per schermi touch */
 
 var touchPosition = { x: 0, y: 0 };
@@ -118,14 +74,10 @@ function onTouchMove(event) {
   touchPosition.y = event.touches[0].pageY;
 }
 
-function onTouchEnd(event) {
-// non fare niente
-}
-
 var canvas = document.getElementById('home');
 canvas.addEventListener('touchstart', onTouchStart, false);
 canvas.addEventListener('touchmove', onTouchMove, false);
-canvas.addEventListener('touchend', onTouchEnd, false);
+canvas.addEventListener('touchend', onMouseLeave, false);
 
 
 /* animazione scena */
@@ -148,7 +100,7 @@ function stopOther(){
     .repeat(Infinity);
     rotationTween.start();
 const scaleTween = new TWEEN.Tween(cube.scale)
-    .to({ x: cubedimension * 0.5, y: cubedimension * 0.5, z: cubedimension * 0.5 }, 1000)
+    .to({ x: cubedimension * 0, y: cubedimension * 0, z: cubedimension * 0 }, 1000)
     .onComplete(function(){scene.remove(cube)});
     scaleTween.start();
 }
