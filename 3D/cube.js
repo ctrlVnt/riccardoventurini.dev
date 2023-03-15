@@ -1,6 +1,22 @@
+/* da eliminare */
+document.getElementById('tell').addEventListener('click', 
+function() {
+  alert('coming soon');
+});
+
+document.getElementById('try').addEventListener('click', 
+function() {
+  alert('coming soon');
+});
+
+document.getElementById('about').addEventListener('click', 
+function() {
+  alert('coming soon');
+});
 
 /* variabili */
 var hiClicked = false;
+var loader = new THREE.GLTFLoader();
 
 /* inizializzazione */
 const scene = new THREE.Scene();
@@ -68,8 +84,8 @@ function onTouchStart(event) {
 function onTouchMove(event) {
   var dx = event.touches[0].pageX - touchPosition.x;
   var dy = event.touches[0].pageY - touchPosition.y;
-  cube.rotation.x += dy / 2 * 0.01;
-  cube.rotation.y += dx / 2 * 0.01;
+  cube.rotation.x += dy / 5 * 0.01;
+  cube.rotation.y -= dx / 5 * 0.01;
   touchPosition.x = event.touches[0].pageX;
   touchPosition.y = event.touches[0].pageY;
 }
@@ -101,6 +117,31 @@ function stopOther(){
     rotationTween.start();
 const scaleTween = new TWEEN.Tween(cube.scale)
     .to({ x: cubedimension * 0, y: cubedimension * 0, z: cubedimension * 0 }, 1000)
-    .onComplete(function(){scene.remove(cube)});
+    .onComplete(uploadNew);
     scaleTween.start();
+}
+
+function uploadNew(){
+  scene.remove(cube);
+
+  document.getElementById("eyes").hidden = true;
+  document.getElementById("tell").hidden = true;
+  document.getElementById("try").hidden = true;
+  document.getElementById("about").hidden = true;
+
+  loader.load(
+    '../assets/3D/model.gltf',
+    function ( gltf ) {
+      gltf.scene.scale.set( 15, 15, 15 );
+      scene.add( gltf.scene );
+    }, 
+    
+    function ( xhr ) {
+      console.log( ( xhr.loaded / xhr.total * 100 ) + '% loaded' );
+    },
+
+    function ( error ) {
+      console.log( 'An error happened' );
+    }
+  );
 }
