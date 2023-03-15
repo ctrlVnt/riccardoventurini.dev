@@ -1,4 +1,6 @@
-import * as THREE from 'https://unpkg.com/three/build/three.module.js';
+
+/* variabili */
+var hiClicked = false;
 
 /* inizializzazione */
 const scene = new THREE.Scene();
@@ -20,11 +22,13 @@ camera.position.z = 5;
 const geometry = new THREE.BoxGeometry( 1, 1, 1 );
 const material = new THREE.MeshPhongMaterial( { color: 0xD92B3A } );
 const cube = new THREE.Mesh( geometry, material );
+const cubedimension = cube.scale.x;
 cube.rotation.set(2.1, 0, 0.8);
 scene.add( cube );
 
 /* comportamento cubo */
 function onMouseMove(event) {
+  if(!hiClicked){
     const mouseX = event.clientX;
     const mouseY = event.clientY;
     
@@ -32,14 +36,24 @@ function onMouseMove(event) {
     const rotationY = (mouseX / window.innerWidth) * Math.PI - Math.PI / 2;
 
     cube.rotation.set(rotationX, rotationY, 0);
+  }
 }
   
 document.addEventListener('mousemove', onMouseMove, false);  
 
 const mouseTarget = document.getElementById("main");
 mouseTarget.addEventListener('mouseleave', onMouseLeave, false);
+
 function onMouseLeave() {
-  cube.rotation.set(2.1, 0, 0.8);
+  var tween = new TWEEN.Tween(cube.rotation.set(2.1, 0, 0.8))
+    .to({ y: cube.rotation.y + Math.PI }, 1000)
+    .start();
+
+  function update() {
+    requestAnimationFrame(update);
+    TWEEN.update();
+  }
+  update();
 }
 
 /*************************************************************/
@@ -98,8 +112,8 @@ function onTouchStart(event) {
 function onTouchMove(event) {
   var dx = event.touches[0].pageX - touchPosition.x;
   var dy = event.touches[0].pageY - touchPosition.y;
-  cube.rotation.x += dy * 0.01;
-  cube.rotation.y += dx * 0.01;
+  cube.rotation.x += dy / 2 * 0.01;
+  cube.rotation.y += dx / 2 * 0.01;
   touchPosition.x = event.touches[0].pageX;
   touchPosition.y = event.touches[0].pageY;
 }
@@ -117,6 +131,24 @@ canvas.addEventListener('touchend', onTouchEnd, false);
 /* animazione scena */
 function animate() {
 	requestAnimationFrame( animate );
+  TWEEN.update();
 	renderer.render( scene, camera );
 }
 animate();
+
+/* after button click */
+var eyes = document.getElementById("eyes");
+
+eyes.addEventListener('click', stopOther);
+
+function stopOther(){
+  hiClicked = true;
+  const rotationTween = new TWEEN.Tween(cube.rotation)
+    .to({ y: cube.rotation.y + Math.PI * 2 }, 500)
+    .repeat(Infinity);
+    rotationTween.start();
+const scaleTween = new TWEEN.Tween(cube.scale)
+    .to({ x: cubedimension * 0.5, y: cubedimension * 0.5, z: cubedimension * 0.5 }, 1000)
+    .onComplete(function(){scene.remove(cube)});
+    scaleTween.start();
+}
