@@ -27,6 +27,8 @@ document.body.appendChild( renderer.domElement );
 
 camera.position.z = 5;
 
+const raycaster = new THREE.Raycaster();
+
 /* oggetto cubo */
 {
     const color = 0xFFFFFF;
@@ -121,7 +123,7 @@ const scaleTween = new TWEEN.Tween(cube.scale)
     scaleTween.start();
 }
 
-function uploadNew(){
+function uploadNew() {
   scene.remove(cube);
 
   document.getElementById("eyes").hidden = true;
@@ -131,17 +133,23 @@ function uploadNew(){
 
   loader.load(
     '../assets/3D/model.gltf',
-    function ( gltf ) {
-      gltf.scene.scale.set( 15, 15, 15 );
-      scene.add( gltf.scene );
-    }, 
+    function (gltf) {
+      gltf.scene.scale.set(0.01, 0.01, 0.01);
+
+      scene.add(gltf.scene);
+
+      new TWEEN.Tween(gltf.scene.scale)
+        .to({ x: 15, y: 15, z: 15 }, 1000)
+        .easing(TWEEN.Easing.Quadratic.Out) 
+        .start();
+    },
     
-    function ( xhr ) {
-      console.log( ( xhr.loaded / xhr.total * 100 ) + '% loaded' );
+    function (xhr) {
+      console.log((xhr.loaded / xhr.total * 100) + '% loaded');
     },
 
-    function ( error ) {
-      console.log( 'An error happened' );
+    function (error) {
+      console.log('An error happened');
     }
   );
 }
