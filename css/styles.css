@@ -11640,6 +11640,13 @@ section {
     }
 }
 
+
+@media (max-height: 900px) {
+  .center {
+    opacity: 0;
+  }
+}
+
 .logos {
   display: flex;
   justify-content: space-evenly;
