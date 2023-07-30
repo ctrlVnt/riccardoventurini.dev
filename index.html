@@ -38,7 +38,7 @@
                         <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#contact">Contact</a></li>
                         <div class="dropdown">
                             <button id="lang_btn_gen" onclick="langueges()" class="dropbtn btn btn-secondary dropdown-toggle" value = 'EN'>EN</button>
-                            <div id="myDropdown" class="dropdown-menu">
+                            <div id="myDropdown" class="menu-fade">
                               <button id="lang_btn" class="dropdown-item text-box btn" onclick="show('EN'); toggleText(this.id);" value="EN">EN</button>
                               <button id="lang_btn" class="dropdown-item text-box btn" onclick="show('FR'); toggleText(this.id);" value="FR">FR</button>
                               <button id="lang_btn" class="dropdown-item text-box btn" onclick="show('IT'); toggleText(this.id);" value="IT">IT</button>
@@ -50,7 +50,7 @@
         </nav>
 
         <!-- Masthead-->
-        <header class="masthead bg-primary text-white text-center">
+        <section class="masthead bg-primary text-white text-center">
             <div class="container d-flex align-items-center flex-column">
                 <!-- Masthead Avatar Image-->
                 <img class="masthead-avatar mb-5" src="assets/img/avataaars.svg" alt="..." />
@@ -63,12 +63,17 @@
                     <div class="divider-custom-line"></div>
                 </div>
                 <!-- Masthead Subheading-->
-                <p class="masthead-subheading font-weight-light mb-0">Programmer</p>
+                <p class="masthead-subheading font-weight-light mb-0">Developer</p>
             </div>
-        </header>
+            <a href="#projects">
+                <div class="center">
+                    <div class="arrow"></div>
+                </div>
+            </a>
+        </section>
 
         <!-- Portfolio Section-->
-        <section class="page-section portfolio" id="projects">
+        <section class="portfolio" id="projects">
             <div class="container">
                 <!-- Portfolio Section Heading-->
                 <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Projects</h2>
@@ -102,7 +107,7 @@
         </section>
 
         <!-- About Section-->
-        <section class="page-section bg-primary text-white mb-0" id="about">
+        <section class="bg-primary text-white mb-0" id="about">
             <div class="container">
                 <!-- About Section Heading-->
                 <h2 class="page-section-heading text-center text-uppercase text-white">About me</h2>
@@ -114,20 +119,27 @@
                 </div>
                 <!-- About Section Content-->
                 <div class="row d-flex justify-content-center">
-                    <div class="text-center md-0" style="max-width: 650px">
+                    <div class="text-center md-0" style="max-width: 1000px">
+                        <h4 id="welcome"></h4>
                         <p id="demo"></p>
-                        
-                        <p class="mt-3" id="proflife"></p>
-                        <div class="text-center">
-                            <a class="btn btn-secondary" href="CV/IT/CV Riccardo Venturini.pdf" id="cv"></a>
+                        <h4 id="competencesTitle"></h4>
+                        <div class="logos">
+                            <object class="svgs" data="assets/img/competences/c.svg" type="image/svg+xml"></object>
+                            <object class="svgs" data="assets/img/competences/java.svg" type="image/svg+xml"></object>
+                            <object class="svgs" data="assets/img/competences/springboot.svg" type="image/svg+xml"></object>
+                            <object class="svgs" data="assets/img/competences/react.svg" type="image/svg+xml"></object>
+                            <object class="svgs" data="assets/img/competences/kotlin.svg" type="image/svg+xml"></object>
                         </div>
+                        <p id="competences"></p>
+                        <p id="proflife"></p>
+                        <a class="btn btn-secondary cv-btn" href="CV/IT/CV Riccardo Venturini.pdf" id="cv"></a>
                     </div>
                 </div>
             </div>
         </section>
 
         <!-- Contact Section-->
-        <section class="page-section" id="contact">
+        <section class="" id="contact">
             <div class="container">
                 <!-- Contact Section Heading-->
                 <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Contact Me</h2>
@@ -139,9 +151,12 @@
                 </div>
                 <!-- Contact Section Form-->
                 <div class="text-center">
-                    <a class="text-secondary h6" href="mailto:riccardoventurini220@gmail.com">
+                    <p class="mt-2" id="mail"></p>
+                    <a class="text-secondary h5" href="mailto:riccardoventurini220@gmail.com">
                         riccardoventurini220@gmail.com 
                     </a>
+                    <p class="mt-4" id="donations"></p>
+                    <a id="dona" class="btn btn-secondary donate-btn" href="https://www.paypal.com/donate/?hosted_button_id=Q9S9L8LUAFW6W">Donate</a>
                 </div>
             </div>
         </section>
@@ -165,7 +180,7 @@
 
         <!-- Copyright Section-->
         <div class="copyright py-4 text-center text-white">
-            <div class="container"><small>Copyright &copy; riccardoventurini.it 2022</small></div>
+            <div class="container"><small>Copyright &copy; riccardoventurini.dev 2023</small></div>
         </div>
         
         <!-- Projects Modals-->

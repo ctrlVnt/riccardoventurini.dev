@@ -52,7 +52,7 @@ function langueges() {
 // Close the dropdown menu if the user clicks outside of it
 window.onclick = function(event) {
     if (!event.target.matches('.dropbtn')) {
-    var dropdowns = document.getElementsByClassName("dropdown-menu");
+    var dropdowns = document.getElementsByClassName("menu-fade");
     var i;
         for (i = 0; i < dropdowns.length; i++) {
             var openDropdown = dropdowns[i];
@@ -82,8 +82,30 @@ dropdown.onclick = function() {
     dropdown.classList.toggle("active")
 }
 
+// Funzione per animare il div con il salto e la rotazione
+function animateDiv() {
+    const divElement = document.getElementById("cv");
+    divElement.style.animation = "jumpAndRotate 1s ease-in-out";
+    
+    // Rimuovere la classe di animazione dopo che l'animazione è terminata
+    setTimeout(() => {
+      divElement.style.animation = "";
+    }, 1000); // 1000ms = 1 secondo
+  }
+  
+  // Impostare l'intervallo per l'animazione ogni 2 secondi
+  setInterval(animateDiv, 2000); // 2000ms = 2 secondi
 
+  function animateDonation(){
+    const divElement = document.getElementById("dona");
+    divElement.style.animation = "pulseAnimation 0.5s linear";
+    
+    setTimeout(() => {
+      divElement.style.animation = "";
+    }, 1000); // 1000ms = 1 secondo
+  }
 
+  setInterval(animateDonation, 2000);
 
 
 function show(value) {
@@ -94,10 +116,15 @@ const lang = value;
 fetch('json/text.json')
 .then(response => response.json())
 .then(data => {
-    document.getElementById('demo').innerHTML = '<h5>' + data[lang].welcome + '</h5>' + data[lang].aboutMe;
+    document.getElementById('welcome').innerHTML = data[lang].welcome;
+    document.getElementById('demo').innerHTML = data[lang].aboutMe;
+    document.getElementById('competencesTitle').innerHTML = data[lang].competencesTitle;
+    document.getElementById('competences').innerHTML = data[lang].competences;
     document.getElementById('proflife').innerHTML =  data[lang].profile;
     document.getElementById('cv').innerHTML =  data[lang].myCV;
     document.getElementById('cv').href = data[lang].cvLink;
+    document.getElementById('mail').innerHTML =  data[lang].mail;
+    document.getElementById('donations').innerHTML =  data[lang].donations;
     document.getElementById('flashapp').innerHTML = data[lang].flashApp;
 })
 .catch(error => console.error('Errore nel caricamento del file JSON:', error));
