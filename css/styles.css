@@ -11664,6 +11664,8 @@ section {
 @media (max-width: 800px) {
   .logos {
     flex-wrap: wrap;
+    justify-content: none;
+    margin-left: 50px;
   }
 }
 
