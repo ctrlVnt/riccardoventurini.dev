@@ -120,12 +120,12 @@ fetch('json/text.json')
     document.getElementById('demo').innerHTML = data[lang].aboutMe;
     document.getElementById('competencesTitle').innerHTML = data[lang].competencesTitle;
     document.getElementById('competences').innerHTML = data[lang].competences;
-    document.getElementById('proflife').innerHTML =  data[lang].profile;
-    document.getElementById('cv').innerHTML =  data[lang].myCV;
-    document.getElementById('cv').href = data[lang].cvLink;
     document.getElementById('mail').innerHTML =  data[lang].mail;
     document.getElementById('donations').innerHTML =  data[lang].donations;
     document.getElementById('flashapp').innerHTML = data[lang].flashApp;
+    //document.getElementById('proflife').innerHTML =  data[lang].profile;
+    //document.getElementById('cv').innerHTML =  data[lang].myCV;
+    //document.getElementById('cv').href = data[lang].cvLink;
 })
 .catch(error => console.error('Errore nel caricamento del file JSON:', error));
 }

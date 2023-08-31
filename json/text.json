@@ -19,9 +19,10 @@
  "profile": "Pour en savoir plus sur ma vie professionnelle :",
  "myCV": "Mon CV",
  "mail": "Si vous souhaitez me contacter, vous pouvez m'écrire un email :",
- "donations": "Si tu veux m'offrir un café ;)",
+ "donations": "Si vous voulez m'offrir un café ;)",
  "cvLink": "https://riccardoventurini.dev/CV/FR/CV Riccardo Venturini - Fr.pdf",
- "flashApp": "<b>FlashApp</b> est une application d'aide à l'apprentissage.<br> L'application permet de créer des jeux de cartes (flashcards) : chaque carte a un espace pour la question et un pour la réponse. Ce sera l'utilisateur qui créera les cartes, en effet pour jouer il faut avoir créé au moins une carte.<br> Le jeu consiste à lire la question, à tourner la carte et à indiquer si vous avez bien deviné ou non, à l'aide des boutons appropriés.<br> <i>Application disponible uniquement pour Android, ci-dessous le lien vers le Google Play Store.</i>"    },
+ "flashApp": "<b>FlashApp</b> est une application d'aide à l'apprentissage.<br> L'application permet de créer des jeux de cartes (flashcards) : chaque carte a un espace pour la question et un pour la réponse. Ce sera l'utilisateur qui créera les cartes, en effet pour jouer il faut avoir créé au moins une carte.<br> Le jeu consiste à lire la question, à tourner la carte et à indiquer si vous avez bien deviné ou non, à l'aide des boutons appropriés.<br> <i>Application disponible uniquement pour Android, ci-dessous le lien vers le Google Play Store.</i>"
+},
     "IT": {
  "welcome": "Benvenuti!",
  "aboutMe": " Sono Riccardo e attualmente sono studente di informatica alla facoltà degli  studi di Torino, città dalla quale provengo.<br> Ho deciso di intraprendere la mia carriera in questo ambito perché credo fortemente nell'impatto che i mezzi virtuali stanno avendo nella quotidianità di tutti noi. Spesso mi piace paragonare la figura del programmatore a quella di un piccolo inventore, capace di creare qualcosa di funzionale e averne pieno controllo.<br> Su questa piattaforma pubblicherò progetti ai quali lavoro durante il tempo libero e per l'università.",
@@ -32,5 +33,6 @@
  "mail": "Se vuoi contattarmi puoi scrivermi una mail:",
  "donations": "Se vuoi offrirmi un caffé ;)",
  "cvLink": "https://riccardoventurini.dev/CV/IT/CV Riccardo Venturini - It.pdf",
- "flashApp": "<b>FlashApp</b> è un applicazione per l'aiuto all'apprendimento.<br> L'app permette di creare dei mazzi di carte (flashcard): ogni carta ha uno spazio per la domanda e uno per la risposta. Sarà l'utente a creare le carte, infatti per poter giocare è necessario aver creato almeno una carta.<br> Il gioco consiste nel leggere la domanda, ruotare la carta e indicare se si ha indovinato, o meno, usando gli appositi bottoni.<br> <i>App disponibile solo per Android, di seguito il link al Google Play Store.</i>"    }
+ "flashApp": "<b>FlashApp</b> è un applicazione per l'aiuto all'apprendimento.<br> L'app permette di creare dei mazzi di carte (flashcard): ogni carta ha uno spazio per la domanda e uno per la risposta. Sarà l'utente a creare le carte, infatti per poter giocare è necessario aver creato almeno una carta.<br> Il gioco consiste nel leggere la domanda, ruotare la carta e indicare se si ha indovinato, o meno, usando gli appositi bottoni.<br> <i>App disponibile solo per Android, di seguito il link al Google Play Store.</i>"
+ }
   }
