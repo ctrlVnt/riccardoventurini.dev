@@ -123,9 +123,9 @@ fetch('json/text.json')
     document.getElementById('mail').innerHTML =  data[lang].mail;
     document.getElementById('donations').innerHTML =  data[lang].donations;
     document.getElementById('flashapp').innerHTML = data[lang].flashApp;
-    //document.getElementById('proflife').innerHTML =  data[lang].profile;
-    //document.getElementById('cv').innerHTML =  data[lang].myCV;
-    //document.getElementById('cv').href = data[lang].cvLink;
+    document.getElementById('proflife').innerHTML =  data[lang].profile;
+    document.getElementById('cv').innerHTML =  data[lang].myCV;
+    document.getElementById('cv').href = data[lang].cvLink;
 })
 .catch(error => console.error('Errore nel caricamento del file JSON:', error));
 }
