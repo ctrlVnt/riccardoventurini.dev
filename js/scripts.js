@@ -126,6 +126,7 @@ fetch('json/text.json')
     document.getElementById('proflife').innerHTML =  data[lang].profile;
     document.getElementById('cv').innerHTML =  data[lang].myCV;
     document.getElementById('cv').href = data[lang].cvLink;
+    document.getElementById('javaemailprovider').innerHTML = data[lang].javaEmailProvider;
 })
 .catch(error => console.error('Errore nel caricamento del file JSON:', error));
 }

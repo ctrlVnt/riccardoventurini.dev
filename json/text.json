@@ -9,7 +9,8 @@
  "mail": "If you want to contact me you can write me an email:",
  "donations": "If you want to offer me a coffe ;)",
  "cvLink": "https://riccardoventurini.dev/CV/EN/CV Riccardo Venturini - En.pdf",
- "flashApp": "<b>FlashApp</b> is a learning aid application.<br>The app allows you to create decks of cards (flashcards): each card has a space for the question and one for the answer. It will be the user who creates the cards, in fact in order to play it is necessary to have created at least one card.<br> The game consists in reading the question, turning the card and indicating whether or not you guessed right, using the appropriate buttons.<br> <i>App available only for Android, below is the link to the Google Play Store.</i>"
+ "flashApp": "<b>FlashApp</b> is a learning aid application.<br>The app allows you to create decks of cards (flashcards): each card has a space for the question and one for the answer. It will be the user who creates the cards, in fact in order to play it is necessary to have created at least one card.<br> The game consists in reading the question, turning the card and indicating whether or not you guessed right, using the appropriate buttons.<br> <i>App available only for Android, below is the link to the Google Play Store.</i>",
+ "javaEmailProvider":"<b>Java Email Provider</b> is a desktop application that simulates the behavior of an email provider locally on the computer, therefore without the need for a connection. It was born as a university project whose objective was the correct management of threads and the use of the JavaFx library with the Java language. On GitHub you can view the source code with instructions to run it on your computer!"
  },
  "FR": {
  "welcome": "Bienvenu !",
@@ -21,7 +22,8 @@
  "mail": "Si vous souhaitez me contacter, vous pouvez m'écrire un email :",
  "donations": "Si vous voulez m'offrir un café ;)",
  "cvLink": "https://riccardoventurini.dev/CV/FR/CV Riccardo Venturini - Fr.pdf",
- "flashApp": "<b>FlashApp</b> est une application d'aide à l'apprentissage.<br> L'application permet de créer des jeux de cartes (flashcards) : chaque carte a un espace pour la question et un pour la réponse. Ce sera l'utilisateur qui créera les cartes, en effet pour jouer il faut avoir créé au moins une carte.<br> Le jeu consiste à lire la question, à tourner la carte et à indiquer si vous avez bien deviné ou non, à l'aide des boutons appropriés.<br> <i>Application disponible uniquement pour Android, ci-dessous le lien vers le Google Play Store.</i>"
+ "flashApp": "<b>FlashApp</b> est une application d'aide à l'apprentissage.<br> L'application permet de créer des jeux de cartes (flashcards) : chaque carte a un espace pour la question et un pour la réponse. Ce sera l'utilisateur qui créera les cartes, en effet pour jouer il faut avoir créé au moins une carte.<br> Le jeu consiste à lire la question, à tourner la carte et à indiquer si vous avez bien deviné ou non, à l'aide des boutons appropriés.<br> <i>Application disponible uniquement pour Android, ci-dessous le lien vers le Google Play Store.</i>",
+ "javaEmailProvider":"<b>Java Email Provider</b> est une application de bureau qui simule le comportement d'un fournisseur de messagerie localement sur l'ordinateur, donc sans avoir besoin d'une connexion. Il est né comme un projet universitaire dont l'objectif était la gestion correcte des threads et l'utilisation de la bibliothèque JavaFx avec le langage Java. Sur GitHub, vous pouvez afficher le code source avec des instructions pour l'exécuter sur votre ordinateur !"
 },
     "IT": {
  "welcome": "Benvenuti!",
@@ -33,6 +35,7 @@
  "mail": "Se vuoi contattarmi puoi scrivermi una mail:",
  "donations": "Se vuoi offrirmi un caffé ;)",
  "cvLink": "https://riccardoventurini.dev/CV/IT/CV Riccardo Venturini - It.pdf",
- "flashApp": "<b>FlashApp</b> è un applicazione per l'aiuto all'apprendimento.<br> L'app permette di creare dei mazzi di carte (flashcard): ogni carta ha uno spazio per la domanda e uno per la risposta. Sarà l'utente a creare le carte, infatti per poter giocare è necessario aver creato almeno una carta.<br> Il gioco consiste nel leggere la domanda, ruotare la carta e indicare se si ha indovinato, o meno, usando gli appositi bottoni.<br> <i>App disponibile solo per Android, di seguito il link al Google Play Store.</i>"
+ "flashApp": "<b>FlashApp</b> è un applicazione per l'aiuto all'apprendimento.<br> L'app permette di creare dei mazzi di carte (flashcard): ogni carta ha uno spazio per la domanda e uno per la risposta. Sarà l'utente a creare le carte, infatti per poter giocare è necessario aver creato almeno una carta.<br> Il gioco consiste nel leggere la domanda, ruotare la carta e indicare se si ha indovinato, o meno, usando gli appositi bottoni.<br> <i>App disponibile solo per Android, di seguito il link al Google Play Store.</i>",
+ "javaEmailProvider": "<b>Java Email Provvider</b> è un'applicazione desktop che simula il comportamento di un mail provvider localmente sul computer, quindi senza necessità di connessione. Nasce come progetto universitario il cui obiettivo era la corretta gestione dei thread e dell'utilizzo della libreria JavaFx con il linguaggio Java. Su GitHub la possibilità di visualizzazione del codice sorgente con le istruzioni per poterlo eseguire sul vostro computer!"
  }
   }
