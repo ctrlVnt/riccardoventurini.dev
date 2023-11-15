@@ -33,8 +33,8 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ms-auto">
-                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#projects">Projects</a></li>
                         <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#about">About</a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#projects">Projects</a></li>
                         <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#contact">Contact</a></li>
                         <div class="dropdown">
                             <button id="lang_btn_gen" onclick="langueges()" class="dropbtn btn btn-secondary dropdown-toggle" value = 'EN'>EN</button>
@@ -72,13 +72,47 @@
             </a>
         </section>
 
-        <!-- Portfolio Section-->
-        <section class="portfolio" id="projects">
+        <!-- About Section-->
+        <section class="sec text-black mb-0" id="about">
             <div class="container">
-                <!-- Portfolio Section Heading-->
-                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Projects</h2>
+                <!-- About Section Heading-->
+                <h2 class="page-section-heading text-center text-uppercase">About me</h2>
                 <!-- Icon Divider-->
                 <div class="divider-custom">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon"><i class="far fa-hand-scissors"></i></div>
+                    <div class="divider-custom-line"></div>
+                </div>
+                <!-- About Section Content-->
+                <div class="row d-flex justify-content-center">
+                    <div class="md-0" style="max-width: 800px;padding-left: 50px; padding-right: 50px; ">
+                        <h4 id="welcome"></h4>
+                        <p id="demo"></p>
+                        <!--<h4 id="competencesTitle"></h4>
+                        <div class="logos">
+                            <object class="svgs" data="assets/img/competences/c.svg" type="image/svg+xml"></object>
+                            <object class="svgs" data="assets/img/competences/java.svg" type="image/svg+xml"></object>
+                            <object class="svgs" data="assets/img/competences/springboot.svg" type="image/svg+xml"></object>
+                            <object class="svgs" data="assets/img/competences/react.svg" type="image/svg+xml"></object>
+                            <object class="svgs" data="assets/img/competences/kotlin.svg" type="image/svg+xml"></object>
+                        </div>-->
+                        <p id="competences"></p>
+                        <p id="proflife"></p>
+                        <div class="text-center">
+                            <a class="btn btn-secondary cv-btn" href="CV/IT/CV Riccardo Venturini.pdf" id="cv"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio Section-->
+        <section class="sec bg-primary portfolio" id="projects">
+            <div class="container">
+                <!-- Portfolio Section Heading-->
+                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0 text-white">Projects</h2>
+                <!-- Icon Divider-->
+                <div class="divider-custom divider-light">
                     <div class="divider-custom-line"></div>
                     <div class="divider-custom-icon"><i class="fa fa-code"></i></div>
                     <div class="divider-custom-line"></div>
@@ -92,14 +126,14 @@
 
                         <div class="row justify-content-center">
                             <div class="col-lg-8 col-xl-7">
-                                    <h3 class="text-center text-secondary mb-0">FlashApp</h3>
+                                    <h3 class="text-center text-secondary mb-0 text-white">FlashApp</h3>
                                 </a>
                             </div>
 
                         </div>
                         <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal1">
                             <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                                <div class="portfolio-item-caption-content text-center text-color-primary"><i class="fas fa-plus fa-3x"></i></div>
                             </div>
                             <img class="img-fluid" src="assets/img/portfolio/flashapp.png" alt="..." />
                         </div>
@@ -130,51 +164,19 @@
 
                         <div class="row justify-content-center">
                             <div class="col-lg-8 col-xl-7">
-                                    <h3 class="text-center text-secondary mb-0">RYTM</h3>
+                                    <h3 class="text-center text-secondary mb-0 text-white">RYTM</h3>
                                 </a>
                             </div>
                         </div>
 
                         <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal4">
                             <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                                <div class="portfolio-item-caption-content text-center text-color-primary"><i class="fas fa-plus fa-3x"></i></div>
                             </div>
                             <img class="img-fluid" src="assets/img/portfolio/RYTMCover.png" alt="..." />
                         </div>
                     </div>
 
-                </div>
-            </div>
-        </section>
-
-        <!-- About Section-->
-        <section class="bg-primary text-white mb-0" id="about">
-            <div class="container">
-                <!-- About Section Heading-->
-                <h2 class="page-section-heading text-center text-uppercase text-white">About me</h2>
-                <!-- Icon Divider-->
-                <div class="divider-custom divider-light">
-                    <div class="divider-custom-line"></div>
-                    <div class="divider-custom-icon"><i class="far fa-hand-scissors"></i></div>
-                    <div class="divider-custom-line"></div>
-                </div>
-                <!-- About Section Content-->
-                <div class="row d-flex justify-content-center">
-                    <div class="text-center md-0" style="max-width: 1000px">
-                        <h4 id="welcome"></h4>
-                        <p id="demo"></p>
-                        <h4 id="competencesTitle"></h4>
-                        <div class="logos">
-                            <object class="svgs" data="assets/img/competences/c.svg" type="image/svg+xml"></object>
-                            <object class="svgs" data="assets/img/competences/java.svg" type="image/svg+xml"></object>
-                            <object class="svgs" data="assets/img/competences/springboot.svg" type="image/svg+xml"></object>
-                            <object class="svgs" data="assets/img/competences/react.svg" type="image/svg+xml"></object>
-                            <object class="svgs" data="assets/img/competences/kotlin.svg" type="image/svg+xml"></object>
-                        </div>
-                        <p id="competences"></p>
-                         <p id="proflife"></p>
-                        <a class="btn btn-secondary cv-btn" href="CV/IT/CV Riccardo Venturini.pdf" id="cv"></a>
-                    </div>
                 </div>
             </div>
         </section>

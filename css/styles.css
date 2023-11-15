@@ -7782,6 +7782,11 @@ textarea.form-control-lg {
   color: rgba(0, 0, 0, 0.5) !important;
 }
 
+.text-color-primary {
+  --bs-text-opacity: 1;
+  color: var(--bs-primary) !important;
+}
+
 .text-white-50 {
   --bs-text-opacity: 1;
   color: rgba(255, 255, 255, 0.5) !important;
@@ -11475,7 +11480,7 @@ section {
   left: 0;
   transition: all 0.2s ease-in-out;
   opacity: 0;
-  background-color: var(--bs-primary);
+  background-color: var(--bs-white);
 }
 .portfolio .portfolio-item .portfolio-item-caption:hover {
   opacity: 1;
@@ -11703,5 +11708,19 @@ section {
   }
   50% {
     transform: scale(1.1);
+  }
+}
+
+.sec {
+}
+
+@media (min-width: 769px) {
+  .sec {
+    height: 100vh;
+  }
+}
+
+@media (max-width: 768px) {
+  .sec {
   }
 }
