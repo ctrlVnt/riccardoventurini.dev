@@ -1,9 +1,8 @@
 {
     "EN": {
  "welcome": "Welcome!",
- "aboutMe": "I'm Riccardo! A computer science student at the Faculty of Studies in Turin.<br> I decided to pursue computer science because I strongly believe in the impact that virtual means are having in the daily life of all of us. I often like to compare the figure of the programmer to that of a small inventor, able to create something functional and have full control over it.<br> On this platform I will publish projects that I work on during my free time and for university.",
+ "aboutMe": "I'm Riccardo, a <b>junior web and Android developer</b>, graduated in computer science from the University of Turin.<br> I decided to pursue computer science because I strongly believe in the impact that virtual means are having in the daily life of all of us. I often like to compare the figure of the programmer to that of a small inventor, able to create something functional and have full control over it.<br> On this platform I will publish projects that I work on during my free time and for university.",
  "competencesTitle" : "Competences",
- "competences" : "<b>I take care of Android and web development!</b>",
  "profile": "To find out more about my professional life:",
  "myCV": "My CV",
  "mail": "If you want to contact me you can write me an email:",
@@ -15,9 +14,8 @@
  },
  "FR": {
  "welcome": "Bienvenu !",
- "aboutMe": "Je m'appelle Riccardo et je suis actuellement étudiant en informatique à la Faculté de Turin, d'où je viens.<br> J'ai décidé de poursuivre ma carrière dans ce domaine parce que je crois fermement à l'impact que les médias virtuels  ont sur notre vie quotidienne. J'aime souvent comparer la figure du programmeur à celle d'un petit inventeur,  capable de créer quelque chose de fonctionnel et d'en avoir le plein contrôle.<br> Sur cette plateforme, je publierai des projets sur lesquels je travaille pendant mon temps libre et pour l'université.",
+ "aboutMe": "Je suis Riccardo, un <b>jeune développeur web et Android</b>, diplômé en informatique de l'Université de Turin.<br> J'ai décidé de poursuivre ma carrière dans ce domaine parce que je crois fermement à l'impact que les médias virtuels  ont sur notre vie quotidienne. J'aime souvent comparer la figure du programmeur à celle d'un petit inventeur,  capable de créer quelque chose de fonctionnel et d'en avoir le plein contrôle.<br> Sur cette plateforme, je publierai des projets sur lesquels je travaille pendant mon temps libre et pour l'université.",
  "competencesTitle" : "Compétences",
- "competences" : "<b>Je m'occupe de le développement Android et web!</b>",
  "profile": "Pour en savoir plus sur ma vie professionnelle :",
  "myCV": "Mon CV",
  "mail": "Si vous souhaitez me contacter, vous pouvez m'écrire un email :",
@@ -29,9 +27,8 @@
 },
     "IT": {
  "welcome": "Benvenuti!",
- "aboutMe": " Sono Riccardo e attualmente sono studente di informatica alla facoltà degli  studi di Torino, città dalla quale provengo.<br> Ho deciso di intraprendere la mia carriera in questo ambito perché credo fortemente nell'impatto che i mezzi virtuali stanno avendo nella quotidianità di tutti noi. Spesso mi piace paragonare la figura del programmatore a quella di un piccolo inventore, capace di creare qualcosa di funzionale e averne pieno controllo.<br> Su questa piattaforma pubblicherò progetti ai quali lavoro durante il tempo libero e per l'università.",
+ "aboutMe": "Sono Riccardo, un <b>giovane sviluppatore web e Android</b> laureato in informatica alla facoltà degli  studi di Torino.<br> Ho deciso di intraprendere la mia carriera in questo ambito perché credo fortemente nell'impatto che i mezzi virtuali stanno avendo nella quotidianità di tutti noi. Spesso mi piace paragonare la figura del programmatore a quella di un piccolo inventore, capace di creare qualcosa di funzionale e averne pieno controllo.<br>",
  "competencesTitle" : "Competenze",
- "competences" : "<b>Mi occupo dello sviluppo di applicazioni Android e web!</b>",
  "profile": "Per scoprire di più sulla mia vita professionale:",
  "myCV": "Il mio CV",
  "mail": "Se vuoi contattarmi puoi scrivermi una mail:",

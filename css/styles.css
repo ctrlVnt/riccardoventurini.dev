@@ -11717,10 +11717,21 @@ section {
 @media (min-width: 769px) {
   .sec {
     height: 100vh;
+    position: relative;
+  }
+  .distance{
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
   }
 }
 
 @media (max-width: 768px) {
   .sec {
   }
+}
+
+.distance{
+  margin-top: 60px;
 }

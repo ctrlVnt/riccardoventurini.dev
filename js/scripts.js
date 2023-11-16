@@ -119,7 +119,6 @@ fetch('json/text.json')
     document.getElementById('welcome').innerHTML = data[lang].welcome;
     document.getElementById('demo').innerHTML = data[lang].aboutMe;
     //document.getElementById('competencesTitle').innerHTML = data[lang].competencesTitle;
-    document.getElementById('competences').innerHTML = data[lang].competences;
     document.getElementById('mail').innerHTML =  data[lang].mail;
     document.getElementById('donations').innerHTML =  data[lang].donations;
     document.getElementById('flashapp').innerHTML = data[lang].flashApp;
