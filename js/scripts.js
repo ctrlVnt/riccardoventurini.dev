@@ -45,16 +45,24 @@ window.addEventListener('DOMContentLoaded', event => {
 });
 
 document.addEventListener("DOMContentLoaded", function () {
-
     var headingElement = document.getElementById("typing-heading");
-    
+
     var headingText = headingElement.innerText;
   
     headingElement.innerHTML = "";
   
     for (var i = 0; i < headingText.length; i++) {
       setTimeout(function (index) {
-        headingElement.innerHTML  += headingText[index];
+       // Rimuovi il trattino (_) precedente, se presente
+       if(headingElement.querySelector('.blink') != null){
+        headingElement.querySelector('.blink').remove();
+       }
+
+       // Aggiungi la lettera corrente
+       headingElement.innerHTML += headingText[index];
+
+       // Aggiungi il nuovo trattino (_) alla fine
+       headingElement.innerHTML += '<span class="blink">_</span>';
       }, i * 200, i);
     }
   });
