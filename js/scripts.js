@@ -44,6 +44,21 @@ window.addEventListener('DOMContentLoaded', event => {
 
 });
 
+document.addEventListener("DOMContentLoaded", function () {
+
+    var headingElement = document.getElementById("typing-heading");
+    
+    var headingText = headingElement.innerText;
+  
+    headingElement.innerHTML = "";
+  
+    for (var i = 0; i < headingText.length; i++) {
+      setTimeout(function (index) {
+        headingElement.innerHTML  += headingText[index];
+      }, i * 200, i);
+    }
+  });
+
 // function for show dropdown language menu
 function langueges() {
     document.getElementById("myDropdown").classList.toggle("show");
