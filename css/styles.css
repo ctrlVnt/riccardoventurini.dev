@@ -30,6 +30,8 @@
   --bs-light: #f8f9fa;
   --bs-dark: #212529;
 
+  --bs-portfolio: #78838A;
+
   /*PALETTA COLORE
   #00090D
   #D5FCFE
@@ -7787,6 +7789,11 @@ textarea.form-control-lg {
   color: var(--bs-primary) !important;
 }
 
+.text-bg-portfolio {
+  --bs-text-opacity: 1;
+  color: var(--bs-portfolio) !important;
+}
+
 .text-white-50 {
   --bs-text-opacity: 1;
   color: rgba(255, 255, 255, 0.5) !important;
@@ -7821,6 +7828,11 @@ textarea.form-control-lg {
 .bg-secondary {
   --bs-bg-opacity: 1;
   background-color: var(--bs-secondary) !important;
+}
+
+.bg-portfolio {
+  --bs-bg-opacity: 1;
+  background-color: var(--bs-portfolio) !important;
 }
 
 .bg-success {
