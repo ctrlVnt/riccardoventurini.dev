@@ -11739,21 +11739,6 @@ section {
   }
 }
 
-@media (min-height: 630px) {
-  .sec {
-    height: 100vh;
-    position: relative;
-  }
-  .distance {
-    position: relative;
-    bottom: 0%;
-    left: 20%;
-    transform: translateX(-50%) rotate(-45deg);
-    transform-origin: 10% 100%;
-    white-space: nowrap; /* Impedisce il wrapping del testo */
-  }
-}
-
 @media (max-width: 768px) {
   .sec {
   }
