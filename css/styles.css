@@ -11733,7 +11733,7 @@ section {
   }
   .distance{
     position: absolute;
-    bottom: 10%;
+    bottom: 5%;
     left: 50%;
     transform: translateX(-50%);
   }
@@ -11756,4 +11756,13 @@ section {
 
 .blink {
   animation: blink 1s infinite;
+}
+
+.contactme {
+  background-color: var(--bs-portfolio);
+  border-radius: 10px;
+  max-width: 400px;
+  padding: 20px;
+  margin-inline: auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); 
 }
