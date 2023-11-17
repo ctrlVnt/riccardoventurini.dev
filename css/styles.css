@@ -11726,7 +11726,7 @@ section {
 .sec {
 }
 
-@media (min-width: 769px) {
+@media (min-width: 1800px) {
   .sec {
     height: 100vh;
     position: relative;
