@@ -193,13 +193,29 @@
                     <div class="divider-custom-icon"><i class="far fa-paper-plane"></i></div>
                     <div class="divider-custom-line"></div>
                 </div>
+
                 <!-- Contact Section Form-->
-                <div class="text-center">
-                    <p class="mt-2" id="mail"></p>
-                    <a class="text-secondary h5" href="mailto:riccardoventurini220@gmail.com">
-                        riccardoventurini220@gmail.com 
-                    </a>
-                </div>
+                <form name="contact" method="POST" data-netlify="true">
+                    <p>
+                      <label>Your Name: <input type="text" name="name" /></label>
+                    </p>
+                    <p>
+                      <label>Your Email: <input type="email" name="email" /></label>
+                    </p>
+                    <p>
+                      <label>Your Role: <select name="role[]" multiple>
+                        <option value="leader">Leader</option>
+                        <option value="follower">Follower</option>
+                      </select></label>
+                    </p>
+                    <p>
+                      <label>Message: <textarea name="message"></textarea></label>
+                    </p>
+                    <p>
+                      <button type="submit">Send</button>
+                    </p>
+                  </form>
+                  
                 
                 <div class="text-center distance">
                     <p class="" id="donations"></p>
