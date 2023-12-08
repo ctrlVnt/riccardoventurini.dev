@@ -215,16 +215,16 @@
                 <!-- Contact Section Form-->
                 <form class="contactme text-center text-white" name="contact" method="POST" data-netlify="true">
                     <p>
-                      <label>Name: <input class="form-control" type="text" name="name" /></label>
+                      <label>Email: <input class="form-control" type="email" name="email" id="email" placeholder="youremail@mail.com"/></label>
                     </p>
                     <p>
-                      <label>Email: <input class="form-control" type="email" name="email" placeholder="youremail@mail.com"/></label>
+                        <label>Object: <input class="form-control" type="text" name="object" placeholder="Your object..."/></label>
                     </p>
                     <p>
-                      <label>Message: <textarea class="form-control form-control-lg" rows="5" name="message"></textarea></label>
+                      <label>Message: <textarea class="form-control form-control-lg" rows="5" name="message" id="message" placeholder="Your message..."></textarea></label>
                     </p>
                     <p>
-                      <button class="btn btn-secondary" type="submit">Send <i class="far fa-paper-plane"></i></button>
+                      <button class="btn btn-secondary" type="submit" id="submitBtn" disabled>Send <i class="far fa-paper-plane"></i></button>
                     </p>
                 </form>
                   

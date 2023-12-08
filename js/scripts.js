@@ -153,3 +153,24 @@ fetch('json/text.json')
 })
 .catch(error => console.error('Errore nel caricamento del file JSON:', error));
 }
+
+/* Istruzioni form */
+document.getElementById("email").addEventListener("input", validateForm);
+document.getElementById("message").addEventListener("input", validateForm);
+
+// Funzione per abilitare/disabilitare il pulsante di invio
+function validateForm() {
+    var emailValue = document.getElementById("email").value;
+    var messageValue = document.getElementById("message").value;
+    var submitBtn = document.getElementById("submitBtn");
+
+    var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    var isEmailValid = emailRegex.test(emailValue);
+
+    // Abilita il pulsante solo se entrambi i campi sono stati compilati
+    if (emailValue.trim() !== "" && messageValue.trim() !== "" && isEmailValid) {
+        submitBtn.disabled = false;
+    } else {
+        submitBtn.disabled = true;
+    }
+}
