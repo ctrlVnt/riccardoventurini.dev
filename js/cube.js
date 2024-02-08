@@ -1,4 +1,8 @@
 
+var canvas = document.getElementById('background');
+var heightRatio = 1.5;
+canvas.height = canvas.width * heightRatio;
+
 /* variabili */
 var loader = new THREE.GLTFLoader();
 
