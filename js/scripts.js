@@ -117,7 +117,7 @@ function animateDiv() {
   }
   
   // Impostare l'intervallo per l'animazione ogni 2 secondi
-  setInterval(animateDiv, 2000); // 2000ms = 2 secondi
+  setInterval(animateDiv, 3500); // 2000ms = 2 secondi
 
   function animateDonation(){
     const divElement = document.getElementById("dona");

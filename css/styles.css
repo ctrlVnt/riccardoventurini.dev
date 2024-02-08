@@ -11691,12 +11691,13 @@ section {
     transform: translateY(0) rotate(0);
   }
   50% {
-    transform: translateY(-10px) rotate(20deg);
+    transform: translateY(90px) rotate(360deg);
   }
   100% {
-    transform: translateY(0) rotate(0);
+    transform: translateY(0) rotate(360deg);
   }
 }
+
 
 .cv-btn{
   margin-top: 10px;
@@ -11773,4 +11774,28 @@ section {
   left: 0;
   width: 100%;
   z-index: -1;
+}
+
+.text-about-me{
+  max-width: 800px;
+  padding: 50px;
+  border-radius: 25px;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+@media (max-width: 600px){
+  .text-about-me{
+    max-width: 90%;
+    padding: 50px;
+    border-radius: 25px;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
+  .text-about-me p{
+    font-size: 15px;
+  }
+
+  .text-about-me h4{
+    font-size: 18px;
+  }
 }
