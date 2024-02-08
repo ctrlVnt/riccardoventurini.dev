@@ -199,6 +199,18 @@ function onTouchMove(event) {
   cube.rotation.y -= dx / 5 * 0.01;
   touchPosition.x = event.touches[0].pageX;
   touchPosition.y = event.touches[0].pageY;
+
+  // Aggiungi l'effetto di fluttuazione ai cubi
+  cube1.position.y += Math.sin(Date.now() * 0.005) * 0.05;
+  cube2.position.y += Math.sin(Date.now() * 0.005) * 0.05;
+  cube3.position.y += Math.sin(Date.now() * 0.005) * 0.05;
+  cube4.position.y += Math.sin(Date.now() * 0.005) * 0.05;
+  cube5.position.y += Math.sin(Date.now() * 0.005) * 0.05;
+  cube6.position.y += Math.sin(Date.now() * 0.005) * 0.05;
+  cube7.position.y += Math.sin(Date.now() * 0.005) * 0.05;
+  cube8.position.y += Math.sin(Date.now() * 0.005) * 0.05;
+  cube9.position.y += Math.sin(Date.now() * 0.005) * 0.05;
+  cube10.position.y += Math.sin(Date.now() * 0.005) * 0.05;
 }
 
 var canvas = document.getElementById('background');
