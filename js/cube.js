@@ -168,12 +168,10 @@ function onMouseMove(event) {
   
 document.addEventListener('mousemove', onMouseMove, false);  
 
-const mouseTarget = document.getElementById("home");
-mouseTarget.addEventListener('mouseleave', onMouseLeave, false);
+function onDeviceMove() {
 
-function onMouseLeave() {
   var tween = new TWEEN.Tween(cube.rotation.set(2.1, 0, 0.8))
-    .to({ y: cube.rotation.y + Math.PI }, 1000)
+    .to({x: cube.rotation.x + Math.PI }, 1000)
     .start();
 
   function update() {
@@ -183,41 +181,9 @@ function onMouseLeave() {
   update();
 }
 
-/* adattamento per schermi touch */
-
-var touchPosition = { x: 0, y: 0 };
-
-function onTouchStart(event) {
-  touchPosition.x = event.touches[0].pageX;
-  touchPosition.y = event.touches[0].pageY;
+if(window.innerWidth < 600){
+  setInterval(onDeviceMove, 1000);
 }
-
-function onTouchMove(event) {
-  var dx = event.touches[0].pageX - touchPosition.x;
-  var dy = event.touches[0].pageY - touchPosition.y;
-  cube.rotation.x += dy / 5 * 0.01;
-  cube.rotation.y -= dx / 5 * 0.01;
-  touchPosition.x = event.touches[0].pageX;
-  touchPosition.y = event.touches[0].pageY;
-
-  // Aggiungi l'effetto di fluttuazione ai cubi
-  cube1.position.y += Math.sin(Date.now() * 0.005) * 0.05;
-  cube2.position.y += Math.sin(Date.now() * 0.005) * 0.05;
-  cube3.position.y += Math.sin(Date.now() * 0.005) * 0.05;
-  cube4.position.y += Math.sin(Date.now() * 0.005) * 0.05;
-  cube5.position.y += Math.sin(Date.now() * 0.005) * 0.05;
-  cube6.position.y += Math.sin(Date.now() * 0.005) * 0.05;
-  cube7.position.y += Math.sin(Date.now() * 0.005) * 0.05;
-  cube8.position.y += Math.sin(Date.now() * 0.005) * 0.05;
-  cube9.position.y += Math.sin(Date.now() * 0.005) * 0.05;
-  cube10.position.y += Math.sin(Date.now() * 0.005) * 0.05;
-}
-
-var canvas = document.getElementById('background');
-canvas.addEventListener('touchstart', onTouchStart, false);
-canvas.addEventListener('touchmove', onTouchMove, false);
-canvas.addEventListener('touchend', onMouseLeave, false);
-
 
 /* animazione scena */
 function animate() {
