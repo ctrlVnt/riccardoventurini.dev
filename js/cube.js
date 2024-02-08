@@ -39,6 +39,18 @@ class Cube {
   scale(scale) {
       this.mesh.scale.set(scale.x, scale.y, scale.z);
   }
+
+  rotateOnDeviceMove() {
+    var tween = new TWEEN.Tween(this.mesh.rotation)
+      .to({y: this.mesh.rotation.y + Math.PI}, 1000)
+      .start();
+
+    function update() {
+      requestAnimationFrame(update);
+      TWEEN.update();
+    }
+    update();
+  }
 }
 
 
@@ -183,6 +195,19 @@ function onDeviceMove() {
 
 if(window.innerWidth < 600){
   setInterval(onDeviceMove, 1000);
+
+  setInterval(() => {
+      cube1.rotateOnDeviceMove();
+      cube2.rotateOnDeviceMove();
+      cube3.rotateOnDeviceMove();
+      cube4.rotateOnDeviceMove();
+      cube5.rotateOnDeviceMove();
+      cube6.rotateOnDeviceMove();
+      cube7.rotateOnDeviceMove();
+      cube8.rotateOnDeviceMove();
+      cube9.rotateOnDeviceMove();
+      cube10.rotateOnDeviceMove();
+    }, 1000)
 }
 
 /* animazione scena */
