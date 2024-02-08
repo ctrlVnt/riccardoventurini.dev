@@ -198,6 +198,7 @@ function onDeviceMove() {
 }
 
 if(window.innerWidth < 600){
+  onDeviceMove();
   setInterval(onDeviceMove, 1000);
 
   setInterval(() => {
@@ -221,3 +222,14 @@ function animate() {
 	renderer.render( scene, camera );
 }
 animate();
+
+// Funzione per gestire il ridimensionamento della finestra
+function onWindowResize() {
+  camera.aspect = window.innerWidth / window.innerHeight;
+  camera.updateProjectionMatrix();
+  renderer.setSize( window.innerWidth, window.innerHeight );
+}
+
+// Aggiungi un listener per l'evento di ridimensionamento della finestra
+window.addEventListener( 'resize', onWindowResize );
+
