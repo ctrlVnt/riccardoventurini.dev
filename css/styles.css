@@ -11780,15 +11780,12 @@ section {
   max-width: 800px;
   padding: 50px;
   border-radius: 25px;
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.7);
 }
 
 @media (max-width: 600px){
   .text-about-me{
     max-width: 90%;
-    padding: 50px;
-    border-radius: 25px;
-    background-color: rgba(0, 0, 0, 0.5);
   }
 
   .text-about-me p{

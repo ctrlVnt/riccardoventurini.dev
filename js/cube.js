@@ -11,7 +11,7 @@ const scene = new THREE.Scene();
 const camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 0.1, 1000 );
 const renderer = new THREE.WebGLRenderer({canvas : document.getElementById("background")});
 renderer.setSize( window.innerWidth, window.innerHeight );
-renderer.setClearColor(0x202E2C); //sfondo
+renderer.setClearColor(0xFFFFFF); //sfondo
 document.body.appendChild( renderer.domElement );
 
 camera.position.z = 5;
@@ -231,5 +231,5 @@ function onWindowResize() {
 }
 
 // Aggiungi un listener per l'evento di ridimensionamento della finestra
-window.addEventListener( 'resize', onWindowResize );
+//window.addEventListener( 'resize', onWindowResize );
 
