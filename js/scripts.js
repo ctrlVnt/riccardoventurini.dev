@@ -179,7 +179,7 @@ function validateForm() {
 window.addEventListener('scroll', function() {
     var background = document.getElementById("background");
     
-    if (window.scrollY > 0 && window.scrollY <= 700) {
+    if (window.scrollY >= 0 && window.scrollY <= 700) {
       background.style.opacity = 0;
       background.classList.add("blink-out");
     } else if (window.scrollY > 700 && window.scrollY <= 1200) {
