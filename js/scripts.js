@@ -174,3 +174,25 @@ function validateForm() {
         submitBtn.disabled = true;
     }
 }
+
+  
+window.addEventListener('scroll', function() {
+    var background = document.getElementById("background");
+    
+    if (window.scrollY > 0 && window.scrollY <= 700) {
+      background.style.opacity = 0;
+      background.classList.add("blink-out");
+    } else if (window.scrollY > 700 && window.scrollY <= 1200) {
+      background.classList.add("blink-in"); 
+      background.classList.remove("blink-out");
+      background.style.opacity = 1;
+    } else if (window.scrollY > 1200 && window.scrollY <= 2000) {
+      background.classList.remove("blink-in");
+      background.classList.add("blink-out");
+      background.style.opacity = 0;
+    } else if (window.scrollY > 2000) {
+      background.classList.add("blink-in");
+      background.classList.remove("blink-out");
+      background.style.opacity = 1;
+    }
+  });

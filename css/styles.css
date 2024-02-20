@@ -11749,14 +11749,30 @@ section {
   margin-top: 60px;
 }
 
-@keyframes blink {
-  0% { opacity: 1; }
-  50% { opacity: 0; }
-  100% { opacity: 1; }
+@keyframes blink-in {
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
 }
 
-.blink {
-  animation: blink 1s infinite;
+@keyframes blink-out {
+  from{
+    opacity: 1;
+  }
+  to{
+    opacity: 0;
+  }
+}
+
+.blink-in {
+  animation: blink-in 1s ease-in;
+}
+
+.blink-out {
+  animation: blink-out 1s ease-in;
 }
 
 .contactme {
@@ -11774,6 +11790,7 @@ section {
   left: 0;
   width: 100%;
   z-index: -1;
+  opacity: 0;
 }
 
 .text-about-me{
