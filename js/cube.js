@@ -212,6 +212,8 @@ if(window.innerWidth < 600){
       cube8.rotateOnDeviceMove();
       cube9.rotateOnDeviceMove();
       cube10.rotateOnDeviceMove();
+      cube11.rotateOnDeviceMove();
+      cube12.rotateOnDeviceMove();
     }, 1000)
 }
 
