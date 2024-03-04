@@ -1,47 +1,13 @@
-<!DOCTYPE html>
-<html lang="it">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="This is my personal website" />
-        <meta name="author" content="Riccardo Venturini" />
-        <title>RYTM</title>
+import React from 'react';
 
-        <!-- Favicon-->
-        <link rel="icon" type="image/x-icon" href="../../assets/favicon1.png" />
-
-        <!-- Font Awesome icons (free version)-->
-        <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
-
-        <!-- Google fonts-->
-        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
-        <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
-
-        <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="../../css/styles.css" rel="stylesheet" />
-    </head>
-
-
-    <body id="page-top">
-
-      <!-- Navigation-->
-      <nav class="navbar bg-secondary text-uppercase fixed-top navbar-shrink" id="mainNav">
-        <div class="container">
-            <a class="navbar-brand" href="../../index.html">riccardoventurini.dev</a>
-        </div>
-    </nav>
-
-        <!-- About Section-->
-        <section class="page-section mb-0" id="about">
-            <div class="container d-flex align-items-center flex-column">
-                <!-- About Section Heading-->
-                <img src="../../assets/img/privacyRYTM/logo_RYTM.svg" alt="..." width="250" height="250" />
-                <h2 class="page-section-heading text-center text-uppercase">RYTM</h2><br/>
+export default function RytmAppPrivacy() {
+  return (
+        <div className="bg-white">
+            <div className="bg-white px-4 py-12 mx-auto prose prose-zinc prose-quoteless">
+                <h2 className="">RYTM</h2><br/>
                 
-                
-                <!-- About Section Content-->
-                <div class="row d-flex justify-content-center">
-                    <div class="md-0" style="max-width: 840px"><p class="lead">
+                <div className="">
+                    <div className="" >
                       <h1>Privacy Policy</h1>
                       <p>Last updated: October 27, 2023</p>
                       <p>This Privacy Policy describes Our policies and procedures on the collection, use and disclosure of Your information when You use the Service and tells You about Your privacy rights and how the law protects You.</p>
@@ -186,19 +152,7 @@
                       </ul>
                 </div>
             </div>
-        </section>
-
-        <!-- Copyright Section-->
-        <div class="copyright py-4 text-center text-white">
-            <div class="container"><small>Copyright &copy; riccardoventurini.it 2022</small></div>
+            </div>
         </div>
-
-        <!-- Bootstrap core JS-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- Core theme JS-->
-        <script src="js/scripts.js"></script>
-
-        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
-    </body>
-</html>
-      
+    );
+}

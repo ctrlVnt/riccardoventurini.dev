@@ -1,47 +1,16 @@
-<!DOCTYPE html>
-<html lang="it">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="This is my personal website" />
-        <meta name="author" content="Riccardo Venturini" />
-        <title>FlashApp Privacy</title>
+import React from 'react';
 
-        <!-- Favicon-->
-        <link rel="icon" type="image/x-icon" href="../../assets/favicon1.png" />
+export default function FlashAppPrivacy() {
+  return (
+    <div className="bg-white">
+          <div className="bg-white px-4 py-12 mx-auto prose prose-zinc prose-quoteless">
+            <h2 className="">FlashApp</h2><br />
 
-        <!-- Font Awesome icons (free version)-->
-        <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
-
-        <!-- Google fonts-->
-        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
-        <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
-
-        <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="../../css/styles.css" rel="stylesheet" />
-    </head>
-
-
-    <body id="page-top">
-
-      <!-- Navigation-->
-      <nav class="navbar bg-secondary text-uppercase fixed-top navbar-shrink" id="mainNav">
-        <div class="container">
-            <a class="navbar-brand" href="../../index.html">riccardoventurini.dev</a>
-        </div>
-    </nav>
-
-        <!-- About Section-->
-        <section class="page-section mb-0" id="about">
-            <div class="container d-flex align-items-center flex-column">
-                <!-- About Section Heading-->
-                <img src="../../assets/img/privacyFlashApp/LogoFlashApp.svg" alt="..." width="250" height="250" />
-                <h2 class="page-section-heading text-center text-uppercase">FlashApp</h2><br/>
-                
-                <!-- About Section Content-->
-                <div class="row d-flex justify-content-center">
-                    <div class="md-0" style="max-width: 840px"><p class="lead">
-                        <p><strong>Privacy Policy</strong></p> <p>
+            <div className="">
+              <div className="">
+                <p className="">
+                  <p><strong>Privacy Policy</strong></p>
+                            <p>
                             ctrlVnt built the FlashApp app as
                             a Free app. This SERVICE is provided by
                             ctrlVnt at no cost and is intended for use as
@@ -65,13 +34,16 @@
                             may require you to provide us with certain personally
                             identifiable information, including but not limited to none. The information that
                             I request will be retained on your device and is not collected by me in any way.
-                          </p> <div><p>
+                          </p> <p>
                               The app does use third-party services that may collect
                               information used to identify you.
                             </p> <p>
                               Link to the privacy policy of third-party service providers used
                               by the app
-                            </p> <ul><li><a href="https://www.google.com/policies/privacy/" target="_blank" rel="noopener noreferrer">Google Play Services</a></li><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----></ul></div> <p><strong>Log Data</strong></p> <p>
+                            </p> <ul><li><a href="https://www.google.com/policies/privacy/" target="_blank" rel="noopener noreferrer">Google Play Services</a></li>
+                            </ul>
+                            
+                            <p><strong>Log Data</strong></p> <p>
                             I want to inform you that whenever you
                             use my Service, in a case of an error in the app
                             I collect data and information (through third-party
@@ -129,7 +101,8 @@
                               and you are aware that your child has provided us with
                               personal information, please contact me so that
                               I will be able to do the necessary actions.
-                            </p></div> <!----> <p><strong>Changes to This Privacy Policy</strong></p> <p>
+                            </p></div> 
+                            <p><strong>Changes to This Privacy Policy</strong></p> <p>
                             I may update our Privacy Policy from
                             time to time. Thus, you are advised to review this page
                             periodically for any changes. I will
@@ -138,22 +111,11 @@
                           </p> <p>This policy is effective as of 2023-01-07</p> <p><strong>Contact Us</strong></p> <p>
                             If you have any questions or suggestions about my
                             Privacy Policy, do not hesitate to contact me at riccardoventurini220@gmail.com.
-                    </div>
-                </div>
+                            </p>
+                </p>
+              </div>
             </div>
-        </section>
-
-        <!-- Copyright Section-->
-        <div class="copyright py-4 text-center text-white">
-            <div class="container"><small>Copyright &copy; riccardoventurini.it 2022</small></div>
-        </div>
-
-        <!-- Bootstrap core JS-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- Core theme JS-->
-        <script src="js/scripts.js"></script>
-
-        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
-    </body>
-</html>
-      
+          </div>
+      </div>
+  );
+}
