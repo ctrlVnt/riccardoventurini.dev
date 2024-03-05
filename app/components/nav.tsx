@@ -3,7 +3,16 @@ import { ArrowLeft } from "lucide-react";
 import Link from "next/link";
 import React, { useEffect, useRef, useState } from "react";
 
-export const Navigation: React.FC = () => {
+interface NavigationProps {
+	activePage: string;
+}
+
+export const Navigation: React.FC<NavigationProps> = ({ activePage }) => {
+
+	const isActiveLink = (href: string) => {
+		return activePage === href ? "text-white" : "text-zinc-400 hover:text-zinc-100";
+	  };
+
 	const ref = useRef<HTMLElement>(null);
 	const [isIntersecting, setIntersecting] = useState(true);
 
@@ -36,13 +45,13 @@ export const Navigation: React.FC = () => {
 						</Link>
 						<Link
 							href="/projects"
-							className="duration-200 text-zinc-400 hover:text-zinc-100"
+							className={`duration-200 ${isActiveLink("/projects")}`}
 						>
 							Projects
 						</Link>
 						<Link
 							href="/contact"
-							className="duration-200 text-zinc-400 hover:text-zinc-100"
+							className={`duration-200 ${isActiveLink("/contact")}`}
 						>
 							Contact
 						</Link>
