@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     siteName: "riccardoventurini.dev",
     images: [
       {
-        url: "https://riccardoventurini.dev/preview.png",
+        url: "https://riccardoventurini.dev/previewl.png",
         width: 1920,
         height: 1080,
       },
