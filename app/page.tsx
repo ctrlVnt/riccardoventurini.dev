@@ -12,21 +12,21 @@ export default function Home() {
   return (
     <div>
       <Head>
-      <title>riccardoventurini.dev</title>
-      <meta name="description" content="Web & Mobile developer. Welcome to my personal website!" />
+        <title>riccardoventurini.dev</title>
+        <meta name="description" content="Web & Mobile developer. Welcome to my personal website!"/>
 
-      <meta property="og:url" content="https://riccardoventurini.dev/" />
-      <meta property="og:type" content="website" />
-      <meta property="og:title" content="riccardoventurini.dev" />
-      <meta property="og:description" content="Web & Mobile developer. Welcome to my personal website!" />
-      <meta property="og:image" content="https://riccardoventurini.dev/previewl.png" />
+        <meta property="og:url" content="https://riccardoventurini.dev/"/>
+        <meta property="og:type" content="website"/>
+        <meta property="og:title" content="riccardoventurini.dev"/>
+        <meta property="og:description" content="Web & Mobile developer. Welcome to my personal website!"/>
+        <meta property="og:image" content="https://riccardoventurini.dev/previewl.png"/>
 
-      <meta name="twitter:card" content="summary_large_image" />
-      <meta property="twitter:domain" content="riccardoventurini.dev" />
-      <meta property="twitter:url" content="https://riccardoventurini.dev/" />
-      <meta name="twitter:title" content="riccardoventurini.dev" />
-      <meta name="twitter:description" content="Web & Mobile developer. Welcome to my personal website!" />
-      <meta name="twitter:image" content="https://riccardoventurini.dev/previewl.png" />
+        <meta name="twitter:card" content="summary_large_image"/>
+        <meta property="twitter:domain" content="riccardoventurini.dev"/>
+        <meta property="twitter:url" content="https://riccardoventurini.dev/"/>
+        <meta name="twitter:title" content="riccardoventurini.dev"/>
+        <meta name="twitter:description" content="Web & Mobile developer. Welcome to my personal website!"/>
+        <meta name="twitter:image" content="https://riccardoventurini.dev/previewl.png"/>
     </Head>
       <div className="flex flex-col items-center justify-center w-screen h-screen overflow-hidden bg-gradient-to-tl from-black via-zinc-600/20 to-black">
         <nav className="my-16 animate-fade-in">
