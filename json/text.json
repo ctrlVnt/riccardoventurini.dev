@@ -1,7 +1,7 @@
 {
     "EN": {
  "welcome": "Welcome!",
- "aboutMe": "I'm Riccardo, a <b>junior Web and Android developer</b>, graduated in computer science from the University of Turin.<br>My career started as a mechanical designer, an area in which I worked for 3 years, and then, following an enlightening conversation, diverged into the fantastic world of computer science.<br>I specialize in creating websites and applications using <b>open source</b> tools, seeking the best combination of attractive design and user-friendly functionality.<br>",
+ "aboutMe": "I'm Riccardo, a <b>full stack developer</b>, graduated in computer science from the University of Turin.<br>My career started as a mechanical designer, an area in which I worked for 3 years, and then, following an enlightening conversation, diverged into the fantastic world of computer science.<br>I specialize in creating websites and applications using <b>open source</b> tools, seeking the best combination of attractive design and user-friendly functionality.<br>",
  "competencesTitle" : "Competences",
  "profile": "To find out more about my professional life:",
  "myCV": "My CV",
@@ -16,7 +16,7 @@
 
  "FR": {
  "welcome": "Bienvenu !",
- "aboutMe": "Je suis Riccardo, un <b>jeune développeur Web et Android</b>, diplômé en informatique de l'Université de Turin.<br>Ma carrière a commencé en tant que dessinateur mécanique, domaine dans lequel j'ai travaillé pendant 3 ans, puis, à la suite d'une conversation éclairante, j'ai bifurqué vers le monde fantastique de l'informatique.<br>Je me consacre à la création de sites web et d'applications en utilisant des outils <b>open source</b>, cherchant la meilleure combinaison entre un design attrayant et une utilisation confortable.<br>",
+ "aboutMe": "Je suis Riccardo, un <b>jeune développeur fukk stack</b>, diplômé en informatique de l'Université de Turin.<br>Ma carrière a commencé en tant que dessinateur mécanique, domaine dans lequel j'ai travaillé pendant 3 ans, puis, à la suite d'une conversation éclairante, j'ai bifurqué vers le monde fantastique de l'informatique.<br>Je me consacre à la création de sites web et d'applications en utilisant des outils <b>open source</b>, cherchant la meilleure combinaison entre un design attrayant et une utilisation confortable.<br>",
  "competencesTitle" : "Compétences",
  "profile": "Pour en savoir plus sur ma vie professionnelle :",
  "myCV": "Mon CV",
@@ -31,7 +31,7 @@
 
     "IT": {
  "welcome": "Benvenuti!",
- "aboutMe": "Sono Riccardo, un <b>giovane sviluppatore Web e Android</b> laureato in informatica alla facoltà degli  studi di Torino.<br>La mia carriera ha avuto inizio come disegnatore meccanico, con una esperienza lavorativa di 3 anni in questo settore. Successivamente, in seguito a una conversazione illuminante, ho deciso di intraprendere il percorso affascinante dell'informatica.<br>Attualmente mi occupo della progettazione e sviluppo di siti web e applicazioni, utilizzando prevalentemente strumenti <b>open source</b>. Cerco costantemente la combinazione ottimale tra un design accattivante e un'esperienza utente confortevole.<br>",
+ "aboutMe": "Sono Riccardo, un <b>giovane sviluppatore full stack</b> laureato in informatica alla facoltà degli  studi di Torino.<br>La mia carriera ha avuto inizio come disegnatore meccanico, con una esperienza lavorativa di 3 anni in questo settore. Successivamente, in seguito a una conversazione illuminante, ho deciso di intraprendere il percorso affascinante dell'informatica.<br>Attualmente mi occupo della progettazione e sviluppo di siti web e applicazioni, utilizzando prevalentemente strumenti <b>open source</b>. Cerco costantemente la combinazione ottimale tra un design accattivante e un'esperienza utente confortevole.<br>",
  "competencesTitle" : "Competenze",
  "profile": "Per scoprire di più sulla mia vita professionale:",
  "myCV": "Il mio CV",
