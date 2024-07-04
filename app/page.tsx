@@ -6,6 +6,7 @@ import Particles from "./components/particles";
 const navigation = [
   { name: "Projects", href: "/projects" },
   { name: "Contact", href: "/contact" },
+  { name: "Privacy policy", href: "/privacy/riccardoventurini" },
 ];
 
 export default function Home() {
@@ -58,6 +59,14 @@ export default function Home() {
           </h2>
         </div>
       </div>
+      <footer>
+      <Link
+                key={item.href[2]}
+                href={item.href[2]}
+                className="text-sm duration-500 text-zinc-400 hover:text-zinc-300 animate-pulse">
+                {item.name[2]}
+              </Link>
+      </footer>
     </div>
   );
 
