@@ -1,0 +1,67 @@
+<head>
+    <link rel="stylesheet" type="text/css" href="home.css">
+</head>
+
+<div id="home" class="parent">
+
+    <app-navbar></app-navbar>
+    
+    <section id="header" class="header">
+        <mat-drawer-container [hasBackdrop]="true">
+            <mat-drawer #drawer mode="over" autoFocus="false">
+                <button mat-icon-button id="clearButton" class="clear-icon" (click)="drawer.close()">
+                    <mat-icon>clear</mat-icon>
+                </button>
+                <div class="presentation-text">
+                    <h3 class="about-me black-color">About me</h3>
+                    <p class="black-color" [innerHTML]="formatAboutMe(aboutme)">
+                    </p>
+                </div>
+            </mat-drawer>
+
+            <div class="div-header">
+                <div class="full-screen-header">
+                    <img class="profile-img fade-in" src="../assets/img/profile.png" alt="Immagine di profilp">
+                    <div class="container">
+                        <p class="about-me-text slide-left-in" [innerHTML]="formatAboutMe(aboutme)">
+                        </p>
+                    </div>
+                </div>
+                <h1 class="slide-right-in">Welcome !</h1>
+                <!--<h2 class="slide-left-in">I'm a ...</h2> -->
+                <button mat-flat-button class="about-me-button slide-up-in" (click)="drawer.open()">
+                    More about me
+                </button>
+            </div>
+        </mat-drawer-container>
+    </section>     
+
+    <section id="Portfolio">
+            <h2>Portfolio</h2>
+            <div class="grid">
+                <a class="research-item" *ngFor="let publication of publications" href="{{publication.link}}" target="_blank">
+                    <div class="publications">
+                        <img class="research-img" [src]="publication.cover" alt="Cover"/>
+                        <h3 class="research-title">{{publication.title}}</h3>
+                        <p class="research-text">{{publication.description}}</p>
+                    </div>
+                </a>
+            </div>
+    </section>
+
+    <section id="Contact">
+        <h2>Contact</h2>
+
+        <app-contactform></app-contactform>
+        
+            <p>Or write directly at: </p>
+            <a><button mat-button class="button-56" [matMenuTriggerFor]="menu">{{mail}}</button></a>
+            <mat-menu #menu="matMenu">
+                <button mat-menu-item (click)="copyToClipboard(mail); openSnackBar('email address copied')"><mat-icon>file_copy</mat-icon>Copy</button>
+                <button mat-menu-item (click)="writeMessage(mail)"><mat-icon> email</mat-icon>Write directly</button>
+            </mat-menu>
+    </section>
+
+    <app-footer></app-footer>
+
+</div>

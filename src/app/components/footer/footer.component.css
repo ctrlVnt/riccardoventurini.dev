@@ -1,0 +1,31 @@
+footer{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: white;
+    margin-top: auto;
+    padding-top: 20px;
+    padding-bottom: 15px;
+    z-index: 1;
+}
+
+.riccardoventurini{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    justify-content: center; 
+}
+
+.footer-text{
+    font-size: 12px;
+    color: #000;
+}
+
+h3{
+    font-size: 20px;
+    z-index: 1;
+    color: #000;
+}

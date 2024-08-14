@@ -1,0 +1,13 @@
+<nav [@navAnim]="isNavExpanded" class="slide-left">
+    <div>
+        <button mat-icon-button class="menu-icon" (click)="toggleNav()">
+            <mat-icon>menu</mat-icon>
+        </button>
+        <button class="logo" color="my-custom-color" (click)="openSection('header')">ctrlVnt</button>
+        <ul *ngIf="isNavExpanded" [@navAnim]="isNavExpanded">
+            <li *ngFor="let action of actions; let i = index" [ngClass]="'fade-in'" [style.animation-delay]="fadeInDelays[i]">
+                <button mat-button class="button-56" color="my-custom-color" (click)="openSection(action);toggleNav()">{{action}}</button>
+            </li>
+        </ul>
+    </div>
+</nav>
