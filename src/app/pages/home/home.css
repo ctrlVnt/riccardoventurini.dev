@@ -26,7 +26,6 @@
     width: 400px;
     object-fit: cover;
     object-position: center;
-    border-radius: 50%;
     z-index: 3;
 }
 
@@ -465,7 +464,6 @@ app-contactform{
         width: 250px;
         object-fit: cover;
         object-position: center;
-        border-radius: 15%;
     }
 
     h1{
@@ -549,7 +547,6 @@ app-contactform{
         object-fit: cover;
         object-position: center;
         max-height: 300px;
-        border-radius: 50%;
     }
 
     h1{
