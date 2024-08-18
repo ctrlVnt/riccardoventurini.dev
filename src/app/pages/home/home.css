@@ -504,6 +504,7 @@ app-contactform{
         object-position: center;
         max-height: 500px;
         margin-top: -200px;
+        margin-bottom: -50px;
     }
 
     h1{
