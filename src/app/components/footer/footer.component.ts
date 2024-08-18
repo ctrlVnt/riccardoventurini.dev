@@ -12,4 +12,8 @@ import {MatButtonModule} from '@angular/material/button';
 })
 export class FooterComponent {
 
+  openLink(url: string) {
+    window.open(url, "_blank");
+  }
+
 }

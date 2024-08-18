@@ -22,7 +22,7 @@
 }
 
 .profile-img {
-    height:400px;
+    height:auto;
     width: 400px;
     object-fit: cover;
     object-position: center;
@@ -133,7 +133,7 @@ section{
 }
 
 .publications:active {
-    background-color: #fff;
+    background-color: #9e2929;
     outline: 0;
 }
 
@@ -194,9 +194,6 @@ mat-list-item{
     margin: 10px auto;
 }
 
-
-.menu-icon{}
-
 mat-drawer-container {
     background-color: white;
     width: 100%;
@@ -210,33 +207,6 @@ mat-drawer {
   flex-direction: column;
   align-items: flex-start;
   margin-top: 50px;
-}
-
-.talk-grid{
-    display: flex;
-    justify-content: space-around;
-    align-items: flex-start;
-    flex-wrap: wrap;
-}
-
-.talk-list{
-    margin: 30px;
-}
-
-.subject-list,
-.link-list{
-    width: 90%;
-}
-
-.subject-list a,
-.link-list a{
-    text-decoration: none;
-    font-size: 22;
-}
-
-.subject-list a:hover,
-.link-list a:hover{
-    color: #B94ED9;
 }
 
 .div-header{
@@ -542,11 +512,11 @@ app-contactform{
     }
 
     .profile-img {
-        height: 30vh;
+        height: auto;
         width: 30vh;
         object-fit: cover;
         object-position: center;
-        max-height: 300px;
+        max-height: 500px;
     }
 
     h1{
