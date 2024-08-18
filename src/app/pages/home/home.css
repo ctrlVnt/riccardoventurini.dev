@@ -18,7 +18,7 @@
     height: 100vh;
     /*scroll-snap-type: y mandatory;*/
     scrollbar-width: none;
-    background-color: #fff370ff;
+    background-color: #FFF3B1;
 }
 
 .profile-img {
@@ -85,7 +85,7 @@ section{
 .header{
     height: 100vh;
     padding-top: 0px;
-    background-color: #fff370ff;
+    background-color: #FFF3B1;
 }
 
 .image {
@@ -209,7 +209,7 @@ mat-drawer {
 }
 
 .div-header{
-    background-color: #fff370ff;
+    background-color: #FFF3B1;
     overflow-x: hidden;
     position:relative;
     display: flex;
@@ -242,19 +242,6 @@ mat-drawer {
     flex-direction: row;
     padding: 100px;
     align-items: center;
-}
-
-.overlay{
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background-color: #fff370ff;
-    z-index: 1;
-    width: 100%;
-    height: 100vh;
-    vertical-align: middle;
 }
 
 .black-color{
@@ -447,9 +434,6 @@ app-contactform{
 
 @media screen and (max-width: 768px) {
 
-    section{
-    }
-
     .about-me-text{
         display: none;
     }
@@ -516,10 +500,10 @@ app-contactform{
 
     .profile-img {
         height: auto;
-        width: 30vh;
         object-fit: cover;
         object-position: center;
         max-height: 500px;
+        margin-top: -200px;
     }
 
     h1{
