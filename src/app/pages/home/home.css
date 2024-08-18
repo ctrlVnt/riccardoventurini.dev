@@ -155,10 +155,7 @@ section{
     width: 80%;
     margin-left: auto;
     margin-right: auto;
-}
-
-mat-list-item{
-    z-index: 1;
+    justify-content: center;
 }
 
 .research-title{
@@ -170,13 +167,15 @@ mat-list-item{
 }
 
 .research-item{
+    height: fit-content;
     text-decoration: none;
     margin-block: 30px;
     margin-inline: 30px;
+    margin-right:auto;
 }
 
-.research-item:hover .research-title,
-.research-item:hover .research-text{
+.publications:hover .research-title,
+.publications:hover .research-text{
     color:#fff;
 }
 
@@ -439,6 +438,10 @@ app-contactform{
     h1{
         font-size: 80px;
         margin-bottom: 45px;
+    }
+
+    .research-item{
+        margin-right:0;
     }
 }
 
