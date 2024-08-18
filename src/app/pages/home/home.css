@@ -530,6 +530,10 @@ app-contactform{
         flex-direction: column;
         align-items: center;
     }
+
+    .publications{
+        width: 90%;
+    }
 }
 
 
