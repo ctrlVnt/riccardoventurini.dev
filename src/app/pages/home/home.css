@@ -86,13 +86,6 @@ section{
     padding-top: 10px;
 }
 
-.image {
-    position: absolute;
-    width: 400px;
-    height: auto;
-    transition: transform 0.3s ease;
-}
-
 .clear-icon{
     position: absolute;
     right: 10px;
@@ -485,7 +478,7 @@ app-contactform{
         object-fit: cover;
         object-position: center;
         max-height: 500px;
-        margin-top: -200px;
+        margin-top: -100px;
         margin-bottom: -50px;
     }
 
