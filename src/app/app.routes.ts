@@ -1,7 +1,7 @@
 import { Routes } from '@angular/router';
-import { FlashappComponent } from './privacy/flashapp/flashapp.component';
-import { RiccardoventuriniComponent } from './privacy/riccardoventurini/riccardoventurini.component';
-import { RytmComponent } from './privacy/rytm/rytm.component';
+import { FlashappComponent } from './pages/privacy/flashapp/flashapp.component';
+import { RiccardoventuriniComponent } from './pages/privacy/riccardoventurini/riccardoventurini.component';
+import { RytmComponent } from './pages/privacy/rytm/rytm.component';
 
 export const routes: Routes = [
     { path: 'privacy/flashapp', component: FlashappComponent },
