@@ -165,3 +165,11 @@ button[mat-button]:hover {
       padding: 0 40px;
     }
   }
+
+  @media (-webkit-device-pixel-ratio: 1.5) {
+    nav {
+      height: auto;
+      padding: 0px;
+      padding-bottom: 10px;
+    }
+  }

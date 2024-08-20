@@ -562,3 +562,18 @@ app-contactform{
 .info a{
     font-size: 18px;
 }
+
+@media (-webkit-device-pixel-ratio: 1.5) {
+    .profile-img {
+        width: 250px;
+    }
+
+    .about-me-text{
+        font-size: 18px;
+        max-width: 800px;
+    }
+
+    h1{
+        font-size: 70px;
+    }
+  }
