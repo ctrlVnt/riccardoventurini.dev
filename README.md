@@ -9,16 +9,16 @@ To run this project locally, you'll need Node.js and Angular CLI installed on yo
 Once you have Node.js and Angular CLI installed, you can clone this repository and navigate into the project directory:
 
 ```
-$ git clone https://github.com/ctrlVnt/riccardoventurini.dev.git
-$ cd riccardoventurini.dev
+git clone https://github.com/ctrlVnt/riccardoventurini.dev.git
+cd riccardoventurini.dev
 ```
 
 Then, install the project dependencies using npm:
 
 ```
-$ npm install
+npm install
 
-$ npm install -g @angular/cli
+npm install -g @angular/cli
 ```
 
 ## Usage
@@ -26,7 +26,7 @@ $ npm install -g @angular/cli
 To serve the project locally, run the following command:
 
 ```
-$ npm run start
+npm run start
 ```
 
 This will start a development server. You can view the website by navigating to `http://localhost:4200` in your web browser.
