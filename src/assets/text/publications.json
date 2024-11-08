@@ -3,13 +3,13 @@
       {
         "cover": "assets/portfolio/cinemit.png",
         "title": "CineMit",
-        "description": "CineMit is the dedicated group movie meeting app for organizing and watching movies shown at theaters together",
+        "description": "Dedicated group movie meeting app for organizing and watching movies shown at theaters together",
         "link": "https://www.cinemit.app/"
       },
       {
         "cover": "assets/portfolio/rytm.png",
         "title": "Real YT Music",
-        "description": "RYTM is an application that enables users to search for videos and play them without initial advertisements. Additionally, users can listen to the video in a compact window, facilitating simultaneous navigation across other applications",
+        "description": "Youtube player without ads and with PIP mode",
         "link": "https://play.google.com/store/apps/details?id=com.ctrlvnt.rytm"
       },
       {
