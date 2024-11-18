@@ -20,20 +20,14 @@ import { NavbarComponent } from '../../components/navbar/navbar.component';
 import { ContactformComponent } from '../../components/contactform/contactform.component';
 import { FooterComponent } from '../../components/footer/footer.component';
 
-import pubblicationsfile from "../../../assets/text/publications.json"
 import textfile from "../../../assets/text/testi.json"
+import { ItemComponent } from "../../components/item/item.component";
 
-interface Publication {
-  cover: string;
-  title: string;
-  description: string;
-  link: string;
-}
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, RouterOutlet, MatListModule, MatInputModule, MatFormFieldModule, MatGridListModule, MatDividerModule, MatButtonModule, MatIconModule, MatSidenavModule, MatCardModule, NavbarComponent, ContactformComponent, MatMenuModule, ClipboardModule, FooterComponent],
+  imports: [CommonModule, RouterOutlet, MatListModule, MatInputModule, MatFormFieldModule, MatGridListModule, MatDividerModule, MatButtonModule, MatIconModule, MatSidenavModule, MatCardModule, NavbarComponent, ContactformComponent, MatMenuModule, ClipboardModule, FooterComponent, ItemComponent],
   templateUrl: './home.html',
   styleUrl: './home.css',
 })
@@ -45,8 +39,6 @@ export class AppComponent{
   mail = 'riccardoventurini220@gmail.com';
 
   aboutme:string = textfile.aboutme;
-  
-  publications: Publication[] = pubblicationsfile.publications;
 
   isWindowGreaterThan600 = window.innerWidth > 768;
 

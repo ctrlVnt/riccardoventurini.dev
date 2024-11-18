@@ -42,13 +42,7 @@
     <section id="Portfolio">
             <h2>Portfolio</h2>
             <div class="grid">
-                <a class="research-item" *ngFor="let publication of publications" href="{{publication.link}}" target="_blank">
-                    <div class="publications">
-                        <img class="research-img" [src]="publication.cover" alt="Cover"/>
-                        <h3 class="research-title">{{publication.title}}</h3>
-                        <p class="research-text">{{publication.description}}</p>
-                    </div>
-                </a>
+                <app-item></app-item>
             </div>
     </section>
 
