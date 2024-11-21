@@ -28,6 +28,10 @@ To serve the project locally, run the following command:
 ```
 npm run start
 ```
+or
+```
+ng serve
+```
 
 This will start a development server. You can view the website by navigating to `http://localhost:4200` in your web browser.
 
