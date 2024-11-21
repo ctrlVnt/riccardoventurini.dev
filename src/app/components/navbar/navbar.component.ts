@@ -4,11 +4,12 @@ import {MatIconModule} from '@angular/material/icon';
 import {MatSidenavModule} from '@angular/material/sidenav';
 import { CommonModule } from '@angular/common';
 import { trigger, state, style, animate, transition } from '@angular/animations';
+import { ManutentionComponent } from "../manutention/manutention.component";
 
 @Component({
   selector: 'app-navbar',
   standalone: true,
-  imports: [CommonModule, MatButtonModule, MatIconModule, MatSidenavModule],
+  imports: [CommonModule, MatButtonModule, MatIconModule, MatSidenavModule, ManutentionComponent],
   templateUrl: './navbar.component.html',
   styleUrl: './navbar.component.css',
   animations: [

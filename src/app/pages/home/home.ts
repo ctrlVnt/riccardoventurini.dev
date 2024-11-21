@@ -24,6 +24,8 @@ import textfile from "../../../assets/text/testi.json"
 import { ItemComponent } from "../../components/item/item.component";
 import pubblicationsfile from "../../../assets/text/publications.json";
 import { WindowComponent } from "../../components/window/window.component";
+import { DonateButtonComponent } from "../../components/donate-button/donate-button.component";
+import { ManutentionComponent } from "../../components/manutention/manutention.component";
 
 interface Publication {
   cover: string;
@@ -36,7 +38,7 @@ interface Publication {
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, RouterOutlet, MatListModule, MatInputModule, MatFormFieldModule, MatGridListModule, MatDividerModule, MatButtonModule, MatIconModule, MatSidenavModule, MatCardModule, NavbarComponent, ContactformComponent, MatMenuModule, ClipboardModule, FooterComponent, ItemComponent, WindowComponent],
+  imports: [CommonModule, RouterOutlet, MatListModule, MatInputModule, MatFormFieldModule, MatGridListModule, MatDividerModule, MatButtonModule, MatIconModule, MatSidenavModule, MatCardModule, NavbarComponent, ContactformComponent, MatMenuModule, ClipboardModule, FooterComponent, ItemComponent, WindowComponent, DonateButtonComponent, ManutentionComponent],
   templateUrl: './home.html',
   styleUrl: './home.css',
 })

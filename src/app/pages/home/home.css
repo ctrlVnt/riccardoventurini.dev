@@ -171,6 +171,10 @@ mat-drawer {
   .buttons {
     font-size: 1.5rem;
     cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
   }
   
   .selected {
@@ -259,6 +263,15 @@ mat-drawer {
 app-window {
     position: absolute;
     z-index: 10;
+}
+
+app-donate-button{
+    position: absolute;
+    z-index: 10;
+    bottom: 0;
+    right: 3%;
+    /*transform: scale(0.5);
+    transform-origin: center; */
 }
 
 .container{

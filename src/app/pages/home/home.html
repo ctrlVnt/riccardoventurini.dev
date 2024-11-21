@@ -7,7 +7,10 @@
 
 <div id="home">
 
+    
     <app-navbar></app-navbar>
+
+    <app-donate-button></app-donate-button>
     
     <section id="header" class="header">
         <mat-drawer-container [hasBackdrop]="true">
@@ -66,11 +69,15 @@
                   tabindex="0" 
                   aria-label="Next Item">
                   
-                    <span class='video-game-button' (click)="prevItem()" >&uarr;</span>
-                    <span class='video-game-button' (click)="nextItem()">&darr;</span>  
+                    <div>
+                        <span class='video-game-button' (click)="prevItem()" >&uarr;</span>
+                        <span class='video-game-button' (click)="nextItem()">&darr;</span>  
+                    </div>
                     
-                    <span class='start-btn' (click)="selectItem()" >SELECT</span>
-                    <span class='start-btn' (click)="openItem()">START</span>
+                    <div>
+                        <span class='start-btn' (click)="selectItem()" >SELECT</span>
+                        <span class='start-btn' (click)="openItem()">START</span>
+                    </div>
 
                 </div>
 

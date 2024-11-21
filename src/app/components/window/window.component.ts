@@ -20,7 +20,6 @@ export class WindowComponent {
   isVisible = false;
 
   toggleVisibility() {
-    this.isVisible = false;
     this.visibilityChange.emit(this.isVisible);
   }
   
