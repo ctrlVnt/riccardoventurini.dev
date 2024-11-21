@@ -258,7 +258,7 @@ mat-drawer {
 
 app-window {
     position: absolute;
-    z-index: 2;
+    z-index: 10;
 }
 
 .container{

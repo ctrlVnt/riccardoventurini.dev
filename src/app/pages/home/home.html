@@ -74,7 +74,7 @@
 
                 </div>
 
-                <app-window *ngIf="isComponentVisible" [text]="selectedText"></app-window>
+                <app-window *ngIf="isComponentVisible" (visibilityChange)="onVisibilityChange($event)" [detail]="detail"></app-window>
             </div>
 
     </section>

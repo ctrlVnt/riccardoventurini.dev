@@ -50,7 +50,7 @@ export class AppComponent{
   mail = 'riccardoventurini220@gmail.com';
 
   selectedIndex = 0;
-  selectedText = '';
+  detail: Publication | undefined;
   isComponentVisible = false;
 
   nextItem() {
@@ -62,12 +62,16 @@ export class AppComponent{
   }  
   
   selectItem() {
-    this.selectedText = this.publications[this.selectedIndex].description;
+    this.detail = this.publications[this.selectedIndex];
     this.isComponentVisible = true;
   }
 
   openItem() {
     window.open(`${this.publications[this.selectedIndex].link}`, '_blank');
+  }
+
+  onVisibilityChange(isVisible: boolean) {
+    this.isComponentVisible = isVisible;
   }
 
   aboutme:string = textfile.aboutme;

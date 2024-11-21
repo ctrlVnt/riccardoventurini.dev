@@ -1,5 +1,11 @@
 <div class="container">
-    <p>
-    {{text}}
-    </p>
+    <div class="content">
+        <img [src]="detail?.cover">
+        <h2>{{detail?.title}}</h2>
+        <p>
+        {{detail?.description}}
+        </p>
+
+        <button (click)="toggleVisibility">AAAAAAAAAAAAAAA</button>
+    </div>
 </div>

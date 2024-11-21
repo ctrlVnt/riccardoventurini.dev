@@ -1,4 +1,11 @@
-import { Component, Input } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
+
+interface Publication {
+  cover: string;
+  title: string;
+  description: string;
+  link: string;
+}
 
 @Component({
   selector: 'app-window',
@@ -8,5 +15,14 @@ import { Component, Input } from '@angular/core';
   styleUrl: './window.component.css'
 })
 export class WindowComponent {
-  @Input() text: string = '';
+
+  @Output() visibilityChange = new EventEmitter<boolean>();
+  isVisible = false;
+
+  toggleVisibility() {
+    this.isVisible = false;
+    this.visibilityChange.emit(this.isVisible);
+  }
+  
+  @Input() detail: Publication | undefined ;
 }
