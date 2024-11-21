@@ -23,6 +23,7 @@ import { FooterComponent } from '../../components/footer/footer.component';
 import textfile from "../../../assets/text/testi.json"
 import { ItemComponent } from "../../components/item/item.component";
 import pubblicationsfile from "../../../assets/text/publications.json";
+import { WindowComponent } from "../../components/window/window.component";
 
 interface Publication {
   cover: string;
@@ -35,7 +36,7 @@ interface Publication {
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, RouterOutlet, MatListModule, MatInputModule, MatFormFieldModule, MatGridListModule, MatDividerModule, MatButtonModule, MatIconModule, MatSidenavModule, MatCardModule, NavbarComponent, ContactformComponent, MatMenuModule, ClipboardModule, FooterComponent, ItemComponent],
+  imports: [CommonModule, RouterOutlet, MatListModule, MatInputModule, MatFormFieldModule, MatGridListModule, MatDividerModule, MatButtonModule, MatIconModule, MatSidenavModule, MatCardModule, NavbarComponent, ContactformComponent, MatMenuModule, ClipboardModule, FooterComponent, ItemComponent, WindowComponent],
   templateUrl: './home.html',
   styleUrl: './home.css',
 })
@@ -49,6 +50,8 @@ export class AppComponent{
   mail = 'riccardoventurini220@gmail.com';
 
   selectedIndex = 0;
+  selectedText = '';
+  isComponentVisible = false;
 
   nextItem() {
     this.selectedIndex = (this.selectedIndex + 1) % this.publications.length;
@@ -59,7 +62,8 @@ export class AppComponent{
   }  
   
   selectItem() {
-    alert(`Hai selezionato: ${this.publications[this.selectedIndex].title}`);
+    this.selectedText = this.publications[this.selectedIndex].description;
+    this.isComponentVisible = true;
   }
 
   openItem() {

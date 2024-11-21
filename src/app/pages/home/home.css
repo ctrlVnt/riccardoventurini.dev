@@ -179,7 +179,6 @@ mat-drawer {
   }
 
   .arrow {
-    color: black;
     opacity: 0;
   }
 
@@ -187,6 +186,13 @@ mat-drawer {
     color: black;
     opacity: 1;
     font-size: 2rem;
+    animation: blink 1s infinite;
+  }
+
+  @keyframes blink {
+    50% {
+      opacity: 0;
+    }
   }
 
   .video-game-button {
@@ -214,6 +220,7 @@ mat-drawer {
 	background-image: linear-gradient(left top, pink 3%, red 22%, maroon 99%);
 	cursor: pointer;
   padding-left: 5px;
+  user-select: none;
 }
 .start-btn{
     font-family: "Press Start 2P", system-ui;
@@ -231,6 +238,7 @@ mat-drawer {
 	border-radius: 7px;
     box-shadow: 0 .2em gray; 
     cursor: pointer;
+    user-select: none;
 
 }
 .video-game-button:active, .start-btn:active {
@@ -248,6 +256,10 @@ mat-drawer {
     display: none;
 }
 
+app-window {
+    position: absolute;
+    z-index: 2;
+}
 
 .container{
     position: relative;

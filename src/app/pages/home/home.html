@@ -61,17 +61,20 @@
                     </div>
                 </div>
 
-                <div 
+                <div
                   class="buttons"
                   tabindex="0" 
                   aria-label="Next Item">
                   
                     <span class='video-game-button' (click)="prevItem()" >&uarr;</span>
                     <span class='video-game-button' (click)="nextItem()">&darr;</span>  
+                    
                     <span class='start-btn' (click)="selectItem()" >SELECT</span>
                     <span class='start-btn' (click)="openItem()">START</span>
 
                 </div>
+
+                <app-window *ngIf="isComponentVisible" [text]="selectedText"></app-window>
             </div>
 
     </section>
