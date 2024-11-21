@@ -41,9 +41,39 @@
 
     <section id="Portfolio">
             <h2>Portfolio</h2>
-            <div class="grid">
-                <app-item></app-item>
+
+            <div class="containert">
+
+                <div class="test">
+                    <div class="select-option" *ngFor="let publication of publications; let i = index" >
+
+                        <div
+                            [class.arrow-sel]="i === selectedIndex" 
+                            class="arrow">
+                            &#9654;
+                        </div>
+                        <div 
+                            [class.selected]="i === selectedIndex" 
+                            class="publication-item">
+                            {{ publication.title }}
+                        </div>
+    
+                    </div>
+                </div>
+
+                <div 
+                  class="buttons"
+                  tabindex="0" 
+                  aria-label="Next Item">
+                  
+                    <span class='video-game-button' (click)="prevItem()" >&uarr;</span>
+                    <span class='video-game-button' (click)="nextItem()">&darr;</span>  
+                    <span class='start-btn' (click)="selectItem()" >SELECT</span>
+                    <span class='start-btn' (click)="openItem()">START</span>
+
+                </div>
             </div>
+
     </section>
 
     <section id="Contact">

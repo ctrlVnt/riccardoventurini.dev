@@ -22,6 +22,14 @@ import { FooterComponent } from '../../components/footer/footer.component';
 
 import textfile from "../../../assets/text/testi.json"
 import { ItemComponent } from "../../components/item/item.component";
+import pubblicationsfile from "../../../assets/text/publications.json";
+
+interface Publication {
+  cover: string;
+  title: string;
+  description: string;
+  link: string;
+}
 
 
 @Component({
@@ -36,7 +44,27 @@ export class AppComponent{
 
   constructor(private clipboard: Clipboard, private _snackBar: MatSnackBar) { }
   
+  publications: Publication[] = pubblicationsfile.publications;
+
   mail = 'riccardoventurini220@gmail.com';
+
+  selectedIndex = 0;
+
+  nextItem() {
+    this.selectedIndex = (this.selectedIndex + 1) % this.publications.length;
+  }
+
+  prevItem() {
+    this.selectedIndex = (this.selectedIndex - 1 + this.publications.length) % this.publications.length;
+  }  
+  
+  selectItem() {
+    alert(`Hai selezionato: ${this.publications[this.selectedIndex].title}`);
+  }
+
+  openItem() {
+    window.open(`${this.publications[this.selectedIndex].link}`, '_blank');
+  }
 
   aboutme:string = textfile.aboutme;
 
