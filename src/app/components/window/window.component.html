@@ -1,20 +1,14 @@
-<div class="container">
+<div class="modal">
 
     <button mat-icon-button id="clearButton" class="clear-icon" (click)="toggleVisibility()">
         <mat-icon>clear</mat-icon>
     </button>
 
-    <div class="content">
-        <img [src]="detail?.cover">
-        <h2>{{detail?.title}}</h2>
-        <p>
-        {{detail?.description}}
-        </p>
-
-        <div class="buttons">
-            <button mat-raised-button>Code Source</button>
-            <button mat-raised-button (click)="openItem()">Visit</button>
-        </div>
-
+    <img [src]="detail?.cover">
+    <h2>{{detail?.title}}</h2>
+    <p class="message">{{detail?.description}}</p>
+    <div class="options">
+      <button class="btn">Code source</button>
+      <button class="btn" (click)="openItem()">Visit</button>
     </div>
 </div>

@@ -24,6 +24,7 @@ import textfile from "../../../assets/text/testi.json"
 import pubblicationsfile from "../../../assets/text/projects.json";
 import { WindowComponent } from "../../components/window/window.component";
 import { DonateButtonComponent } from "../../components/donate-button/donate-button.component";
+import { animate, state, style, transition, trigger } from '@angular/animations';
 
 interface Project {
   cover: string;
@@ -39,6 +40,14 @@ interface Project {
   imports: [CommonModule, RouterOutlet, MatListModule, MatInputModule, MatFormFieldModule, MatGridListModule, MatDividerModule, MatButtonModule, MatIconModule, MatSidenavModule, MatCardModule, NavbarComponent, ContactformComponent, MatMenuModule, ClipboardModule, FooterComponent, WindowComponent, DonateButtonComponent],
   templateUrl: './home.html',
   styleUrl: './home.css',
+  animations: [
+    trigger('fadeAnimation', [
+      state('void', style({ opacity: 0 })), // Stato iniziale
+      state('*', style({ opacity: 1 })),   // Stato finale
+      transition('void => *', [animate('300ms ease-in')]), // Fade in
+      transition('* => void', [animate('300ms ease-out')]) // Fade out
+    ]),
+  ],
 })
 
 export class AppComponent{
