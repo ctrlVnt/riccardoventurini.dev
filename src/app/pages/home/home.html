@@ -86,7 +86,11 @@
 
     </section>
 
-    <app-window *ngIf="isComponentVisible" (visibilityChange)="onVisibilityChange($event)" [detail]="detail" @fadeAnimation></app-window>
+    
+    <div *ngIf="isComponentVisible" class="overlay">
+        <app-window *ngIf="isComponentVisible" (visibilityChange)="onVisibilityChange($event)" [detail]="detail" @fadeAnimation></app-window>
+    </div>
+    
 
     <section id="Contact">
         <h2>Contact</h2>

@@ -4,25 +4,28 @@
         "cover": "assets/portfolio/cinemit.png",
         "title": "CineMit - Android",
         "description": "Dedicated group movie meeting app for organizing and watching movies shown at theaters together",
-        "link": "https://www.cinemit.app/"
+        "link": "https://www.cinemit.app/",
+        "source": "https://github.com/ctrlVnt/cinemit_website"
       },
       {
         "cover": "assets/portfolio/rytm.png",
         "title": "Real YT Music - Android",
         "description": "Youtube player without ads and with PIP mode",
-        "link": "https://play.google.com/store/apps/details?id=com.ctrlvnt.rytm"
+        "link": "https://play.google.com/store/apps/details?id=com.ctrlvnt.rytm",
+        "source": "https://github.com/ctrlVnt/Real-YT-Music"
       },
       {
         "cover": "assets/portfolio/flashapp.png",
         "title": "FlashApp - Android",
         "description": "Learning aid application through the creation of various decks of flashcards",
-        "link": "https://play.google.com/store/apps/details?id=com.ctrlvnt.flashapp"
+        "link": "https://play.google.com/store/apps/details?id=com.ctrlvnt.flashapp",
+        "source": "https://github.com/ctrlVnt/FlashApp"
       },
       {
         "cover": "assets/portfolio/emergemobile.png",
         "title": "EmergeMobile - Android + Web",
         "description": "EmergeMobile is a web application utilized by French forestry professionals, encompassing a web interface, an Android application, and dedicated APIs",
-        "link": "https://github.com/ctrlVnt/Thesis-for-the-Bachelor-s-Degree"
+        "source": "https://github.com/ctrlVnt/Thesis-for-the-Bachelor-s-Degree"
       },
       {
         "cover": "",
