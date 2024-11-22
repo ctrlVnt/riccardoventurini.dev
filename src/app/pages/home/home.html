@@ -45,9 +45,9 @@
     <section id="Portfolio">
             <h2>Portfolio</h2>
 
-            <div class="containert">
-
-                <div class="test">
+            <div class="portfolio-display">
+                <h3>Select a project</h3>
+                <div class="portfolio-texts">
                     <div class="select-option" *ngFor="let project of projects; let i = index" >
 
                         <div
@@ -57,7 +57,7 @@
                         </div>
                         <div 
                             [class.selected]="i === selectedIndex" 
-                            class="publication-item">
+                            class="project-item">
                             {{ project.title }}
                         </div>
     
