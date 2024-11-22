@@ -21,13 +21,11 @@ import { ContactformComponent } from '../../components/contactform/contactform.c
 import { FooterComponent } from '../../components/footer/footer.component';
 
 import textfile from "../../../assets/text/testi.json"
-import { ItemComponent } from "../../components/item/item.component";
-import pubblicationsfile from "../../../assets/text/publications.json";
+import pubblicationsfile from "../../../assets/text/projects.json";
 import { WindowComponent } from "../../components/window/window.component";
 import { DonateButtonComponent } from "../../components/donate-button/donate-button.component";
-import { ManutentionComponent } from "../../components/manutention/manutention.component";
 
-interface Publication {
+interface Project {
   cover: string;
   title: string;
   description: string;
@@ -38,7 +36,7 @@ interface Publication {
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, RouterOutlet, MatListModule, MatInputModule, MatFormFieldModule, MatGridListModule, MatDividerModule, MatButtonModule, MatIconModule, MatSidenavModule, MatCardModule, NavbarComponent, ContactformComponent, MatMenuModule, ClipboardModule, FooterComponent, ItemComponent, WindowComponent, DonateButtonComponent, ManutentionComponent],
+  imports: [CommonModule, RouterOutlet, MatListModule, MatInputModule, MatFormFieldModule, MatGridListModule, MatDividerModule, MatButtonModule, MatIconModule, MatSidenavModule, MatCardModule, NavbarComponent, ContactformComponent, MatMenuModule, ClipboardModule, FooterComponent, WindowComponent, DonateButtonComponent],
   templateUrl: './home.html',
   styleUrl: './home.css',
 })
@@ -47,29 +45,29 @@ export class AppComponent{
 
   constructor(private clipboard: Clipboard, private _snackBar: MatSnackBar) { }
   
-  publications: Publication[] = pubblicationsfile.publications;
+  projects: Project[] = pubblicationsfile.projects;
 
   mail = 'riccardoventurini220@gmail.com';
 
   selectedIndex = 0;
-  detail: Publication | undefined;
+  detail: Project | undefined;
   isComponentVisible = false;
 
   nextItem() {
-    this.selectedIndex = (this.selectedIndex + 1) % this.publications.length;
+    this.selectedIndex = (this.selectedIndex + 1) % this.projects.length;
   }
 
   prevItem() {
-    this.selectedIndex = (this.selectedIndex - 1 + this.publications.length) % this.publications.length;
+    this.selectedIndex = (this.selectedIndex - 1 + this.projects.length) % this.projects.length;
   }  
   
   selectItem() {
-    this.detail = this.publications[this.selectedIndex];
+    this.detail = this.projects[this.selectedIndex];
     this.isComponentVisible = true;
   }
 
   openItem() {
-    window.open(`${this.publications[this.selectedIndex].link}`, '_blank');
+    window.open(`${this.projects[this.selectedIndex].link}`, '_blank');
   }
 
   onVisibilityChange(isVisible: boolean) {

@@ -2,7 +2,7 @@ import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 
-interface Publication {
+interface Project {
   cover: string;
   title: string;
   description: string;
@@ -25,5 +25,9 @@ export class WindowComponent {
     this.visibilityChange.emit(this.isVisible);
   }
   
-  @Input() detail: Publication | undefined ;
+  @Input() detail: Project | undefined ;
+
+  openItem() {
+    window.open(this.detail?.link, '_blank');
+  }
 }

@@ -1,5 +1,5 @@
 {
-    "publications": [
+    "projects": [
       {
         "cover": "assets/portfolio/cinemit.png",
         "title": "CineMit",
@@ -23,6 +23,18 @@
         "title": "EmergeMobile",
         "description": "EmergeMobile is a web application utilized by French forestry professionals, encompassing a web interface, an Android application, and dedicated APIs",
         "link": "https://github.com/ctrlVnt/Thesis-for-the-Bachelor-s-Degree"
+      },
+      {
+        "cover": "",
+        "title": "chiarasava.it",
+        "description": "Website of PhD math student",
+        "link": "https://chiarasava.netlify.app/"
+      },
+      {
+        "cover": "",
+        "title": "Alexismalagnino.fr",
+        "description": "Website of PhD biology student",
+        "link": "https://alexismalagnino.netlify.app/"
       }
     ]
 }

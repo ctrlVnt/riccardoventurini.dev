@@ -48,7 +48,7 @@
             <div class="containert">
 
                 <div class="test">
-                    <div class="select-option" *ngFor="let publication of publications; let i = index" >
+                    <div class="select-option" *ngFor="let project of projects; let i = index" >
 
                         <div
                             [class.arrow-sel]="i === selectedIndex" 
@@ -58,7 +58,7 @@
                         <div 
                             [class.selected]="i === selectedIndex" 
                             class="publication-item">
-                            {{ publication.title }}
+                            {{ project.title }}
                         </div>
     
                     </div>
