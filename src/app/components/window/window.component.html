@@ -1,4 +1,9 @@
 <div class="container">
+
+    <button mat-icon-button id="clearButton" class="clear-icon" (click)="toggleVisibility()">
+        <mat-icon>clear</mat-icon>
+    </button>
+
     <div class="content">
         <img [src]="detail?.cover">
         <h2>{{detail?.title}}</h2>
@@ -6,6 +11,10 @@
         {{detail?.description}}
         </p>
 
-        <button (click)="toggleVisibility()">chiudi</button>
+        <div class="buttons">
+            <button mat-button class="button-56">Source</button>
+            <button mat-button class="button-56">Go to</button>
+        </div>
+
     </div>
 </div>

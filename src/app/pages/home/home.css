@@ -261,7 +261,11 @@ mat-drawer {
 }
 
 app-window {
-    position: absolute;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: block;
     z-index: 10;
 }
 
@@ -270,8 +274,8 @@ app-donate-button{
     z-index: 10;
     bottom: 0;
     right: 3%;
-    /*transform: scale(0.5);
-    transform-origin: center; */
+    transform: scale(0.9);
+    transform-origin: center; 
 }
 
 .container{

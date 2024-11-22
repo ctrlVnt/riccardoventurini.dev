@@ -1,4 +1,6 @@
 import { Component, EventEmitter, Input, Output } from '@angular/core';
+import { MatButtonModule } from '@angular/material/button';
+import { MatIconModule } from '@angular/material/icon';
 
 interface Publication {
   cover: string;
@@ -10,7 +12,7 @@ interface Publication {
 @Component({
   selector: 'app-window',
   standalone: true,
-  imports: [],
+  imports: [MatButtonModule, MatIconModule],
   templateUrl: './window.component.html',
   styleUrl: './window.component.css'
 })
