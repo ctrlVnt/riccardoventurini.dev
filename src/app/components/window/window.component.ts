@@ -32,4 +32,8 @@ export class WindowComponent {
   openItem() {
     window.open(this.detail?.link, '_blank');
   }
+  
+  openSource() {
+    window.open(this.detail?.source, '_blank');
+  }
 }

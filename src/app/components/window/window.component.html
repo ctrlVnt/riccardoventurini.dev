@@ -9,7 +9,7 @@
         <h2>{{detail?.title}}</h2>
         <p class="message">{{detail?.description}}</p>
         <div class="options">
-          <button *ngIf="detail?.source != null" class="btn">Code source</button>
+          <button *ngIf="detail?.source != null" class="btn" (click)="openSource()">Code source</button>
           <button *ngIf="detail?.link != null" class="btn" (click)="openItem()">Visit</button>
         </div>
     </div>
