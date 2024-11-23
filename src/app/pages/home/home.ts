@@ -24,6 +24,7 @@ import textfile from "../../../assets/text/testi.json"
 import pubblicationsfile from "../../../assets/text/projects.json";
 import { WindowComponent } from "../../components/window/window.component";
 import { DonateButtonComponent } from "../../components/donate-button/donate-button.component";
+import { LoadingComponent } from '../../components/loading/loading.component';
 import { animate, state, style, transition, trigger } from '@angular/animations';
 
 interface Project {
@@ -38,7 +39,7 @@ interface Project {
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, RouterOutlet, MatListModule, MatInputModule, MatFormFieldModule, MatGridListModule, MatDividerModule, MatButtonModule, MatIconModule, MatSidenavModule, MatCardModule, NavbarComponent, ContactformComponent, MatMenuModule, ClipboardModule, FooterComponent, WindowComponent, DonateButtonComponent],
+  imports: [CommonModule, RouterOutlet, MatListModule, MatInputModule, MatFormFieldModule, MatGridListModule, MatDividerModule, MatButtonModule, MatIconModule, MatSidenavModule, MatCardModule, NavbarComponent, ContactformComponent, MatMenuModule, ClipboardModule, FooterComponent, WindowComponent, DonateButtonComponent, LoadingComponent],
   templateUrl: './home.html',
   styleUrl: './home.css',
   animations: [
@@ -62,6 +63,17 @@ export class AppComponent{
   selectedIndex = 0;
   detail: Project | undefined;
   isComponentVisible = false;
+  isLoading = false;
+
+  loading(){
+    this.isLoading = true;
+
+    setTimeout(() => {
+      this.openItem();
+      this.isLoading = false;
+    }, 1000);
+
+  }
 
   nextItem() {
     this.selectedIndex = (this.selectedIndex + 1) % this.projects.length;

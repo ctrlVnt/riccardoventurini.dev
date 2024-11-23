@@ -9,8 +9,6 @@
 
     
     <app-navbar></app-navbar>
-
-    <app-donate-button></app-donate-button>
     
     <section id="header" class="header">
         <mat-drawer-container [hasBackdrop]="true">
@@ -76,16 +74,17 @@
                     
                     <div>
                         <span class='start-btn' (click)="selectItem()" >SELECT</span>
-                        <span class='start-btn' (click)="openItem()">START</span>
+                        <span class='start-btn' (click)="loading()">START</span>
                     </div>
 
                 </div>
-
                 
             </div>
 
     </section>
 
+    
+    <app-loading *ngIf="isLoading"></app-loading>
     
     <div *ngIf="isComponentVisible" class="overlay">
         <app-window *ngIf="isComponentVisible" (visibilityChange)="onVisibilityChange($event)" [detail]="detail" @fadeAnimation></app-window>

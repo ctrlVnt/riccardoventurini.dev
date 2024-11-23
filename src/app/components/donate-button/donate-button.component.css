@@ -13,12 +13,10 @@
 
 @media (max-width: 768px) {
   .cont {
-    width: 30vw;
-    height: 16vw;
-  }  
-
-  .text {
-    font-size: 7vw;
+    transform: scale(2);
+    transform-origin: center;
+    right: 30px;
+    bottom: 10px;
   }
 }
 
