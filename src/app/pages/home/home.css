@@ -76,6 +76,12 @@ h3{
     z-index: 1;
 }
 
+h4{
+    font-family: "Pixelify Sans", sans-serif;
+    font-size: 30px;
+    text-align: center;
+}
+
 p{
     font-size: 18px;
     color: #000;
@@ -492,13 +498,16 @@ app-contactform{
         padding: 80px;
     }
 
+    h4{
+        margin-top: 30px;
+    }
+
     .about-me-text{
         font-size: 18px;
     }
 
     .profile-img{
-        height:250px;
-        width: 250px;
+        max-width: 250px;
         object-fit: cover;
         object-position: center;
     }
@@ -510,6 +519,10 @@ app-contactform{
 }
 
 @media screen and (max-width: 768px) {
+
+    .header{
+        padding-top: 0px;
+    }
 
     .about-me-text{
         display: none;

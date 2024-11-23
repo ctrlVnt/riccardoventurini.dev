@@ -10,7 +10,7 @@
       {
         "cover": "assets/portfolio/rytm.png",
         "title": "Real YT Music - Android",
-        "description": "Youtube player without ads and with PIP mode",
+        "description": "Youtube player without ads and with PIP mode to watch and listen your favourite videos",
         "link": "https://play.google.com/store/apps/details?id=com.ctrlvnt.rytm",
         "source": "https://github.com/ctrlVnt/Real-YT-Music"
       },
@@ -24,7 +24,7 @@
       {
         "cover": "assets/portfolio/emergemobile.png",
         "title": "EmergeMobile - Android + Web",
-        "description": "EmergeMobile is a web application utilized by French forestry professionals, encompassing a web interface, an Android application, and dedicated APIs",
+        "description": "A web application developed for French forestry services to streamline tree maintenance in forests. Built using React, SpringBoot, and Kotlin, the platform collects on-site data, processes it, and presents actionable insights through an intuitive web interface. This project was the focus of my thesis—click below to explore the work in detail!",
         "source": "https://github.com/ctrlVnt/Thesis-for-the-Bachelor-s-Degree"
       },
       {
