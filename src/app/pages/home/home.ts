@@ -33,6 +33,7 @@ interface Project {
   description: string;
   link: string;
   source: string;
+  type: string;
 }
 
 
@@ -89,7 +90,11 @@ export class AppComponent{
   }
 
   openItem() {
-    window.open(`${this.projects[this.selectedIndex].link}`, '_blank');
+    if(this.projects[this.selectedIndex].link!=null){
+      window.open(`${this.projects[this.selectedIndex].link}`, '_blank');
+    }else{
+      window.open(`${this.projects[this.selectedIndex].source}`, '_blank');
+    }
   }
 
   onVisibilityChange(isVisible: boolean) {

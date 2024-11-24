@@ -191,7 +191,20 @@ mat-drawer {
     border: 2px solid transparent;
     transition: all 0.3s ease-in-out;
     cursor: pointer;
-    line-height: 35px;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .tag{
+    opacity: 0;
+  }
+
+  .tag-sel{
+    font-family: "KarmaticArcade", system-ui;
+    color: #fff;
+    transform: rotate(-15deg);
+    margin-left: 10px;
+    opacity: 1;
   }
   
   .buttons {

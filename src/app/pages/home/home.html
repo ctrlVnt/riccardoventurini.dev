@@ -61,7 +61,7 @@
                         <div 
                             [class.selected]="i === selectedIndex" 
                             class="project-item">
-                            {{ project.title }}
+                            {{ project.title }} <p [class.tag-sel]="i === selectedIndex" class="tag">{{ project.type }}</p>
                         </div>
     
                     </div>
