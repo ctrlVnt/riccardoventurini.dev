@@ -46,6 +46,14 @@
     padding-block: 15vh;
 }
 
+#Support{
+    padding-block: 15vh;
+}
+
+#Contact{
+    padding-block: 15vh;
+}
+
 .profile-img {
     height:auto;
     width: 350px;
@@ -104,10 +112,6 @@ section{
     align-items: center;
     flex-direction: column;
     scroll-snap-align: start;
-}
-
-#Contact{
-    padding-block: 15vh;
 }
 
 .header{
