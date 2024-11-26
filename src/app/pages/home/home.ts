@@ -97,6 +97,10 @@ export class AppComponent{
     }
   }
 
+  openLink() {
+      window.open(`https://github.com/ctrlVnt/riccardoventurini.dev`, '_blank');
+  }
+
   onVisibilityChange(isVisible: boolean) {
     this.isComponentVisible = isVisible;
   }
