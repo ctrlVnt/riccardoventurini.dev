@@ -31,6 +31,7 @@ export class NavbarComponent implements OnInit {
 
   actions = [
     'Portfolio',
+    'Support',
     'Contact',
   ];
 
