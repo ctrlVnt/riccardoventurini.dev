@@ -18,14 +18,6 @@
     font-style: normal;
   }
 
-  
-:root{
-    --blue-light: #559BD9;
-    --blue: #4D7A8C;
-    --central: #283940;
-    --adark-light: #152618;
-    --dark: #040D01;
-}
 
 ::-webkit-scrollbar {
     width: 0px;
@@ -36,7 +28,7 @@
     overflow-y: scroll;
     height: 100vh;
     scrollbar-width: none;
-    background-color: #FFF3B1;
+    background-color: #F28E13;
 }
 
 #Portfolio{
@@ -147,7 +139,7 @@ mat-drawer {
 }
 
 .div-header{
-    background-color: #FFF3B1;
+    background-color: #F28E13;
     overflow-x: hidden;
     position:relative;
     display: flex;
@@ -740,12 +732,12 @@ app-contactform{
     height: 86px;
     font-size: 30px;
     font-family: "KarmaticArcade", sans-serif;
-    background: linear-gradient(45deg, transparent 5%, #FF013C 5%);
+    background: linear-gradient(45deg, transparent 5%, #DFF24B 5%);
     border: 0;
-    color: #fff;
+    color: #6F4BF2;
     letter-spacing: 3px;
     line-height: 88px;
-    box-shadow: 6px 0px 0px #00E6F6;
+    box-shadow: 6px 0px 0px #80F2BD;
     outline: transparent;
     position: relative;
   }
@@ -765,7 +757,7 @@ app-contactform{
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(45deg, transparent 3%, #00E6F6 3%, #00E6F6 5%, #FF013C 5%);
+    background: linear-gradient(45deg, transparent 3%, #00E6F6 3%, #00E6F6 5%, #DFF24B 5%);
     text-shadow: -3px -3px 0px #F8F005, 3px 3px 0px #00E6F6;
     clip-path: var(--slice-0);
   }
