@@ -16,16 +16,15 @@ import { MatListModule } from '@angular/material/list';
 import { MatMenuModule } from '@angular/material/menu';
 import { MatSnackBar } from '@angular/material/snack-bar';
 
-import { NavbarComponent } from '../../components/navbar/navbar.component'; 
-import { ContactformComponent } from '../../components/contactform/contactform.component';
 import { FooterComponent } from '../../components/footer/footer.component';
 
 import textfile from "../../../assets/text/testi.json"
 import pubblicationsfile from "../../../assets/text/projects.json";
-import { WindowComponent } from "../../components/window/window.component";
-import { DonateButtonComponent } from "../../components/donate-button/donate-button.component";
-import { LoadingComponent } from '../../components/loading/loading.component';
 import { animate, state, style, transition, trigger } from '@angular/animations';
+
+import { MoveDirection, ClickMode, HoverMode, OutMode, Container, Engine } from "tsparticles-engine";
+import { NgParticlesModule } from "ng-particles";
+import { loadSlim } from "tsparticles-slim";
 
 interface Project {
   cover: string;
@@ -40,7 +39,7 @@ interface Project {
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, RouterOutlet, MatListModule, MatInputModule, MatFormFieldModule, MatGridListModule, MatDividerModule, MatButtonModule, MatIconModule, MatSidenavModule, MatCardModule, NavbarComponent, ContactformComponent, MatMenuModule, ClipboardModule, FooterComponent, WindowComponent, DonateButtonComponent, LoadingComponent],
+  imports: [NgParticlesModule, CommonModule, RouterOutlet, MatListModule, MatInputModule, MatFormFieldModule, MatGridListModule, MatDividerModule, MatButtonModule, MatIconModule, MatSidenavModule, MatCardModule, MatMenuModule, ClipboardModule, FooterComponent],
   templateUrl: './home.html',
   styleUrl: './home.css',
   animations: [
@@ -136,4 +135,90 @@ export class AppComponent{
   openSnackBar(message: string) {
     this._snackBar.open(message);
   }
+
+  id = "tsparticles";
+
+    /* Starting from 1.19.0 you can use a remote url (AJAX request) to a JSON with the configuration */
+    particlesUrl = "http://foo.bar/particles.json";
+
+    /* or the classic JavaScript object */
+    particlesOptions = {
+        background: {
+            color: {
+                value: "#000",
+            },
+        },
+        fpsLimit: 120,
+        interactivity: {
+            events: {
+                onClick: {
+                    enable: true,
+                    mode: ClickMode.push,
+                },
+                onHover: {
+                    enable: true,
+                    mode: HoverMode.repulse,
+                },
+                resize: true,
+            },
+            modes: {
+                push: {
+                    quantity: 4,
+                },
+                repulse: {
+                    distance: 150,
+                    duration: 0.5,
+                },
+            },
+        },
+        particles: {
+            color: {
+                value: "#ffffff",
+            },
+            links: {
+                color: "#ffffff",
+                distance: 10,
+                enable: true,
+                opacity: 0.5,
+                width: 1,
+            },
+            move: {
+                direction: MoveDirection.none,
+                enable: true,
+                outModes: {
+                    default: OutMode.bounce,
+                },
+                random: false,
+                speed: 3,
+                straight: false,
+            },
+            number: {
+                density: {
+                    enable: true,
+                    area: 800,
+                },
+                value: 80,
+            },
+            opacity: {
+                value: 0.5,
+            },
+            shape: {
+                type: "circle",
+            },
+            size: {
+                value: { min: 1, max: 5 },
+            },
+            fullScreen: {
+              enable: true,
+              zIndex: 0,
+            },
+        },
+        detectRetina: true,
+    };
+
+    
+    async particlesInit(engine: Engine): Promise<void> {
+  
+        await loadSlim(engine);
+    }
 }

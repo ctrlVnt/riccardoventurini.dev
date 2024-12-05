@@ -19,6 +19,8 @@ Then, install the project dependencies using npm:
 npm install
 
 npm install -g @angular/cli
+
+npm install ng-particles tsparticles-engine
 ```
 
 ## Usage
