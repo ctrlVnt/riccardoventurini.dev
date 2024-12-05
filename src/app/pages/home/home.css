@@ -1,11 +1,10 @@
-
-
 .title{
-  top: 50vh;
-  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: fixed;
   text-align: center;
   color: white;
-  z-index: 1;
   pointer-events: none;
   line-height: 80px;
 }
@@ -18,4 +17,8 @@ h1{
 p{
   font-size: 40px;
   font-weight:lighter;
+}
+
+section{
+  height: 100vh;
 }

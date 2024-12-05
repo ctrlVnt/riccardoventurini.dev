@@ -25,6 +25,7 @@ import { animate, state, style, transition, trigger } from '@angular/animations'
 import { MoveDirection, ClickMode, HoverMode, OutMode, Container, Engine } from "tsparticles-engine";
 import { NgParticlesModule } from "ng-particles";
 import { loadSlim } from "tsparticles-slim";
+import { PortfolioComponent } from "./portfolio/portfolio.component";
 
 interface Project {
   cover: string;
@@ -39,22 +40,30 @@ interface Project {
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [NgParticlesModule, CommonModule, RouterOutlet, MatListModule, MatInputModule, MatFormFieldModule, MatGridListModule, MatDividerModule, MatButtonModule, MatIconModule, MatSidenavModule, MatCardModule, MatMenuModule, ClipboardModule, FooterComponent],
+  imports: [NgParticlesModule, CommonModule, RouterOutlet, MatListModule, MatInputModule, MatFormFieldModule, MatGridListModule, MatDividerModule, MatButtonModule, MatIconModule, MatSidenavModule, MatCardModule, MatMenuModule, ClipboardModule, FooterComponent, PortfolioComponent],
   templateUrl: './home.html',
   styleUrl: './home.css',
   animations: [
-    trigger('fadeAnimation', [
-      state('void', style({ opacity: 0 })), // Stato iniziale
-      state('*', style({ opacity: 1 })),   // Stato finale
-      transition('void => *', [animate('300ms ease-in')]), // Fade in
-      transition('* => void', [animate('300ms ease-out')]) // Fade out
+    trigger('fade', [
+      state('visible', style({ opacity: 1 })),
+      state('hidden', style({ opacity: 0 })),
+      transition('visible <=> hidden', animate('300ms ease-in-out')),
     ]),
   ],
 })
 
 export class AppComponent{
+  
+  scrol = 0;
 
   constructor(private clipboard: Clipboard, private _snackBar: MatSnackBar) { }
+
+
+  @HostListener('window:scroll', ['$event']) 
+    doSomething() {
+      this.scrol = window.scrollY;
+      console.debug("Scroll Event", window.scrollY );
+    }
   
   projects: Project[] = pubblicationsfile.projects;
 

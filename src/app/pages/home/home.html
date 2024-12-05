@@ -6,12 +6,17 @@
 <router-outlet></router-outlet>
 
 <ng-particles
+    [@fade]="scrol < 500 ? 'visible' : 'hidden'"
     [id]="id"
     [options]="particlesOptions"
     [particlesInit]="particlesInit"
 ></ng-particles>
 
-<div class="title">
-    <h1>Hi, I'm Riccardo</h1>
-    <p>Full-Stack Developer</p>
-</div>
+<section class="header" [@fade]="scrol < 500 ? 'visible' : 'hidden'">
+    <div class="title">
+        <h1>Hi, I'm Riccardo</h1>
+        <p>Full-Stack Developer</p>
+    </div>
+</section>
+
+<app-portfolio></app-portfolio>
