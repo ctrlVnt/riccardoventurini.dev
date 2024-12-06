@@ -1,5 +1,12 @@
-<section>
+<section id="Portfolio">
     <h1>Portfolio</h1>
 
-    
+    <div class="scroll-container">
+        <ul>
+            <li *ngFor="let project of projects; let i = index">
+                <app-item [detail]="project"></app-item>
+            </li>
+        </ul>
+    </div>
+
 </section>

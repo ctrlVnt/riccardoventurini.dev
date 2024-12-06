@@ -1,8 +1,6 @@
 import { Component, OnInit, HostListener } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
-import { ClipboardModule } from '@angular/cdk/clipboard';
-import { Clipboard } from '@angular/cdk/clipboard';
 
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
@@ -14,33 +12,23 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatListModule } from '@angular/material/list'; 
 import { MatMenuModule } from '@angular/material/menu';
-import { MatSnackBar } from '@angular/material/snack-bar';
 
 import { FooterComponent } from '../../components/footer/footer.component';
 
 import textfile from "../../../assets/text/testi.json"
-import pubblicationsfile from "../../../assets/text/projects.json";
 import { animate, state, style, transition, trigger } from '@angular/animations';
 
 import { MoveDirection, ClickMode, HoverMode, OutMode, Container, Engine } from "tsparticles-engine";
 import { NgParticlesModule } from "ng-particles";
 import { loadSlim } from "tsparticles-slim";
 import { PortfolioComponent } from "./portfolio/portfolio.component";
-
-interface Project {
-  cover: string;
-  title: string;
-  description: string;
-  link: string;
-  source: string;
-  type: string;
-}
+import { ContactComponent } from "./contact/contact.component";
 
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [NgParticlesModule, CommonModule, RouterOutlet, MatListModule, MatInputModule, MatFormFieldModule, MatGridListModule, MatDividerModule, MatButtonModule, MatIconModule, MatSidenavModule, MatCardModule, MatMenuModule, ClipboardModule, FooterComponent, PortfolioComponent],
+  imports: [NgParticlesModule, CommonModule, RouterOutlet, MatListModule, MatInputModule, MatFormFieldModule, MatGridListModule, MatDividerModule, MatButtonModule, MatIconModule, MatSidenavModule, MatCardModule, MatMenuModule, PortfolioComponent, ContactComponent, FooterComponent],
   templateUrl: './home.html',
   styleUrl: './home.css',
   animations: [
@@ -56,61 +44,14 @@ export class AppComponent{
   
   scrol = 0;
 
-  constructor(private clipboard: Clipboard, private _snackBar: MatSnackBar) { }
-
-
   @HostListener('window:scroll', ['$event']) 
     doSomething() {
       this.scrol = window.scrollY;
-      console.debug("Scroll Event", window.scrollY );
+      //console.debug("Scroll Event", window.scrollY );
     }
   
-  projects: Project[] = pubblicationsfile.projects;
-
-  mail = 'riccardoventurini220@gmail.com';
-
-  selectedIndex = 0;
-  detail: Project | undefined;
-  isComponentVisible = false;
-  isLoading = false;
-
-  loading(){
-    this.isLoading = true;
-
-    setTimeout(() => {
-      this.openItem();
-      this.isLoading = false;
-    }, 1000);
-
-  }
-
-  nextItem() {
-    this.selectedIndex = (this.selectedIndex + 1) % this.projects.length;
-  }
-
-  prevItem() {
-    this.selectedIndex = (this.selectedIndex - 1 + this.projects.length) % this.projects.length;
-  }  
-  
-  selectItem() {
-    this.detail = this.projects[this.selectedIndex];
-    this.isComponentVisible = true;
-  }
-
-  openItem() {
-    if(this.projects[this.selectedIndex].link!=null){
-      window.open(`${this.projects[this.selectedIndex].link}`, '_blank');
-    }else{
-      window.open(`${this.projects[this.selectedIndex].source}`, '_blank');
-    }
-  }
-
   openLink() {
       window.open(`https://github.com/ctrlVnt/riccardoventurini.dev`, '_blank');
-  }
-
-  onVisibilityChange(isVisible: boolean) {
-    this.isComponentVisible = isVisible;
   }
 
   aboutme:string = textfile.aboutme;
@@ -131,18 +72,6 @@ export class AppComponent{
 
   formatAboutMe(aboutme: string): string {
     return aboutme.replace(/(?:\r\n|\r|\n)/g, '<br>');
-  }
-
-  copyToClipboard(email: string) {
-    this.clipboard.copy(email);
-  }
-
-  writeMessage(email: string) {
-    window.location.href = `mailto:` + email;
-  }
-
-  openSnackBar(message: string) {
-    this._snackBar.open(message);
   }
 
   id = "tsparticles";

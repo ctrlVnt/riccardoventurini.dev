@@ -1,0 +1,14 @@
+.example-card {
+    max-width: 400px;
+  }
+  
+  .example-header-image {
+    background-image: url('https://avatars.githubusercontent.com/u/80196285?s=400&u=615f87a70dcb7e3179310dfa6b4d6b0b68568691&v=4');
+    background-size: cover;
+  }
+  
+  mat-card{
+    padding: 20px;
+    border-radius: 25px;
+    white-space:initial;
+  }

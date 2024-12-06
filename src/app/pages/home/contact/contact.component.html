@@ -1,0 +1,50 @@
+<section id="Contact">
+    <h1>Contact</h1>
+    <div class="overlay" *ngIf="sended">
+        <div [class.slide-in]="sended" [class.slide-out]="outeffect">
+            <h2>Submission successful</h2>
+            <p>Thank you for writing, a response will be given via email as soon as possible!</p>
+            <button mat-raised-button (click) = "resend()">Ok</button>
+        </div>
+    </div>
+    
+    <form class="form" name="contact"  method="POST" (ngSubmit)="onSubmit()" [formGroup]="profileForm" netlify>
+    
+        <mat-form-field>
+            <mat-label for="email">Email: </mat-label>
+            <input matInput placeholder="email@email.com" name="email" id="email" type="text" formControlName="email">
+            @if (profileForm.get('email')?.hasError('email') && !profileForm.get('email')?.hasError('required')) {
+                <mat-error>Please enter a valid email address</mat-error>
+            }
+            @if (profileForm.get('email')?.hasError('required')) {
+                <mat-error>Email is <strong>required</strong></mat-error>
+            }
+        </mat-form-field>
+        
+        <mat-form-field>
+            <mat-label for="object">Object</mat-label>
+            <input matInput placeholder="Ex. Pizza" name="object" id="object" type="text" formControlName="object">
+            @if (profileForm.get('object')?.hasError('required')) {
+                <mat-error>Object is <strong>required</strong></mat-error>
+            }
+        </mat-form-field>
+    
+        <mat-form-field>
+            <mat-label for="message">Message: </mat-label>
+            <textarea matInput name="message" placeholder="Ex. Hi! nice to meet you..." id="message" type="text" formControlName="message"></textarea>
+            @if (profileForm.get('message')?.hasError('required')) {
+                <mat-error>Message is <strong>required</strong></mat-error>
+            }
+        </mat-form-field>
+    
+        <button mat-raised-button type="submit" [disabled]="!profileForm.valid">submit</button>
+    
+        <p>Or write directly at: </p>
+            <a><button mat-button [matMenuTriggerFor]="menu">{{mail}}</button></a>
+            <mat-menu #menu="matMenu">
+                <button mat-menu-item (click)="copyToClipboard(mail); openSnackBar('email address copied')"><mat-icon>file_copy</mat-icon>Copy</button>
+                <button mat-menu-item (click)="writeMessage(mail)"><mat-icon> email</mat-icon>Write directly</button>
+            </mat-menu>
+
+    </form>
+</section>

@@ -28,6 +28,7 @@
         "cover": "assets/portfolio/emergemobile.png",
         "title": "EmergeMobile",
         "description": "A web application developed for French forestry services to streamline tree maintenance in forests. Built using React, SpringBoot, and Kotlin, the platform collects on-site data, processes it, and presents actionable insights through an intuitive web interface. This project was the focus of my thesis—click below to explore the work in detail!",
+        "link": "",
         "source": "https://github.com/ctrlVnt/Thesis-for-the-Bachelor-s-Degree",
         "type": "WebApp"
       },
@@ -36,6 +37,7 @@
         "title": "chiarasava.it",
         "description": "A minimalist and elegant website developed in Angular to present a PhD student’s work, showcasing completed research as well as upcoming and past events. Designed with a harmonious pastel color palette and an intuitive navigation system, the site offers a clean and straightforward user experience.",
         "link": "https://chiarasava.netlify.app/",
+        "source":"",
         "type": "Web"
       },
       {
@@ -43,6 +45,7 @@
         "title": "Alexismalagnino.fr",
         "description": "A personalized website built with Jekyll for a PhD student in biology, designed to showcase the discoveries made through their research and thesis work. The site has been customized to enhance its visual appeal and provide a more engaging and seamless navigation experience.",
         "link": "https://alexismalagnino.netlify.app/",
+        "source": "",
         "type": "Web"
       }
     ]

@@ -1,0 +1,60 @@
+section{
+    color: white;
+    background-color: black;
+    height: 100vh;
+    padding: 50px;
+}
+
+h1{
+    font-size: 80px;
+    font-weight: bold;
+    text-align: center;
+}
+
+form{
+    display:table;
+    flex-direction: column;
+    padding: 50px;
+    color: #fff;
+}
+
+button{
+    background-color: #fff;
+}
+
+.overlay{
+    position: absolute;
+    z-index: 5;
+}
+
+.slide-in {
+    animation: slideIn 0.1s ease-in;
+}
+
+@keyframes slideIn {
+    from {
+        transform: scale(0);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+.slide-out {
+    animation: slideOut 0.1s ease-in;
+}
+
+@keyframes slideOut {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(0);
+    }
+}
+
+.form{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
