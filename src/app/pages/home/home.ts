@@ -47,7 +47,7 @@ export class AppComponent{
   @HostListener('window:scroll', ['$event']) 
     doSomething() {
       this.scrol = window.scrollY;
-      //console.debug("Scroll Event", window.scrollY );
+      console.debug("Scroll Event", window.scrollY );
     }
   
   openLink() {
@@ -75,9 +75,6 @@ export class AppComponent{
   }
 
   id = "tsparticles";
-
-    /* Starting from 1.19.0 you can use a remote url (AJAX request) to a JSON with the configuration */
-    particlesUrl = "http://foo.bar/particles.json";
 
     /* or the classic JavaScript object */
     particlesOptions = {

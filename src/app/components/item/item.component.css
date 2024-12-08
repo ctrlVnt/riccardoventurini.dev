@@ -11,4 +11,13 @@
     padding: 20px;
     border-radius: 25px;
     white-space:initial;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+    transition: box-shadow 0.3s ease;
+    animation: floating 5s -1s infinite;
   }
+  
+@keyframes floating {
+  0%, 100% { transform: translateY(-5%); }
+  50% { transform: translateY(0); }
+}

@@ -22,3 +22,22 @@ p{
 section{
   height: 100vh;
 }
+
+#Header{
+  z-index: 0;
+}
+
+#Portfolio{
+  color: black;
+  background-color: white;
+  padding: 50px;
+  z-index: 1;
+}
+
+#Contact{
+  color: white;
+  background-color: black;
+  height: 100vh;
+  padding: 50px;
+  z-index: 2;
+}
