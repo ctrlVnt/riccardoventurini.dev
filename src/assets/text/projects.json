@@ -27,7 +27,7 @@
       {
         "cover": "assets/portfolio/emergemobile.png",
         "title": "EmergeMobile",
-        "description": "A web application developed for French forestry services to streamline tree maintenance in forests. Built using React, SpringBoot, and Kotlin, the platform collects on-site data, processes it, and presents actionable insights through an intuitive web interface. This project was the focus of my thesis—click below to explore the work in detail!",
+        "description": "A web application developed for French forestry services to streamline tree maintenance in forests. The platform collects on-site data, processes it, and presents actionable insights through an intuitive web interface.",
         "link": "",
         "source": "https://github.com/ctrlVnt/Thesis-for-the-Bachelor-s-Degree",
         "type": "WebApp"

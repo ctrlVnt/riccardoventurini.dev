@@ -10,6 +10,7 @@
     </div>
 
     <div class="scroll-istruction">
-        <p>Shift + wheel mouse</p> <p class="or">or</p> <p>scroll right</p>
+        <p *ngIf="isWindowGreaterThan600">Shift + wheel mouse</p> 
+        <p *ngIf="!isWindowGreaterThan600">scroll right</p>
     </div>
 </section>    
