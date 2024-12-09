@@ -30,6 +30,7 @@ ul > li {
     list-style-type: none;
     scroll-snap-align: center;
     margin: 50px;
+    max-width: 90%;
 }
 
 .scroll-container {
