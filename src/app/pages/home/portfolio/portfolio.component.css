@@ -1,3 +1,10 @@
+#Portfolio{
+    color: black;
+    background-color: white;
+    padding-block: 100px;
+    z-index: 1;
+  }
+  
 h1{
     font-size: 80px;
     font-weight: bold;
@@ -9,17 +16,25 @@ p{
     font-weight:lighter;
 }
 
+ul{
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
 ul > li {
+    display: inline-block;
     list-style-type: none;
+    scroll-snap-align: center;
     margin: 50px;
 }
 
-li {
-    display: inline-block; /* Dispone gli elementi in linea */
-    margin-right: 10px; /* Spazio tra gli elementi */
-}
-
 .scroll-container {
-    overflow-x: auto;
+    position: relative;
+    margin-top: 80px;
+    overflow-x: hidden;
     white-space: nowrap;
 }

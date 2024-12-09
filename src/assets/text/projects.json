@@ -33,7 +33,7 @@
         "type": "WebApp"
       },
       {
-        "cover": "",
+        "cover": "assets/portfolio/chiarasava.png",
         "title": "chiarasava.it",
         "description": "A minimalist and elegant website developed in Angular to present a PhD student’s work, showcasing completed research as well as upcoming and past events. Designed with a harmonious pastel color palette and an intuitive navigation system, the site offers a clean and straightforward user experience.",
         "link": "https://chiarasava.netlify.app/",
@@ -41,7 +41,7 @@
         "type": "Web"
       },
       {
-        "cover": "",
+        "cover": "assets/portfolio/alexis.png",
         "title": "Alexismalagnino.fr",
         "description": "A personalized website built with Jekyll for a PhD student in biology, designed to showcase the discoveries made through their research and thesis work. The site has been customized to enhance its visual appeal and provide a more engaging and seamless navigation experience.",
         "link": "https://alexismalagnino.netlify.app/",

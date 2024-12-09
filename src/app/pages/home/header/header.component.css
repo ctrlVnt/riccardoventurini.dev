@@ -1,0 +1,30 @@
+.title{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: fixed;
+    text-align: center;
+    color: white;
+    pointer-events: none;
+    line-height: 80px;
+  }
+  
+  h1{
+    font-size: 80px;
+    font-weight: bold;
+    line-height: 80px;
+  }
+  
+  p{
+    font-size: 40px;
+    font-weight:lighter;
+    line-height: 50px;
+  }
+  
+  section{
+    height: 100vh;
+  }
+  
+  #Header{
+    z-index: 0;
+  }

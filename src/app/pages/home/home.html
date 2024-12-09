@@ -5,25 +5,8 @@
 
 <router-outlet></router-outlet>
 
-    <section id="Header" [@fade]="scrol > 100 ? 'hidden' : 'visible'">    
-        <ng-particles
-            [id]="id"
-            [options]="particlesOptions"
-            [particlesInit]="particlesInit"
-        ></ng-particles>
-
-        <div class="title">
-            <h1>Hi, I'm Riccardo</h1>
-            <p>Full-Stack Developer</p>
-        </div>
-    </section>
+    <app-header [@fade]="scrol > 100 ? 'hidden' : 'visible'"></app-header>
     
-    <section id="Portfolio">
-        <app-portfolio></app-portfolio>
-    </section>
-
-    <section id="Contact">
-        <app-contact></app-contact>
-    </section>
-
-    <app-footer></app-footer>
+    <app-portfolio></app-portfolio>
+    
+    <app-contact></app-contact>

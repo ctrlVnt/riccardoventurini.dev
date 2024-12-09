@@ -1,3 +1,13 @@
+#Contact{
+    color: white;
+    background-color: black;
+    height: 80vh;
+    padding-top: 100px;
+    padding-inline: 5%;
+    z-index: 2;
+    text-align: center;
+}
+  
 h1{
     font-size: 80px;
     font-weight: bold;
@@ -11,6 +21,19 @@ form{
     color: #fff;
 }
 
+.submit{
+    width: 50px;
+}
+
+.submit:disabled{
+    background-color: #fff;
+    opacity: 0.5;
+}
+
+textarea{
+    min-height: 100px;
+}
+
 button{
     background-color: #fff;
 }
@@ -18,6 +41,15 @@ button{
 .overlay{
     position: absolute;
     z-index: 5;
+    background-color: #fff;
+    color: black;
+    padding: 20px;
+    border-radius: 15px;
+    left: 50%;
+}
+
+button{
+    padding: 20px;
 }
 
 .slide-in {

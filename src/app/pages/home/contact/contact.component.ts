@@ -10,11 +10,12 @@ import { ClipboardModule } from '@angular/cdk/clipboard';
 import { Clipboard } from '@angular/cdk/clipboard';
 import { MatSnackBar } from '@angular/material/snack-bar';
 import { MatIconModule } from '@angular/material/icon';
+import { FooterComponent } from "../../../components/footer/footer.component";
 
 @Component({
   selector: 'app-contact',
   standalone: true,
-  imports: [ReactiveFormsModule, HttpClientModule, MatButtonModule, MatInputModule, CommonModule, MatMenuModule, ClipboardModule, MatIconModule],
+  imports: [ReactiveFormsModule, HttpClientModule, MatButtonModule, MatInputModule, CommonModule, MatMenuModule, ClipboardModule, MatIconModule, FooterComponent],
   templateUrl: './contact.component.html',
   styleUrl: './contact.component.css'
 })

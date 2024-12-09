@@ -1,4 +1,6 @@
+<section id="Contact">
     <h1>Contact</h1>
+    
     <div class="overlay" *ngIf="sended">
         <div [class.slide-in]="sended" [class.slide-out]="outeffect">
             <h2>Submission successful</h2>
@@ -36,13 +38,19 @@
             }
         </mat-form-field>
     
-        <button mat-raised-button type="submit" [disabled]="!profileForm.valid">submit</button>
-    
-        <p>Or write directly at: </p>
-            <a><button mat-button [matMenuTriggerFor]="menu">{{mail}}</button></a>
-            <mat-menu #menu="matMenu">
-                <button mat-menu-item (click)="copyToClipboard(mail); openSnackBar('email address copied')"><mat-icon>file_copy</mat-icon>Copy</button>
-                <button mat-menu-item (click)="writeMessage(mail)"><mat-icon> email</mat-icon>Write directly</button>
-            </mat-menu>
-
+        <button class="submit" mat-raised-button type="submit" [disabled]="!profileForm.valid">submit</button>
+        
     </form>
+
+    <div>
+        <p>Or write directly at: </p>
+        <a><button mat-button [matMenuTriggerFor]="menu">{{mail}}</button></a>
+        <mat-menu #menu="matMenu">
+            <button mat-menu-item (click)="copyToClipboard(mail); openSnackBar('email address copied')"><mat-icon>file_copy</mat-icon>Copy</button>
+            <button mat-menu-item (click)="writeMessage(mail)"><mat-icon> email</mat-icon>Write directly</button>
+        </mat-menu>
+    </div>
+    
+    <app-footer></app-footer>
+
+</section>
