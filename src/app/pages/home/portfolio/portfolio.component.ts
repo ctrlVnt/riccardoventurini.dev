@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ElementRef, ViewChild } from '@angular/core';
 import pubblicationsfile from "../../../../assets/text/projects.json";
 import { ItemComponent } from "../../../components/item/item.component";
 import {MatListModule} from '@angular/material/list';
@@ -21,6 +21,9 @@ interface Project {
   styleUrl: './portfolio.component.css'
 })
 export class PortfolioComponent {
+
+  @ViewChild('widgetsContent', { read: ElementRef })
+  public widgetsContent!: ElementRef<any>;
 
   projects: Project[] = pubblicationsfile.projects;
 

@@ -32,7 +32,7 @@ import { HeaderComponent } from "./header/header.component";
     trigger('fade', [
       state('visible', style({ opacity: 1 })),
       state('hidden', style({ opacity: 0 })),
-      transition('visible <=> hidden', animate('300ms ease-in-out')),
+      transition('visible <=> hidden', animate('100ms ease-in-out')),
     ]),
   ],
 })
@@ -44,7 +44,7 @@ export class AppComponent{
   @HostListener('window:scroll', ['$event']) 
     doSomething() {
       this.scrol = window.scrollY;
-      console.debug("Scroll Event", window.scrollY );
+      //console.debug("Scroll Event", window.scrollY );
     }
   
   openLink() {

@@ -1,11 +1,15 @@
 <section id="Portfolio">
     <h1>Portfolio</h1>
 
-    <div class="scroll-container">
+    <div class="scroll-container" #widgetsContent>
         <ul>
             <li *ngFor="let project of projects; let i = index">
                 <app-item [detail]="project"></app-item>
             </li>
         </ul>
+    </div>
+
+    <div class="scroll-istruction">
+        <p>Shift + wheel mouse</p> <p class="or">or</p> <p>scroll right</p>
     </div>
 </section>    
