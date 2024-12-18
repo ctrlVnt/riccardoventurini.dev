@@ -2,6 +2,9 @@
 
 You're welcome on [my website](https://riccardoventurini.dev) repository!
 
+![Capture d’écran 2024-12-18 155222](https://github.com/user-attachments/assets/22bed3f4-e04c-47d3-81bd-8abd866af6c6)
+
+
 ## Installation
 
 To run this project locally, you'll need Node.js and Angular CLI installed on your machine. If you haven't already, you can download Node.js from [here](https://nodejs.org/) and Angular CLI by running the following command:
