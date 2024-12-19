@@ -11,7 +11,7 @@
       </p>
     </mat-card-content>
     <mat-card-actions>
-      <button mat-button (click)="openLink(detail!.link)">Link</button>
-      <button mat-button (click)="openLink(detail!.source)">Code source</button>
+      <a *ngIf='detail?.link != ""' href="{{detail?.link}}" target="_blank">Link 🔗</a>
+      <a *ngIf='detail?.source != ""' href="{{detail?.source}}" target="_blank">Code Source</a>
     </mat-card-actions>
   </mat-card>  
