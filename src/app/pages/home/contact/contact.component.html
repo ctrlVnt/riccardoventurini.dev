@@ -47,7 +47,7 @@
         <a><button mat-button [matMenuTriggerFor]="menu">{{mail}}</button></a>
         <mat-menu #menu="matMenu">
             <button mat-menu-item (click)="copyToClipboard(mail); openSnackBar('email address copied')"><mat-icon>file_copy</mat-icon>Copy</button>
-            <button mat-menu-item (click)="writeMessage(mail)"><mat-icon> email</mat-icon>Write directly</button>
+            <button mat-menu-item (click)="writeMessage(mail)"><mat-icon>open_in_new</mat-icon> Write directly</button>
         </mat-menu>
     </div>
     
