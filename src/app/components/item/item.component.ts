@@ -2,6 +2,7 @@ import {ChangeDetectionStrategy, Component, Input} from '@angular/core';
 import {CommonModule} from '@angular/common';
 import {MatButtonModule} from '@angular/material/button';
 import {MatCardModule} from '@angular/material/card';
+import { MatIconModule } from '@angular/material/icon';
 
 interface Project {
   cover: string;
@@ -15,7 +16,7 @@ interface Project {
 @Component({
   selector: 'app-item',
   standalone: true,
-  imports: [MatCardModule, MatButtonModule, CommonModule],
+  imports: [MatCardModule, MatButtonModule, CommonModule, MatIconModule],
   templateUrl: './item.component.html',
   styleUrl: './item.component.css',
   changeDetection: ChangeDetectionStrategy.OnPush,

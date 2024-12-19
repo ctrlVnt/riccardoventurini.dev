@@ -21,6 +21,10 @@
     margin-top: 20px;
   }
 
+  mat-icon{
+    scale: 0.7;
+  }
+
   img{
     border-radius: 5px;
   }

@@ -15,12 +15,6 @@ h1{
     text-align: center;
 }
 
-.scroll-istruction{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-
 p{
     font-size: 15px;
     font-weight:lighter;
@@ -44,8 +38,8 @@ ul > li {
     display: inline-block;
     list-style-type: none;
     scroll-snap-align: center;
-    margin: 50px;
     max-width: 90%;
+    margin-right: 50px;
 }
 
 .scroll-container {
@@ -62,11 +56,28 @@ ul > li {
       }
 
     ul > li {
-        margin-inline: 10px;
+        margin: 50px;
     }
 
     .scroll-container {
         margin-top: 0px;
         margin-bottom: -50px;
     }
+}
+
+button{
+    background-color: white;
+    color: black;
+}
+
+.btn-left{
+    position: absolute;
+    top: 35%;
+    left: 10px;
+}
+
+.btn-right{
+    position: absolute;
+    top: 35%;
+    right: 10px;
 }
