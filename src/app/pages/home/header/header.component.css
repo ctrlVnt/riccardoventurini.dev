@@ -8,6 +8,13 @@
     pointer-events: none;
     line-height: 80px;
   }
+
+  app-menu{
+    position: fixed;
+    top: 0%;
+    right: 0%;
+    z-index: 3;
+  }
   
   h1{
     font-size: 80px;

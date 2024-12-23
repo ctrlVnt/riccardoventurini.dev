@@ -5,11 +5,12 @@ import {MatButtonModule} from '@angular/material/button';
 import {MatSidenavModule} from '@angular/material/sidenav';
 
 import { NgParticlesModule } from "ng-particles";
+import { MenuComponent } from "../../../components/menu/menu.component";
 
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [NgParticlesModule, MatSidenavModule, MatButtonModule],
+  imports: [NgParticlesModule, MatSidenavModule, MatButtonModule, MenuComponent],
   templateUrl: './header.component.html',
   styleUrl: './header.component.css'
 })
@@ -21,7 +22,7 @@ export class HeaderComponent {
   particlesOptions = {
       background: {
           color: {
-              value: "#000",
+              value: "transparent",
           },
       },
       fpsLimit: 120,

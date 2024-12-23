@@ -20,12 +20,13 @@ import { animate, state, style, transition, trigger } from '@angular/animations'
 import { PortfolioComponent } from "./portfolio/portfolio.component";
 import { ContactComponent } from "./contact/contact.component";
 import { HeaderComponent } from "./header/header.component";
+import { MenuComponent } from "../../components/menu/menu.component";
 
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, RouterOutlet, MatListModule, MatInputModule, MatFormFieldModule, MatGridListModule, MatDividerModule, MatButtonModule, MatIconModule, MatSidenavModule, MatCardModule, MatMenuModule, PortfolioComponent, ContactComponent, FooterComponent, HeaderComponent],
+  imports: [CommonModule, RouterOutlet, MatListModule, MatInputModule, MatFormFieldModule, MatGridListModule, MatDividerModule, MatButtonModule, MatIconModule, MatSidenavModule, MatCardModule, MatMenuModule, PortfolioComponent, ContactComponent, FooterComponent, HeaderComponent, MenuComponent],
   templateUrl: './home.html',
   styleUrl: './home.css',
   animations: [
