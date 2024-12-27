@@ -50,23 +50,6 @@ ul > li {
     white-space: nowrap;
 }
 
-@media (max-width: 680px) {
-    #Portfolio{
-        padding-top: 100px;
-        padding-bottom: 50px;
-      }
-
-    ul > li {
-        margin: 50px;
-        margin-block: 20px;
-    }
-
-    .scroll-container {
-        margin-top: 0px;
-        margin-bottom: -50px;
-    }
-}
-
 button{
     background-color: white;
     color: black;
@@ -82,4 +65,31 @@ button{
     position: absolute;
     top: 35%;
     right: 10px;
+}
+
+@media (max-width: 680px) {
+    #Portfolio{
+        padding-top: 100px;
+        padding-bottom: 50px;
+      }
+
+    ul > li {
+        margin: 50px;
+        margin-block: 20px;
+    }
+
+    .scroll-container {
+        margin-top: 0px;
+        margin-bottom: -50px;
+    }
+    
+    h1{
+        font-size: 60px;
+        line-height: 70px;
+    }
+
+    h2{
+        font-size: 30px;
+        line-height: 40px;
+    }
 }

@@ -15,18 +15,20 @@ import { MatMenuModule } from '@angular/material/menu';
 
 import { FooterComponent } from '../../components/footer/footer.component';
 
-import textfile from "../../../assets/text/testi.json"
+import textfile from "../../../assets/text/strings.json"
 import { animate, state, style, transition, trigger } from '@angular/animations';
 import { PortfolioComponent } from "./portfolio/portfolio.component";
 import { ContactComponent } from "./contact/contact.component";
 import { HeaderComponent } from "./header/header.component";
 import { MenuComponent } from "../../components/menu/menu.component";
+import { AboutComponent } from "./about/about.component";
+import { ServicesComponent } from "./services/services.component";
 
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, RouterOutlet, MatListModule, MatInputModule, MatFormFieldModule, MatGridListModule, MatDividerModule, MatButtonModule, MatIconModule, MatSidenavModule, MatCardModule, MatMenuModule, PortfolioComponent, ContactComponent, FooterComponent, HeaderComponent, MenuComponent],
+  imports: [CommonModule, RouterOutlet, MatListModule, MatInputModule, MatFormFieldModule, MatGridListModule, MatDividerModule, MatButtonModule, MatIconModule, MatSidenavModule, MatCardModule, MatMenuModule, PortfolioComponent, ContactComponent, FooterComponent, HeaderComponent, MenuComponent, AboutComponent, ServicesComponent],
   templateUrl: './home.html',
   styleUrl: './home.css',
   animations: [

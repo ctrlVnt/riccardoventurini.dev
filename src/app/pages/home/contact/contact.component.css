@@ -18,6 +18,7 @@ form{
     display:table;
     flex-direction: column;
     padding: 50px;
+    padding-top: 80px;
     color: #fff;
 }
 
@@ -83,3 +84,15 @@ button{
     justify-content: center;
     text-align: center;
 }
+
+@media (max-width: 680px) {
+    h1{
+      font-size: 60px;
+      line-height: 70px;
+    }
+  
+    h2{
+      font-size: 30px;
+      line-height: 40px;
+    }
+  }

@@ -111,7 +111,7 @@
     transform: scaleY(1);
   }
   .wrapper ul li a:hover {
-    color: #1a73e8;
+    color: #000;
   }
   input[type="checkbox"] {
     display: none;

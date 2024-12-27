@@ -85,3 +85,15 @@
     background: #fff;
     animation: scroll_1 2.75s ease-in-out infinite;
   }
+
+@media (max-width: 680px) {
+  h1{
+    font-size: 60px;
+    line-height: 70px;
+  }
+
+  h2{
+    font-size: 30px;
+    line-height: 40px;
+  }
+}

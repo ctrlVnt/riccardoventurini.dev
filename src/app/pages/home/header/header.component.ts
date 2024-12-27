@@ -54,7 +54,7 @@ export class HeaderComponent {
           },
           links: {
               color: "#ffffff",
-              distance: 10,
+              distance: 100,
               enable: true,
               opacity: 0.5,
               width: 1,
