@@ -1,6 +1,5 @@
 import { Component, OnInit, HostListener } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { RouterOutlet } from '@angular/router';
 
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
@@ -26,9 +25,9 @@ import { ServicesComponent } from "./services/services.component";
 
 
 @Component({
-  selector: 'app-root',
+  selector: 'app-home',
   standalone: true,
-  imports: [CommonModule, RouterOutlet, MatListModule, MatInputModule, MatFormFieldModule, MatGridListModule, MatDividerModule, MatButtonModule, MatIconModule, MatSidenavModule, MatCardModule, MatMenuModule, PortfolioComponent, ContactComponent, FooterComponent, HeaderComponent, MenuComponent, AboutComponent, ServicesComponent],
+  imports: [CommonModule, MatListModule, MatInputModule, MatFormFieldModule, MatGridListModule, MatDividerModule, MatButtonModule, MatIconModule, MatSidenavModule, MatCardModule, MatMenuModule, PortfolioComponent, ContactComponent, FooterComponent, HeaderComponent, MenuComponent, AboutComponent, ServicesComponent],
   templateUrl: './home.html',
   styleUrl: './home.css',
   animations: [
@@ -40,7 +39,7 @@ import { ServicesComponent } from "./services/services.component";
   ],
 })
 
-export class AppComponent{
+export class Homecomponent{
   
   scrol = 0;
 
