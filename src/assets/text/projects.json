@@ -9,6 +9,14 @@
         "type": "Android"
       },
       {
+        "cover": "assets/portfolio/godot.jpg",
+        "title": "Real YT Music",
+        "description": "3D cross-platform survival game where you face relentless hordes of skeletons. As time progresses, the challenge escalates, demanding strategic decision-making to overcome increasingly formidable adversaries.",
+        "link": "",
+        "source": "https://github.com/ctrlVnt/skeleton-race",
+        "type": "Videogame"
+      },
+      {
         "cover": "assets/portfolio/rytm.png",
         "title": "Real YT Music",
         "description": "Youtube player without ads and with PIP mode to watch and listen your favourite videos",
