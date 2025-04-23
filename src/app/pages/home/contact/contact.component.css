@@ -40,13 +40,16 @@ button{
 }
 
 .overlay{
-    position: absolute;
+    position: relative;
+    margin-block: 80px;
     z-index: 5;
     background-color: #fff;
     color: black;
     padding: 20px;
     border-radius: 15px;
+    max-width: 300px;
     left: 50%;
+    transform: translateX(-50%);
 }
 
 button{

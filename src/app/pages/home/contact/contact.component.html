@@ -9,7 +9,7 @@
         </div>
     </div>
     
-    <form class="form" name="contact"  method="POST" (ngSubmit)="onSubmit()" [formGroup]="profileForm" netlify>
+    <form *ngIf="!sended" class="form" name="contact"  method="POST" (ngSubmit)="onSubmit()" [formGroup]="profileForm" netlify>
     
         <mat-form-field>
             <mat-label for="email">Email: </mat-label>

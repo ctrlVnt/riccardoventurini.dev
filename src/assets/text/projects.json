@@ -5,8 +5,16 @@
         "title": "CineMit",
         "description": "Dedicated group movie meeting app for organizing and watching movies shown at theaters together",
         "link": "https://www.cinemit.app/",
-        "source": "https://github.com/ctrlVnt/cinemit_website",
+        "source": "",
         "type": "Android"
+      },
+      {
+        "cover": "assets/portfolio/godot.jpg",
+        "title": "Real YT Music",
+        "description": "3D cross-platform survival game where you face relentless hordes of skeletons. As time progresses, the challenge escalates, demanding strategic decision-making to overcome increasingly formidable adversaries.",
+        "link": "",
+        "source": "https://github.com/ctrlVnt/skeleton-race",
+        "type": "Videogame"
       },
       {
         "cover": "assets/portfolio/rytm.png",
