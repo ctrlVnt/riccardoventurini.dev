@@ -14,12 +14,11 @@ interface Project {
 }
 
 @Component({
-  selector: 'app-item',
-  standalone: true,
-  imports: [MatCardModule, MatButtonModule, CommonModule, MatIconModule],
-  templateUrl: './item.component.html',
-  styleUrl: './item.component.css',
-  changeDetection: ChangeDetectionStrategy.OnPush,
+    selector: 'app-item',
+    imports: [MatCardModule, MatButtonModule, CommonModule, MatIconModule],
+    templateUrl: './item.component.html',
+    styleUrl: './item.component.css',
+    changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class ItemComponent {
 

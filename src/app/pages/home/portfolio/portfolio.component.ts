@@ -16,11 +16,10 @@ interface Project {
 }
 
 @Component({
-  selector: 'app-portfolio',
-  standalone: true,
-  imports: [ItemComponent, MatListModule, CommonModule, MatIconModule, MatButtonModule],
-  templateUrl: './portfolio.component.html',
-  styleUrl: './portfolio.component.css'
+    selector: 'app-portfolio',
+    imports: [ItemComponent, MatListModule, CommonModule, MatIconModule, MatButtonModule],
+    templateUrl: './portfolio.component.html',
+    styleUrl: './portfolio.component.css'
 })
 export class PortfolioComponent {
 

@@ -25,18 +25,17 @@ import { ServicesComponent } from "./services/services.component";
 
 
 @Component({
-  selector: 'app-home',
-  standalone: true,
-  imports: [CommonModule, MatListModule, MatInputModule, MatFormFieldModule, MatGridListModule, MatDividerModule, MatButtonModule, MatIconModule, MatSidenavModule, MatCardModule, MatMenuModule, PortfolioComponent, ContactComponent, FooterComponent, HeaderComponent, MenuComponent, AboutComponent, ServicesComponent],
-  templateUrl: './home.html',
-  styleUrl: './home.css',
-  animations: [
-    trigger('fade', [
-      state('visible', style({ opacity: 1 })),
-      state('hidden', style({ opacity: 0 })),
-      transition('visible <=> hidden', animate('100ms ease-in-out')),
-    ]),
-  ],
+    selector: 'app-home',
+    imports: [CommonModule, MatListModule, MatInputModule, MatFormFieldModule, MatGridListModule, MatDividerModule, MatButtonModule, MatIconModule, MatSidenavModule, MatCardModule, MatMenuModule, PortfolioComponent, ContactComponent, FooterComponent, HeaderComponent, MenuComponent, AboutComponent, ServicesComponent],
+    templateUrl: './home.html',
+    styleUrl: './home.css',
+    animations: [
+        trigger('fade', [
+            state('visible', style({ opacity: 1 })),
+            state('hidden', style({ opacity: 0 })),
+            transition('visible <=> hidden', animate('100ms ease-in-out')),
+        ]),
+    ]
 })
 
 export class Homecomponent{
