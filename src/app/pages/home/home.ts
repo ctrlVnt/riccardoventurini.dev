@@ -33,8 +33,8 @@ import { ServicesComponent } from "./services/services.component";
   animations: [
     trigger('fade', [
       state('visible', style({ opacity: 1 })),
-      state('hidden', style({ opacity: 0 })),
-      transition('visible <=> hidden', animate('100ms ease-in-out')),
+      state('hidden', style({ 'height': '0px', 'opacity': '0', 'display': 'none' })),
+      transition('visible <=> hidden', [style({ 'display': 'block' }), animate('100ms ease-in-out')]),
     ]),
   ],
 })
