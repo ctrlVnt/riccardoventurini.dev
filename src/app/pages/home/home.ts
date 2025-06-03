@@ -32,9 +32,9 @@ import { ServicesComponent } from "./services/services.component";
   styleUrl: './home.css',
   animations: [
     trigger('fade', [
-      state('visible', style({ opacity: 1 })),
+      state('visible',  style({ 'height': '100vh', 'opacity': '1', 'display': 'contents' })),
       state('hidden', style({ 'height': '0px', 'opacity': '0', 'display': 'none' })),
-      transition('visible <=> hidden', [style({ 'display': 'block' }), animate('100ms ease-in-out')]),
+      transition('visible <=> hidden', [style({ 'display': 'block' }), animate('500ms ease-in-out')]),
     ]),
   ],
 })
