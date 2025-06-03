@@ -3,11 +3,10 @@ import {MatIconModule} from '@angular/material/icon';
 import {MatButtonModule} from '@angular/material/button';
 
 @Component({
-  selector: 'app-services',
-  standalone: true,
-  imports: [MatIconModule, MatButtonModule],
-  templateUrl: './services.component.html',
-  styleUrl: './services.component.css'
+    selector: 'app-services',
+    imports: [MatIconModule, MatButtonModule],
+    templateUrl: './services.component.html',
+    styleUrl: './services.component.css'
 })
 export class ServicesComponent {
 

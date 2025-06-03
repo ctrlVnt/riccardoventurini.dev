@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { FormControl, ReactiveFormsModule, FormGroup, Validators } from '@angular/forms';
-import { HttpClientModule } from '@angular/common/http';
+import {} from '@angular/common/http';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import {MatButtonModule} from '@angular/material/button';
 import {MatInputModule} from '@angular/material/input'; 
@@ -13,11 +13,10 @@ import { MatIconModule } from '@angular/material/icon';
 import { FooterComponent } from "../../../components/footer/footer.component";
 
 @Component({
-  selector: 'app-contact',
-  standalone: true,
-  imports: [ReactiveFormsModule, HttpClientModule, MatButtonModule, MatInputModule, CommonModule, MatMenuModule, ClipboardModule, MatIconModule, FooterComponent],
-  templateUrl: './contact.component.html',
-  styleUrl: './contact.component.css'
+    selector: 'app-contact',
+    imports: [ReactiveFormsModule, MatButtonModule, MatInputModule, CommonModule, MatMenuModule, ClipboardModule, MatIconModule, FooterComponent],
+    templateUrl: './contact.component.html',
+    styleUrl: './contact.component.css'
 })
 export class ContactComponent {
 

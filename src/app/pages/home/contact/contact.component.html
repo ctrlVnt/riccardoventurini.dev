@@ -23,10 +23,10 @@
         </mat-form-field>
         
         <mat-form-field>
-            <mat-label for="object">Object</mat-label>
+            <mat-label for="object">Subject</mat-label>
             <input matInput placeholder="Ex. Pizza" name="object" id="object" type="text" formControlName="object">
             @if (profileForm.get('object')?.hasError('required')) {
-                <mat-error>Object is <strong>required</strong></mat-error>
+                <mat-error>Subject is <strong>required</strong></mat-error>
             }
         </mat-form-field>
     

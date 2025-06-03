@@ -8,11 +8,10 @@ import { NgParticlesModule } from "ng-particles";
 import { MenuComponent } from "../../../components/menu/menu.component";
 
 @Component({
-  selector: 'app-header',
-  standalone: true,
-  imports: [NgParticlesModule, MatSidenavModule, MatButtonModule, MenuComponent],
-  templateUrl: './header.component.html',
-  styleUrl: './header.component.css'
+    selector: 'app-header',
+    imports: [NgParticlesModule, MatSidenavModule, MatButtonModule, MenuComponent],
+    templateUrl: './header.component.html',
+    styleUrl: './header.component.css'
 })
 export class HeaderComponent {
     showFiller = false;
