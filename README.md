@@ -7,9 +7,9 @@ You're welcome on [my website](https://riccardoventurini.dev) repository!
 
 ## Installation
 
-To run this project locally, you'll need Node.js and Angular CLI installed on your machine. If you haven't already, you can download Node.js from [here](https://nodejs.org/) and Angular CLI by running the following command:
+To run this project locally, you'll need Node.js installed on your machine. If you haven't already, you can download Node.js from [here](https://nodejs.org/) by running the following command:
 
-Once you have Node.js and Angular CLI installed, you can clone this repository and navigate into the project directory:
+Once you have Node.js installed, you can clone this repository and navigate into the project directory:
 
 ```
 git clone https://github.com/ctrlVnt/riccardoventurini.dev.git
@@ -19,11 +19,7 @@ cd riccardoventurini.dev
 Then, install the project dependencies using npm:
 
 ```
-npm install
-
-npm install -g @angular/cli
-
-npm install ng-particles tsparticles-engine
+npm i
 ```
 
 ## Usage
@@ -31,11 +27,7 @@ npm install ng-particles tsparticles-engine
 To serve the project locally, run the following command:
 
 ```
-npm run start
-```
-or
-```
-ng serve
+npm run dev
 ```
 
 This will start a development server. You can view the website by navigating to `http://localhost:4200` in your web browser.
