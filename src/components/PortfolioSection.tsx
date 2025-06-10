@@ -15,7 +15,7 @@ const PortfolioSection = () => {
       title: "CineMit",
       description: "Dedicated group movie meeting app for organizing and watching movies shown at theaters together",
       image: cinemit,
-      tech: ["Android"],
+      tech: ["Android", "IOS", "website", "Docker", "back-end"],
       liveUrl: "https://www.cinemit.app/",
       githubUrl: "#"
     },
@@ -24,7 +24,7 @@ const PortfolioSection = () => {
       description: "3D cross-platform survival game where you face relentless hordes of skeletons. As time progresses, the challenge escalates, demanding strategic decision-making to overcome increasingly formidable adversaries",
       image: godot,
       tech: ["Godot"],
-      liveUrl: "#",
+      liveUrl: "https://skeleton-race.netlify.app/",
       githubUrl: "https://github.com/ctrlVnt/skeleton-race"
     },
     {
@@ -48,7 +48,7 @@ const PortfolioSection = () => {
       description: "A web application developed for French forestry services to streamline tree maintenance in forests. The platform collects on-site data, processes it, and presents actionable insights through an intuitive web interface",
       image: emergemobile,
       tech: ["WebApp", "React", "SpringBoot", "PostgreSQL","Docker"],
-      liveUrl: "#",
+      liveUrl: "https://www.onf.fr/",
       githubUrl: "https://github.com/ctrlVnt/Thesis-for-the-Bachelor-s-Degree"
     },
     {
@@ -73,7 +73,7 @@ const PortfolioSection = () => {
       image: alexis,
       tech: ["Website","Jekyll"],
       liveUrl: "https://alexismalagnino.netlify.app/",
-      githubUrl: "#"
+      githubUrl: "https://github.com/ctrlVnt/alexismalagnino.com/"
     }
   ];
 
