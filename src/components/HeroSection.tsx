@@ -16,14 +16,13 @@ const HeroSection = () => {
           <h1 className="text-5xl md:text-7xl font-bold font-inter mb-6">
             <span className="text-white">Hi, I'm</span>
             <br />
-            <span className="bg-gradient-to-r from-dev-primary to-dev-secondary bg-clip-text text-transparent">
+            <span className="bg-primary bg-clip-text text-transparent">
               Riccardo Venturini
             </span>
           </h1>
 
           <p className="text-xl md:text-2xl text-gray-300 mb-8 max-w-3xl mx-auto leading-relaxed">
-            Full Stack Developer passionate about modern technologies.
-            I craft extraordinary digital experiences that combine elegant design and clean code.
+            Full Stack Developer
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">

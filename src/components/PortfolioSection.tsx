@@ -1,5 +1,5 @@
-import React from 'react';
-import { ExternalLink, Github } from 'lucide-react';
+import React, { useState } from 'react';
+import { ExternalLink, Github, X } from 'lucide-react';
 import alexis from '/images/alexis.png';
 import chiarasava from '/images/chiarasava.png';
 import cinemit from '/images/cinemit.png';
@@ -10,14 +10,17 @@ import michela from '/images/michela.png';
 import rytm from '/images/rytm.png';
 
 const PortfolioSection = () => {
+  const [selectedProject, setSelectedProject] = useState(null);
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
   const projects = [
     {
       title: "CineMit",
-      description: "Dedicated group movie meeting app for organizing and watching movies shown at theaters together",
+      description: "Dedicated group movie meeting app for organizing and watching movies shown at theaters together. The application was entirely developed by me, taking care of the front-end, back-end, and database.",
       image: cinemit,
-      tech: ["Android", "IOS", "website", "Docker", "back-end"],
+      tech: ["Android", "IOS", "Web", "Docker", "Back-end"],
       liveUrl: "https://www.cinemit.app/",
-      githubUrl: "#"
+      githubUrl: "https://play.google.com/store/apps/details?id=com.ctrlvnt.cinemit&hl=en-US"
     },
     {
       title: "Skeleton Race",
@@ -45,7 +48,7 @@ const PortfolioSection = () => {
     },
     {
       title: "EmergeMobile",
-      description: "A web application developed for French forestry services to streamline tree maintenance in forests. The platform collects on-site data, processes it, and presents actionable insights through an intuitive web interface",
+      description: "A web application developed for French forestry services to streamline tree maintenance in forests. The platform collects on-site data, processes it, and presents actionable insights through an intuitive web interface. This application was the basis for writing my bachelor's thesis.",
       image: emergemobile,
       tech: ["WebApp", "React", "SpringBoot", "PostgreSQL","Docker"],
       liveUrl: "https://www.onf.fr/",
@@ -55,7 +58,7 @@ const PortfolioSection = () => {
       title: "michelaventurini.it",
       description: "A refined and visually captivating portfolio website designed for an aerial dance artist. The site highlights performances, background, and contact information with a focus on elegance, fluidity, and the artistry of movement",
       image: michela,
-      tech: ["Website", "React"],
+      tech: ["Web", "React"],
       liveUrl: "https://michelaventurini.netlify.app/",
       githubUrl: "https://github.com/ctrlVnt/michelaventurini.it"
     },
@@ -63,7 +66,7 @@ const PortfolioSection = () => {
       title: "chiarasava.com",
       description: "A minimalist and elegant website developed in Angular to present a PhD student’s work, showcasing completed research as well as upcoming and past events. Designed with a harmonious pastel color palette and an intuitive navigation system, the site offers a clean and straightforward user experience",
       image: chiarasava,
-      tech: ["Website", "Angular"],
+      tech: ["Web", "Angular"],
       liveUrl: "https://chiarasava.netlify.app/",
       githubUrl: "#"
     },
@@ -71,11 +74,21 @@ const PortfolioSection = () => {
       title: "alexismalagnino.fr",
       description: "A personalized website built with Jekyll for a PhD student in biology, designed to showcase the discoveries made through their research and thesis work. The site has been customized to enhance its visual appeal and provide a more engaging and seamless navigation experience",
       image: alexis,
-      tech: ["Website","Jekyll"],
+      tech: ["Web","Jekyll"],
       liveUrl: "https://alexismalagnino.netlify.app/",
       githubUrl: "https://github.com/ctrlVnt/alexismalagnino.com/"
     }
   ];
+
+   const openModal = (project) => {
+    setSelectedProject(project);
+    setIsModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setIsModalOpen(false);
+    setSelectedProject(null);
+  };
 
   return (
     <section id="portfolio" className="py-20 bg-dark-surface relative">
@@ -91,7 +104,7 @@ const PortfolioSection = () => {
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project, index) => (
-            <div key={index} className="bg-dark-accent rounded-lg shadow-lg overflow-hidden border border-dev-primary/10 hover:shadow-xl hover:shadow-dev-primary/10 transition-all duration-300 transform hover:-translate-y-2 group">
+            <div key={index} className="bg-dark-accent rounded-lg shadow-lg overflow-hidden border border-dev-primary/10 hover:shadow-xl hover:shadow-dev-primary/10 transition-all duration-300 transform hover:-translate-y-2 group" onClick={() => openModal(project)}>
               <div className="relative">
                 <img 
                   src={project.image} 
@@ -138,6 +151,59 @@ const PortfolioSection = () => {
           ))}
         </div>
       </div>
+
+      {isModalOpen && selectedProject && (
+        <div className="fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center z-50 transition-opacity duration-300 opacity-100">
+          <div className="bg-dark-accent rounded-lg shadow-lg overflow-hidden max-w-2xl w-full transition-transform duration-300 transform translate-y-0 opacity-100">
+            <div className="relative">
+              <button
+                className="absolute top-4 right-4 bg-dev-primary text-dark-bg p-2 rounded-full hover:bg-dev-secondary transition-colors duration-200"
+                onClick={closeModal}
+              >
+                <X size={16} />
+              </button>
+              <img
+                src={selectedProject.image}
+                alt={selectedProject.title}
+                className="w-full h-64 object-cover"
+              />
+            </div>
+            <div className="p-6">
+              <h3 className="text-2xl font-bold font-inter mb-3 text-white">
+                {selectedProject.title}
+              </h3>
+              <p className="text-gray-300 mb-4">
+                {selectedProject.description}
+              </p>
+              <div className="flex flex-wrap gap-2 mb-4">
+                {selectedProject.tech.map((tech, techIndex) => (
+                  <span
+                    key={techIndex}
+                    className="bg-dark-bg text-dev-primary px-3 py-1 rounded-full text-xs font-medium border border-dev-primary/20"
+                  >
+                    {tech}
+                  </span>
+                ))}
+              </div>
+              <div className="flex space-x-3">
+                <a
+                  href={selectedProject.liveUrl}
+                  className="bg-dev-primary text-dark-bg px-4 py-2 rounded-full hover:bg-dev-secondary transition-colors duration-200"
+                >
+                  Live Demo
+                </a>
+                <a
+                  href={selectedProject.githubUrl}
+                  className="bg-dev-primary text-dark-bg px-4 py-2 rounded-full hover:bg-dev-secondary transition-colors duration-200"
+                >
+                  GitHub
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
+      
     </section>
   );
 };
