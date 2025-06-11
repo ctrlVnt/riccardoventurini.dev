@@ -13,10 +13,10 @@ const HeroSection = () => {
     <section id="home" className="min-h-screen flex items-center justify-center bg-transparent pt-16 relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
         <div className="animate-fade-in">
-          <h1 className="text-5xl md:text-7xl font-bold font-inter mb-6">
-            <span className="text-white">Hi, I'm</span>
+          <h1 className="font-bold font-inter mb-6">
+            <span className="text-4xl md:text-6xl text-white">Hi, I'm</span>
             <br />
-            <span className="bg-primary bg-clip-text text-transparent">
+            <span className="text-5xl md:text-8xl bg-primary bg-clip-text text-transparent">
               Riccardo Venturini
             </span>
           </h1>
