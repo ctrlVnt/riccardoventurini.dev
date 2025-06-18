@@ -111,22 +111,6 @@ const PortfolioSection = () => {
                   alt={project.title}
                   className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
                 />
-                <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-center pb-4">
-                  <div className="flex space-x-3">
-                    <a 
-                      href={project.liveUrl}
-                      className="bg-dev-primary text-dark-bg p-2 rounded-full hover:bg-dev-secondary transition-colors duration-200"
-                    >
-                      <ExternalLink size={16} />
-                    </a>
-                    <a 
-                      href={project.githubUrl}
-                      className="bg-dev-primary text-dark-bg p-2 rounded-full hover:bg-dev-secondary transition-colors duration-200"
-                    >
-                      <Github size={16} />
-                    </a>
-                  </div>
-                </div>
               </div>
               
               <div className="p-6">
@@ -185,20 +169,22 @@ const PortfolioSection = () => {
                   </span>
                 ))}
               </div>
-              <div className="flex space-x-3">
-                <a
-                  href={selectedProject.liveUrl}
-                  className="bg-dev-primary text-dark-bg px-4 py-2 rounded-full hover:bg-dev-secondary transition-colors duration-200"
-                >
-                  Live Demo
-                </a>
-                <a
-                  href={selectedProject.githubUrl}
-                  className="bg-dev-primary text-dark-bg px-4 py-2 rounded-full hover:bg-dev-secondary transition-colors duration-200"
-                >
-                  GitHub
-                </a>
-              </div>
+             <div className="transition-opacity duration-300 flex items-end justify-center pb-4">
+                  <div className="flex space-x-3">
+                    <a 
+                      href={selectedProject.liveUrl}
+                      className="bg-dev-primary text-dark-bg p-2 rounded-full hover:bg-dev-secondary transition-colors duration-200"
+                    >
+                      <ExternalLink size={16} />
+                    </a>
+                    <a 
+                      href={selectedProject.githubUrl}
+                      className="bg-dev-primary text-dark-bg p-2 rounded-full hover:bg-dev-secondary transition-colors duration-200"
+                    >
+                      <Github size={16} />
+                    </a>
+                  </div>
+                </div>
             </div>
           </div>
         </div>
