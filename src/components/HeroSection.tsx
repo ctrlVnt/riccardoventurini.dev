@@ -14,9 +14,10 @@ const HeroSection = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
         <div className="animate-fade-in">
           <h1 className="font-bold font-inter mb-6">
-            <span className="text-4xl md:text-6xl text-white">Hi, I'm</span>
+            <span className="text-4xl md:text-5xl text-white">Hi, I'm</span>
             <br />
-            <span className="text-5xl md:text-8xl bg-primary bg-clip-text text-transparent">
+            <br />
+            <span className="text-5xl md:text-7xl bg-primary bg-clip-text text-transparent">
               Riccardo Venturini
             </span>
           </h1>
