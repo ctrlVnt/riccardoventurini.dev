@@ -54,16 +54,7 @@ const Header = () => {
             ))}
           </nav>
 
-          {/* CTA Button */}
-          <div className="hidden md:block">
-            <button
-              onClick={() => scrollToSection('#contact')}
-              className="bg-gradient-to-r from-dev-primary to-dev-secondary text-dark-bg px-6 py-2 rounded-full hover:shadow-lg hover:shadow-dev-primary/25 transition-all duration-300 transform hover:scale-105"
-            >
-              Let's work together
-            </button>
-          </div>
-
+         
           {/* Mobile menu button */}
           <button
             className="md:hidden text-white"
@@ -90,12 +81,6 @@ const Header = () => {
                   {item.name}
                 </button>
               ))}
-              <button
-                onClick={() => scrollToSection('#contact')}
-                className="w-full mt-3 bg-gradient-to-r from-dev-primary to-dev-secondary text-dark-bg px-4 py-2 rounded-full"
-              >
-                Let's work together
-              </button>
             </div>
           </div>
         )}

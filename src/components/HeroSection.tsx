@@ -13,11 +13,13 @@ const HeroSection = () => {
     <section id="home" className="min-h-screen flex items-center justify-center bg-transparent pt-16 relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
         <div className="animate-fade-in">
+          <img
+            src="images/profile.jpg"
+            alt="RV"
+            className="w-32 h-32 mx-auto mb-4 rounded-full flex items-center justify-center text-white text-4xl font-bold"
+          />
           <h1 className="font-bold font-inter mb-6">
-            <span className="text-4xl md:text-5xl text-white">Hi, I'm</span>
-            <br />
-            <br />
-            <span className="text-5xl md:text-7xl bg-primary bg-clip-text text-transparent">
+            <span className="text-5xl md:text-7xl bg-gray-100 bg-clip-text text-transparent">
               Riccardo Venturini
             </span>
           </h1>
@@ -25,21 +27,6 @@ const HeroSection = () => {
           <p className="text-xl md:text-2xl text-gray-300 mb-8 max-w-3xl mx-auto leading-relaxed">
             Full Stack Developer
           </p>
-
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
-            <button
-              onClick={() => scrollToSection('#portfolio')}
-              className="bg-gradient-to-r from-dev-primary to-dev-secondary text-dark-bg px-8 py-4 rounded-full font-semibold hover:shadow-xl hover:shadow-dev-primary/25 transition-all duration-300 transform hover:scale-105"
-            >
-              View My Projects
-            </button>
-            <button
-              onClick={() => scrollToSection('#contact')}
-              className="border-2 border-dev-primary text-dev-primary px-8 py-4 rounded-full font-semibold hover:bg-dev-primary hover:text-dark-bg transition-all duration-300"
-            >
-              Contact Me
-            </button>
-          </div>
 
           {/* Social Links */}
           <div className="flex justify-center space-x-6 mb-12">

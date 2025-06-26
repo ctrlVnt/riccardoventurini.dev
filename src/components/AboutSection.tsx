@@ -2,28 +2,35 @@ import React from 'react';
 import { Code, Coffee, Lightbulb, Users } from 'lucide-react';
 
 const AboutSection = () => {
-  const highlights = [
+  const links = [
     {
-      icon: Code,
-      title: "Clean Code",
-      description: "I write maintainable and scalable code following best practices"
+      name: "GitHub",
+      url: "https://github.com/ctrlvnt",
+      image: "https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png",
+      description: "Explore my open-source projects and contributions"
     },
     {
-      icon: Lightbulb,
-      title: "Problem Solver",
-      description: "I turn complex ideas into elegant digital solutions"
+      name: "Buy Me a Coffee",
+      url: "https://buymeacoffee.com/v3ntuz",
+      image: "https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png",
+      description: "Support my work with a small donation"
     },
     {
-      icon: Users,
-      title: "Team Player",
-      description: "I collaborate effectively with designers, PMs, and other developers"
-    },
-    {
-      icon: Coffee,
-      title: "Always Learning",
-      description: "I constantly study the latest technologies and frameworks"
+      name: "Product Hunt",
+      url: "https://www.producthunt.com/@v3ntuz1",
+      image: "images/product-hunt.jpg",
+      description: "Check out my launched products and upvote"
     }
   ];
+
+  /*,
+    {
+      name: "F-Droid",
+      url: "https://f-droid.org/packages/yourpackage",
+      image: "https://fdroid.gitlab.io/artwork/badge/get-it-on.png",
+      description: "Get my apps from this open-source app store"
+    }
+      */
 
   return (
     <section id="about" className="py-32 bg-dark-surface/80 backdrop-blur-sm relative">
@@ -63,16 +70,23 @@ const AboutSection = () => {
             </div>
           </div>
 
-          {/* Right column - Highlights */}
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-            {highlights.map((item, index) => (
-              <div key={index} className="text-center p-6 rounded-lg bg-dark-accent/50 border border-dev-primary/10 hover:shadow-lg hover:shadow-dev-primary/10 transition-all duration-300">
-                <div className="inline-flex items-center justify-center w-12 h-12 bg-gradient-to-r from-dev-primary to-dev-secondary rounded-lg mb-4">
-                  <item.icon className="w-6 h-6 text-dark-bg" />
-                </div>
-                <h3 className="font-semibold text-lg mb-2 text-white">{item.title}</h3>
-                <p className="text-gray-400 text-sm">{item.description}</p>
-              </div>
+            {links.map((item, index) => (
+              <a 
+                key={index} 
+                href={item.url} 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="flex flex-col items-center justify-center p-6 rounded-lg bg-dark-accent/50 border border-dev-primary/10 hover:shadow-lg hover:shadow-dev-primary/10 transition-all duration-300 hover:scale-105"
+              >
+                <img 
+                  src={item.image} 
+                  alt={item.name}
+                  className="h-12 rounded-lg object-contain mb-4"
+                />
+                <h3 className="font-semibold text-lg mb-2 text-white">{item.name}</h3>
+                <p className="text-gray-400 text-sm text-center px-2">{item.description}</p>
+              </a>
             ))}
           </div>
         </div>
