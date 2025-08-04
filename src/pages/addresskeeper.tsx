@@ -2,7 +2,7 @@ import React from 'react';
 
 const AddressKeeperPolicy: React.FC = () => {
   return (
-    <div className="p-6 max-w-3xl mx-auto text-gray-800">
+    <div className="p-6 bg-white max-w-3xl mx-auto text-gray-800">
       <h1 className="text-3xl font-bold mb-4">Privacy Policy</h1>
 
       <p className="mb-4">
