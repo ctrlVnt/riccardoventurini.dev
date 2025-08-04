@@ -8,6 +8,7 @@ import NotFound from "./pages/NotFound";
 import WebsitePrivacy from "./pages/riccardoventurini";
 import FlashAppPrivacy from "./pages/flashapp";
 import RytmPrivacy from "./pages/rytm";
+import AddressKeeperPolicy from "./pages/addresskeeper";
 
 const queryClient = new QueryClient();
 
@@ -22,6 +23,7 @@ const App = () => (
           <Route path="privacy/flashapp" element={<FlashAppPrivacy />} />
           <Route path="privacy/riccardoventurini" element={<WebsitePrivacy />} />
           <Route path="privacy/rytm" element={<RytmPrivacy />} />
+          <Route path="privacy/addresskeeper" element={<AddressKeeperPolicy/>} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
