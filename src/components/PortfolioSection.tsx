@@ -8,6 +8,7 @@ import flashapp from '/images/flashapp.png';
 import godot from '/images/godot.jpg';
 import michela from '/images/michela.png';
 import rytm from '/images/rytm.png';
+import addresskeeper from '/images/addresskeeper.png';
 
 const PortfolioSection = () => {
   const [selectedProject, setSelectedProject] = useState(null);
@@ -77,6 +78,14 @@ const PortfolioSection = () => {
       tech: ["Web","Jekyll"],
       liveUrl: "https://alexismalagnino.netlify.app/",
       githubUrl: "https://github.com/ctrlVnt/alexismalagnino.com/"
+    },
+    {
+      title: "Address Keeper",
+      description: "Address Keeper is a mobile app built with Flutter that helps you keep track of where you've shared your personal information, like your home address or phone number, so you never forget to update it when it changes. Whether it’s for social media, government services, or online subscriptions, Address Keeper makes it easy to stay organized and avoid missing important updates",
+      image: addresskeeper,
+      tech: ["Mobile","Flutter"],
+      liveUrl: "https://play.google.com/store/apps/details?id=com.ctrlvnt.addresskeeper",
+      githubUrl: "https://github.com/ctrlVnt/addresskeeper"
     }
   ];
 
