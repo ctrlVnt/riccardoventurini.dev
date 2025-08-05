@@ -16,6 +16,14 @@ const PortfolioSection = () => {
 
   const projects = [
     {
+      title: "Address Keeper",
+      description: "Address Keeper is a mobile app built with Flutter that helps you keep track of where you've shared your personal information, like your home address or phone number, so you never forget to update it when it changes. Whether it’s for social media, government services, or online subscriptions, Address Keeper makes it easy to stay organized and avoid missing important updates",
+      image: addresskeeper,
+      tech: ["Mobile","Flutter"],
+      liveUrl: "https://play.google.com/store/apps/details?id=com.ctrlvnt.addresskeeper",
+      githubUrl: "https://github.com/ctrlVnt/addresskeeper"
+    },
+    {
       title: "CineMit",
       description: "Dedicated group movie meeting app for organizing and watching movies shown at theaters together. The application was entirely developed by me, taking care of the front-end, back-end, and database.",
       image: cinemit,
@@ -78,14 +86,6 @@ const PortfolioSection = () => {
       tech: ["Web","Jekyll"],
       liveUrl: "https://alexismalagnino.netlify.app/",
       githubUrl: "https://github.com/ctrlVnt/alexismalagnino.com/"
-    },
-    {
-      title: "Address Keeper",
-      description: "Address Keeper is a mobile app built with Flutter that helps you keep track of where you've shared your personal information, like your home address or phone number, so you never forget to update it when it changes. Whether it’s for social media, government services, or online subscriptions, Address Keeper makes it easy to stay organized and avoid missing important updates",
-      image: addresskeeper,
-      tech: ["Mobile","Flutter"],
-      liveUrl: "https://play.google.com/store/apps/details?id=com.ctrlvnt.addresskeeper",
-      githubUrl: "https://github.com/ctrlVnt/addresskeeper"
     }
   ];
 
