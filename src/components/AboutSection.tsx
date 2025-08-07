@@ -20,18 +20,15 @@ const AboutSection = () => {
       url: "https://www.producthunt.com/@v3ntuz1",
       image: "images/product-hunt.jpg",
       description: "Check out my launched products and upvote"
+    },
+    {
+      name: "HashNode",
+      url: "https://v3ntuz.hashnode.dev/",
+      image: "https://cdn.hashnode.com/res/hashnode/image/upload/v1611902473383/CDyAuTy75.png",
+      description: "Check out my blog !"
     }
   ];
-
-  /*,
-    {
-      name: "F-Droid",
-      url: "https://f-droid.org/packages/yourpackage",
-      image: "https://fdroid.gitlab.io/artwork/badge/get-it-on.png",
-      description: "Get my apps from this open-source app store"
-    }
-      */
-
+      
   return (
     <section id="about" className="py-32 bg-dark-surface/80 backdrop-blur-sm relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
