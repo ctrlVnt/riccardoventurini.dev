@@ -58,7 +58,7 @@ const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaE
     {
       icon: MapPin,
       title: "Location",
-      content: "Rennes, France",
+      content: "Nantes, France",
       href: "#"
     }
   ];

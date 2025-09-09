@@ -69,7 +69,7 @@ const Footer = () => {
                 📧 riccardoventurini220@gmail.com
               </p>
               <p className="text-gray-400 text-sm">
-                📍 Rennes, France
+                📍 Nantes, France
               </p>
             </div>
           </div>

@@ -5,28 +5,33 @@ const SkillsSection = () => {
     {
       title: "Frontend",
       skills: [
-        { name: "Flutter", level: 95 },
-        { name: "Angular", level: 85 },
-        { name: "React", level: 80 },
-        { name: "Typescript", level: 75 },
-        { name: "Kotlin", level: 85 }
+        { name: "Flutter", level: 100 },
+        { name: "Kotlin", level: 90 },
+        { name: "Angular", level: 70 },
+        { name: "React", level: 85 },
+        { name: "Javascript", level: 75 },
+        { name: "HTML/CSS", level: 100 }
       ]
     },
     {
       title: "Backend",
       skills: [
-        { name: "SpringBoot", level: 95 },
-        { name: "PostgreSQL", level: 95 },
-        { name: "Node.js", level: 50 }
+        { name: "Java (SpringBoot)", level: 95 },
+        { name: "PostgreSQL", level: 100 },
+        { name: "Node.js", level: 50 },
+        { name: "Mongodb", level: 30 },
+        { name: "RESTful APIs", level: 90 },
+        { name: "Python", level: 30 }
       ]
     },
     {
       title: "DevOps & Tools",
       skills: [
         { name: "Docker", level: 85 },
-        { name: "Git", level: 95 },
+        { name: "Git", level: 100 },
         { name: "CI/CD", level: 80 },
-        { name: "MongoDB", level: 70 }
+        { name: "Linux CLI", level: 90 },
+        { name: "Bash Scripting", level: 70 }
       ]
     }
   ];

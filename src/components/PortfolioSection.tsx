@@ -20,7 +20,7 @@ const PortfolioSection = () => {
       title: "Address Keeper",
       description: "Address Keeper is a mobile app built with Flutter that helps you keep track of where you've shared your personal information, like your home address or phone number, so you never forget to update it when it changes. Whether it’s for social media, government services, or online subscriptions, Address Keeper makes it easy to stay organized and avoid missing important updates",
       image: addresskeeper,
-      tech: ["Mobile","Flutter"],
+      tech: ["App Mobile"],
       liveUrl: "https://play.google.com/store/apps/details?id=com.ctrlvnt.addresskeeper",
       githubUrl: "https://github.com/ctrlVnt/addresskeeper"
     },
@@ -28,31 +28,31 @@ const PortfolioSection = () => {
       title: "CineMit",
       description: "Dedicated group movie meeting app for organizing and watching movies shown at theaters together. The application was entirely developed by me, taking care of the front-end, back-end, and database.",
       image: cinemit,
-      tech: ["Android", "IOS", "Web", "Docker", "Back-end"],
+      tech: ["App Mobile", "Website"],
       liveUrl: "https://www.cinemit.app/",
       githubUrl: "https://play.google.com/store/apps/details?id=com.ctrlvnt.cinemit&hl=en-US"
-    },
-    {
-      title: "Skeleton Race",
-      description: "3D cross-platform survival game where you face relentless hordes of skeletons. As time progresses, the challenge escalates, demanding strategic decision-making to overcome increasingly formidable adversaries",
-      image: godot,
-      tech: ["Godot"],
-      liveUrl: "https://skeleton-race.netlify.app/",
-      githubUrl: "https://github.com/ctrlVnt/skeleton-race"
     },
     {
       title: "Real YT Music",
       description: "Youtube player without ads and with PIP mode to watch and listen your favourite videos",
       image: rytm,
-      tech: ["Android", "Kotlin"],
+      tech: ["App Mobile"],
       liveUrl: "https://play.google.com/store/apps/details?id=com.ctrlvnt.rytm",
       githubUrl: "https://github.com/ctrlVnt/Real-YT-Music"
+    },
+    {
+      title: "Skeleton Race",
+      description: "3D cross-platform survival game where you face relentless hordes of skeletons. As time progresses, the challenge escalates, demanding strategic decision-making to overcome increasingly formidable adversaries",
+      image: godot,
+      tech: ["Game"],
+      liveUrl: "https://skeleton-race.netlify.app/",
+      githubUrl: "https://github.com/ctrlVnt/skeleton-race"
     },
     {
       title: "FlashApp",
       description: "Learning aid application through the creation of various decks of flashcards",
       image: flashapp,
-      tech: ["Android", "Kotlin"],
+      tech: ["App Mobile"],
       liveUrl: "https://play.google.com/store/apps/details?id=com.ctrlvnt.flashapp",
       githubUrl: "https://github.com/ctrlVnt/FlashApp"
     },
@@ -60,7 +60,7 @@ const PortfolioSection = () => {
       title: "EmergeMobile",
       description: "A web application developed for French forestry services to streamline tree maintenance in forests. The platform collects on-site data, processes it, and presents actionable insights through an intuitive web interface. This application was the basis for writing my bachelor's thesis.",
       image: emergemobile,
-      tech: ["WebApp", "React", "SpringBoot", "PostgreSQL","Docker"],
+      tech: ["App Mobile", "WebApp"],
       liveUrl: "https://www.onf.fr/",
       githubUrl: "https://github.com/ctrlVnt/Thesis-for-the-Bachelor-s-Degree"
     },
@@ -68,7 +68,7 @@ const PortfolioSection = () => {
       title: "michelaventurini.it",
       description: "A refined and visually captivating portfolio website designed for an aerial dance artist. The site highlights performances, background, and contact information with a focus on elegance, fluidity, and the artistry of movement",
       image: michela,
-      tech: ["Web", "React"],
+      tech: ["Website"],
       liveUrl: "https://michelaventurini.netlify.app/",
       githubUrl: "https://github.com/ctrlVnt/michelaventurini.it"
     },
@@ -76,7 +76,7 @@ const PortfolioSection = () => {
       title: "chiarasava.com",
       description: "A minimalist and elegant website developed in Angular to present a PhD student’s work, showcasing completed research as well as upcoming and past events. Designed with a harmonious pastel color palette and an intuitive navigation system, the site offers a clean and straightforward user experience",
       image: chiarasava,
-      tech: ["Web", "Angular"],
+      tech: ["Website"],
       liveUrl: "https://chiarasava.netlify.app/",
       githubUrl: "#"
     },
@@ -84,7 +84,7 @@ const PortfolioSection = () => {
       title: "enricogaido.it",
       description: "A showcase website presenting the services offered by a surveyor specializing in the third sector and the ecclesiastical sector, with the possibility of receiving quote requests directly through a form",
       image: enrico,
-      tech: ["Web","React"],
+      tech: ["Website"],
       liveUrl: "https://enricogaido.netlify.app/",
       githubUrl: ""
     }
