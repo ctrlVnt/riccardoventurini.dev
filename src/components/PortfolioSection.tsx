@@ -82,7 +82,7 @@ const PortfolioSection = () => {
     },
     {
       title: "enricogaido.it",
-      description: "A showcase website presenting the services offered by a surveyor specializing in the third sector and the ecclesiastical sector, with the possibility of receiving quote requests directly through a form.",
+      description: "A showcase website presenting the services offered by a surveyor specializing in the third sector and the ecclesiastical sector, with the possibility of receiving quote requests directly through a form",
       image: enrico,
       tech: ["Web","React"],
       liveUrl: "https://enricogaido.netlify.app/",
