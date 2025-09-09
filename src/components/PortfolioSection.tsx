@@ -9,6 +9,7 @@ import godot from '/images/godot.jpg';
 import michela from '/images/michela.png';
 import rytm from '/images/rytm.png';
 import addresskeeper from '/images/addresskeeper.png';
+import enrico from '/images/enrico.png';
 
 const PortfolioSection = () => {
   const [selectedProject, setSelectedProject] = useState(null);
@@ -80,12 +81,12 @@ const PortfolioSection = () => {
       githubUrl: "#"
     },
     {
-      title: "alexismalagnino.fr",
-      description: "A personalized website built with Jekyll for a PhD student in biology, designed to showcase the discoveries made through their research and thesis work. The site has been customized to enhance its visual appeal and provide a more engaging and seamless navigation experience",
-      image: alexis,
-      tech: ["Web","Jekyll"],
-      liveUrl: "https://alexismalagnino.netlify.app/",
-      githubUrl: "https://github.com/ctrlVnt/alexismalagnino.com/"
+      title: "enricogaido.it",
+      description: "A showcase website presenting the services offered by a surveyor specializing in the third sector and the ecclesiastical sector, with the possibility of receiving quote requests directly through a form.",
+      image: enrico,
+      tech: ["Web","React"],
+      liveUrl: "https://enricogaido.netlify.app/",
+      githubUrl: ""
     }
   ];
 
