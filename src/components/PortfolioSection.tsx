@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import { ExternalLink, Github, X } from 'lucide-react';
+import { ExternalLink, Github, X, Play } from 'lucide-react';
+import { motion, AnimatePresence } from 'framer-motion';
 import alexis from '/images/alexis.png';
 import chiarasava from '/images/chiarasava.png';
 import cinemit from '/images/cinemit.png';
@@ -10,6 +11,7 @@ import michela from '/images/michela.png';
 import rytm from '/images/rytm.png';
 import addresskeeper from '/images/addresskeeper.png';
 import enrico from '/images/enrico.png';
+import angelica from '/images/angelicascelza.png';
 
 const PortfolioSection = () => {
   const [selectedProject, setSelectedProject] = useState(null);
@@ -21,8 +23,9 @@ const PortfolioSection = () => {
       description: "Address Keeper is a mobile app built with Flutter that helps you keep track of where you've shared your personal information, like your home address or phone number, so you never forget to update it when it changes. Whether it’s for social media, government services, or online subscriptions, Address Keeper makes it easy to stay organized and avoid missing important updates",
       image: addresskeeper,
       tech: ["App Mobile"],
-      liveUrl: "https://play.google.com/store/apps/details?id=com.ctrlvnt.addresskeeper",
-      githubUrl: "https://github.com/ctrlVnt/addresskeeper"
+      liveUrl: "",
+      githubUrl: "https://github.com/ctrlVnt/addresskeeper",
+      playstoreUrl: "https://play.google.com/store/apps/details?id=com.ctrlvnt.addresskeeper"
     },
     {
       title: "CineMit",
@@ -30,15 +33,17 @@ const PortfolioSection = () => {
       image: cinemit,
       tech: ["App Mobile", "Website"],
       liveUrl: "https://www.cinemit.app/",
-      githubUrl: "https://play.google.com/store/apps/details?id=com.ctrlvnt.cinemit&hl=en-US"
+      githubUrl: "",
+      playstoreUrl: "https://play.google.com/store/apps/details?id=com.ctrlvnt.cinemit"
     },
     {
       title: "Real YT Music",
       description: "Youtube player without ads and with PIP mode to watch and listen your favourite videos",
       image: rytm,
       tech: ["App Mobile"],
-      liveUrl: "https://play.google.com/store/apps/details?id=com.ctrlvnt.rytm",
-      githubUrl: "https://github.com/ctrlVnt/Real-YT-Music"
+      liveUrl: "",
+      githubUrl: "https://github.com/ctrlVnt/Real-YT-Music",
+      playstoreUrl: "https://play.google.com/store/apps/details?id=com.ctrlvnt.rytm"
     },
     {
       title: "Skeleton Race",
@@ -46,23 +51,26 @@ const PortfolioSection = () => {
       image: godot,
       tech: ["Game"],
       liveUrl: "https://skeleton-race.netlify.app/",
-      githubUrl: "https://github.com/ctrlVnt/skeleton-race"
+      githubUrl: "https://github.com/ctrlVnt/skeleton-race",
+      playstoreUrl: ""
     },
     {
       title: "FlashApp",
       description: "Learning aid application through the creation of various decks of flashcards",
       image: flashapp,
       tech: ["App Mobile"],
-      liveUrl: "https://play.google.com/store/apps/details?id=com.ctrlvnt.flashapp",
-      githubUrl: "https://github.com/ctrlVnt/FlashApp"
+      liveUrl: "",
+      githubUrl: "https://github.com/ctrlVnt/FlashApp",
+      playstoreUrl: "https://play.google.com/store/apps/details?id=com.ctrlvnt.flashapp"
     },
     {
       title: "EmergeMobile",
       description: "A web application developed for French forestry services to streamline tree maintenance in forests. The platform collects on-site data, processes it, and presents actionable insights through an intuitive web interface. This application was the basis for writing my bachelor's thesis.",
       image: emergemobile,
       tech: ["App Mobile", "WebApp"],
-      liveUrl: "https://www.onf.fr/",
-      githubUrl: "https://github.com/ctrlVnt/Thesis-for-the-Bachelor-s-Degree"
+      liveUrl: "",
+      githubUrl: "https://github.com/ctrlVnt/Thesis-for-the-Bachelor-s-Degree",
+      playstoreUrl: ""
     },
     {
       title: "michelaventurini.it",
@@ -70,7 +78,8 @@ const PortfolioSection = () => {
       image: michela,
       tech: ["Website"],
       liveUrl: "https://michelaventurini.netlify.app/",
-      githubUrl: "https://github.com/ctrlVnt/michelaventurini.it"
+      githubUrl: "https://github.com/ctrlVnt/michelaventurini.it",
+      playstoreUrl: ""
     },
     {
       title: "chiarasava.com",
@@ -78,7 +87,8 @@ const PortfolioSection = () => {
       image: chiarasava,
       tech: ["Website"],
       liveUrl: "https://chiarasava.netlify.app/",
-      githubUrl: "#"
+      githubUrl: "",
+      playstoreUrl: ""
     },
     {
       title: "enricogaido.it",
@@ -86,11 +96,21 @@ const PortfolioSection = () => {
       image: enrico,
       tech: ["Website"],
       liveUrl: "https://enricogaido.netlify.app/",
-      githubUrl: ""
+      githubUrl: "",
+      playstoreUrl: ""
+    },
+    {
+      title: "angelicascelza.it",
+      description: "I designed and developed a professional website for a nutritionist specializing in weight loss and obesity treatment. The site highlights her professional figure while providing a clear structure to showcase her services, research projects, and helpful resources. With an emphasis on intuitive navigation, SEO-optimized content, and accessible links to her work, the website serves as a central online reference point for clients and potential collaborators",
+      image: angelica,
+      tech: ["Website"],
+      liveUrl: "https://angelicascelza.netlify.app/",
+      githubUrl: "",
+      playstoreUrl: ""
     }
   ];
 
-   const openModal = (project) => {
+  const openModal = (project) => {
     setSelectedProject(project);
     setIsModalOpen(true);
   };
@@ -114,10 +134,14 @@ const PortfolioSection = () => {
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project, index) => (
-            <div key={index} className="bg-dark-accent rounded-lg shadow-lg overflow-hidden border border-dev-primary/10 hover:shadow-xl hover:shadow-dev-primary/10 transition-all duration-300 transform hover:-translate-y-2 group" onClick={() => openModal(project)}>
+            <div
+              key={index}
+              className="bg-dark-accent rounded-lg shadow-lg overflow-hidden border border-dev-primary/10 hover:shadow-xl hover:shadow-dev-primary/10 transition-all duration-300 transform hover:-translate-y-2 group cursor-pointer"
+              onClick={() => openModal(project)}
+            >
               <div className="relative">
-                <img 
-                  src={project.image} 
+                <img
+                  src={project.image}
                   alt={project.title}
                   className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
                 />
@@ -132,7 +156,7 @@ const PortfolioSection = () => {
                 </p>
                 <div className="flex flex-wrap gap-2">
                   {project.tech.map((tech, techIndex) => (
-                    <span 
+                    <span
                       key={techIndex}
                       className="bg-dark-bg text-dev-primary px-3 py-1 rounded-full text-xs font-medium border border-dev-primary/20"
                     >
@@ -146,60 +170,88 @@ const PortfolioSection = () => {
         </div>
       </div>
 
-      {isModalOpen && selectedProject && (
-        <div className="fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center z-50 transition-opacity duration-300 opacity-100">
-          <div className="bg-dark-accent rounded-lg shadow-lg overflow-hidden max-w-2xl w-full transition-transform duration-300 transform translate-y-0 opacity-100">
-            <div className="relative">
-              <button
-                className="absolute top-4 right-4 bg-dev-primary text-dark-bg p-2 rounded-full hover:bg-dev-secondary transition-colors duration-200"
-                onClick={closeModal}
-              >
-                <X size={16} />
-              </button>
-              <img
-                src={selectedProject.image}
-                alt={selectedProject.title}
-                className="w-full h-64 object-cover"
-              />
-            </div>
-            <div className="p-6">
-              <h3 className="text-2xl font-bold font-inter mb-3 text-white">
-                {selectedProject.title}
-              </h3>
-              <p className="text-gray-300 mb-4">
-                {selectedProject.description}
-              </p>
-              <div className="flex flex-wrap gap-2 mb-4">
-                {selectedProject.tech.map((tech, techIndex) => (
-                  <span
-                    key={techIndex}
-                    className="bg-dark-bg text-dev-primary px-3 py-1 rounded-full text-xs font-medium border border-dev-primary/20"
-                  >
-                    {tech}
-                  </span>
-                ))}
+      <AnimatePresence>
+        {isModalOpen && selectedProject && (
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            className="fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center z-50 p-4"
+          >
+            <motion.div
+              initial={{ scale: 0.8, opacity: 0, y: 50 }}
+              animate={{ scale: 1, opacity: 1, y: 0 }}
+              exit={{ scale: 0.8, opacity: 0, y: 50 }}
+              transition={{ duration: 0.3 }}
+              className="bg-dark-accent rounded-lg shadow-lg overflow-hidden max-w-2xl w-full"
+            >
+              <div className="relative">
+                <button
+                  className="absolute top-4 right-4 bg-dev-primary text-dark-bg p-2 rounded-full hover:bg-dev-secondary transition-colors duration-200"
+                  onClick={closeModal}
+                >
+                  <X size={16} />
+                </button>
+                <img
+                  src={selectedProject.image}
+                  alt={selectedProject.title}
+                  className="w-full h-64 object-cover"
+                />
               </div>
-             <div className="transition-opacity duration-300 flex items-end justify-center pb-4">
-                  <div className="flex space-x-3">
-                    <a 
-                      href={selectedProject.liveUrl}
-                      className="bg-dev-primary text-dark-bg p-2 rounded-full hover:bg-dev-secondary transition-colors duration-200"
+              <div className="p-6">
+                <h3 className="text-2xl font-bold font-inter mb-3 text-white">
+                  {selectedProject.title}
+                </h3>
+                <p className="text-gray-300 mb-4">
+                  {selectedProject.description}
+                </p>
+                <div className="flex flex-wrap gap-2 mb-4">
+                  {selectedProject.tech.map((tech, techIndex) => (
+                    <span
+                      key={techIndex}
+                      className="bg-dark-bg text-dev-primary px-3 py-1 rounded-full text-xs font-medium border border-dev-primary/20"
                     >
-                      <ExternalLink size={16} />
-                    </a>
-                    <a 
-                      href={selectedProject.githubUrl}
-                      className="bg-dev-primary text-dark-bg p-2 rounded-full hover:bg-dev-secondary transition-colors duration-200"
-                    >
-                      <Github size={16} />
-                    </a>
-                  </div>
+                      {tech}
+                    </span>
+                  ))}
                 </div>
-            </div>
-          </div>
-        </div>
-      )}
-      
+                <div className="flex flex-wrap gap-3 justify-center">
+                  {selectedProject.liveUrl && selectedProject.liveUrl !== "#" && (
+                    <a
+                      href={selectedProject.liveUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-2 bg-dev-primary text-dark-bg px-4 py-2 rounded-full hover:bg-dev-secondary transition-colors duration-200 text-sm font-medium"
+                    >
+                      <ExternalLink size={16} /> Website
+                    </a>
+                  )}
+                  {selectedProject.githubUrl && selectedProject.githubUrl !== "#" && (
+                    <a
+                      href={selectedProject.githubUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-2 bg-dev-primary text-dark-bg px-4 py-2 rounded-full hover:bg-dev-secondary transition-colors duration-200 text-sm font-medium"
+                    >
+                      <Github size={16} /> Code source
+                    </a>
+                  )}
+                  {selectedProject.playstoreUrl && selectedProject.playstoreUrl !== "#" && (
+                    <a
+                      href={selectedProject.playstoreUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-2 bg-dev-primary text-dark-bg px-4 py-2 rounded-full hover:bg-dev-secondary transition-colors duration-200 text-sm font-medium"
+                    >
+                      <Play size={16} /> Play Store
+                    </a>
+                  )}
+                </div>
+              </div>
+            </motion.div>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </section>
   );
 };
