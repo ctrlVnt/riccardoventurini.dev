@@ -105,7 +105,7 @@ export const Hero = () => {
         <h1
           className="font-heading text-5xl md:text-7xl lg:text-8xl font-bold mb-6"
         >
-          <span ref={titleTextRef} className="opacity-0"></span>
+          <span ref={titleTextRef} className="opacity-0 whitespace-wrap"></span>
         </h1>
         
         <img ref={img1Ref} className="absolute w-40 md:w-80 top-0 right-0" src="https://assets.codepen.io/16327/3D-spiral.png"/>
