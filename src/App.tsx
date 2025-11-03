@@ -18,7 +18,7 @@ const App = () => (
       <Toaster />
       <Sonner />
       <BrowserRouter>
-        <Routes>
+      <Routes>
           <Route path="/" element={<Index />} />
           <Route path="privacy/flashapp" element={<FlashAppPrivacy />} />
           <Route path="privacy/riccardoventurini" element={<WebsitePrivacy />} />

@@ -1,45 +1,73 @@
-# riccardoventurini.dev
+# Welcome to your Lovable project
 
-You're welcome on [my website](https://riccardoventurini.dev) repository!
+## Project info
 
-![Capture d’écran 2024-12-18 155222](https://github.com/user-attachments/assets/22bed3f4-e04c-47d3-81bd-8abd866af6c6)
+**URL**: https://lovable.dev/projects/888d7e45-6510-4aaa-b07d-49b93ea0aed4
 
+## How can I edit this code?
 
-## Installation
+There are several ways of editing your application.
 
-To run this project locally, you'll need Node.js installed on your machine. If you haven't already, you can download Node.js from [here](https://nodejs.org/) by running the following command:
+**Use Lovable**
 
-Once you have Node.js installed, you can clone this repository and navigate into the project directory:
+Simply visit the [Lovable Project](https://lovable.dev/projects/888d7e45-6510-4aaa-b07d-49b93ea0aed4) and start prompting.
 
-```
-git clone https://github.com/ctrlVnt/riccardoventurini.dev.git
-cd riccardoventurini.dev
-```
+Changes made via Lovable will be committed automatically to this repo.
 
-Then, install the project dependencies using npm:
+**Use your preferred IDE**
 
-```
+If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+
+The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+
+Follow these steps:
+
+```sh
+# Step 1: Clone the repository using the project's Git URL.
+git clone <YOUR_GIT_URL>
+
+# Step 2: Navigate to the project directory.
+cd <YOUR_PROJECT_NAME>
+
+# Step 3: Install the necessary dependencies.
 npm i
-```
 
-## Usage
-
-To serve the project locally, run the following command:
-
-```
+# Step 4: Start the development server with auto-reloading and an instant preview.
 npm run dev
 ```
 
-This will start a development server. You can view the website by navigating to `http://localhost:4200` in your web browser.
+**Edit a file directly in GitHub**
 
-## Some indications
+- Navigate to the desired file(s).
+- Click the "Edit" button (pencil icon) at the top right of the file view.
+- Make your changes and commit the changes.
 
-To edit the texts you need to go to the [text](https://github.com/ctrlVnt/riccardoventurini.dev/tree/main/src/assets/text) folder and edit the json files.
+**Use GitHub Codespaces**
 
-## Contributing
+- Navigate to the main page of your repository.
+- Click on the "Code" button (green button) near the top right.
+- Select the "Codespaces" tab.
+- Click on "New codespace" to launch a new Codespace environment.
+- Edit files directly within the Codespace and commit and push your changes once you're done.
 
-Contributions are welcome! If you'd like to contribute to this project, please fork the repository, make your changes, and submit a pull request.
+## What technologies are used for this project?
 
-## License
+This project is built with:
 
-This project is licensed under the [MIT License](LICENSE).
+- Vite
+- TypeScript
+- React
+- shadcn-ui
+- Tailwind CSS
+
+## How can I deploy this project?
+
+Simply open [Lovable](https://lovable.dev/projects/888d7e45-6510-4aaa-b07d-49b93ea0aed4) and click on Share -> Publish.
+
+## Can I connect a custom domain to my Lovable project?
+
+Yes, you can!
+
+To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+
+Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
