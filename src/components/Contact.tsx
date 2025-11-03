@@ -2,14 +2,17 @@ import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { Button } from "@/components/ui/button";
-import { Mail, Github, Linkedin, Twitter } from "lucide-react";
+import { Mail} from "lucide-react";
+import { SocialIcon } from 'react-social-icons'
 
 gsap.registerPlugin(ScrollTrigger);
 
 const socialLinks = [
-  { icon: Github, href: "#", label: "GitHub" },
-  { icon: Linkedin, href: "#", label: "LinkedIn" },
-  { icon: Twitter, href: "#", label: "Twitter" },
+  { href: "https://github.com/ctrlVnt", network: "GitHub" },
+  { href: "https://www.linkedin.com/in/riccardo-venturini-14b6b7261/", network: "LinkedIn" },
+  { href: "https://x.com/CtrlVnt", network: "Twitter" },
+  { href: "https://mastodon.social/@ctrlVnt", network: "Mastodon" },
+  { href: "https://medium.com/@riccardoventurini.dev", network: "Medium" }
 ];
 
 export const Contact = () => {
@@ -48,22 +51,23 @@ export const Contact = () => {
             className="bg-gradient-primary hover:glow-primary transition-all duration-300 mb-8"
             asChild
           >
-            <a href="mailto:contact@example.com" className="flex items-center gap-2">
+            <a href="mailto:riccardoventurini220@gmail.com" className="flex items-center gap-2">
               <Mail className="w-5 h-5" />
-              Send mail
+              riccardoventurini220@gmail.com
             </a>
           </Button>
           
-          <div className="flex justify-center gap-6">
+         <div className="flex justify-center gap-6">
             {socialLinks.map((social) => (
-              <a
-                key={social.label}
-                href={social.href}
-                className="p-3 rounded-full border border-border hover:border-primary hover:bg-primary/10 transition-all duration-300"
-                aria-label={social.label}
-              >
-                <social.icon className="w-6 h-6 text-muted-foreground hover:text-primary" />
-              </a>
+              <SocialIcon 
+                key={social.network}
+                url={social.href} 
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{ height: 40, width: 40 }}
+                bgColor="gray" 
+                fgColor="white"
+              />
             ))}
           </div>
         </div>
