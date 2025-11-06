@@ -120,7 +120,7 @@ export const Hero = () => {
           ref={subsubtitleRef}
           className="text-xl text-muted-foreground max-w-2xl mx-auto mb-8"
         >
-         Scroll to know me better<br/><br/>👇
+         Scroll to know me better<br/><br/> <p className = "visible md:invisible">👇</p>
         </p>
       </div>
     </section>
