@@ -141,7 +141,7 @@ export const ProjectsTimeline = () => {
   return (
     <section
       ref={timelineRef}
-      className="relative bg-background text-white min-h-screen py-20 px-4"
+      className="relative bg-background min-h-screen py-20 px-4"
     >
       <h2 className="font-heading text-4xl md:text-5xl font-bold text-center mb-16">
         My timeline
