@@ -1,6 +1,7 @@
 import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { ScrambleTextPlugin } from "gsap/ScrambleTextPlugin";
+import { Mouse } from "lucide-react";
 
 gsap.registerPlugin(ScrambleTextPlugin);
 
@@ -13,6 +14,7 @@ export const Hero = () => {
   const titleTextRef = useRef<HTMLSpanElement>(null);
   const subtitleRef = useRef<HTMLParagraphElement>(null);
   const subsubtitleRef = useRef<HTMLParagraphElement>(null);
+  const mouse = useRef<SVGSVGElement>(null);
 
   const TITLE_TEXT = "Riccardo Venturini";
 
@@ -38,37 +40,16 @@ export const Hero = () => {
       });
      const titleDuration = 2.5;
 
-      gsap.from(img1Ref.current, {
+       [img1Ref, img2Ref, img3Ref, img4Ref].forEach((ref) => {
+      gsap.from(ref.current, {
         y: 30,
         opacity: 0,
         duration: 1,
-        delay: titleDuration + 0.5,
+        delay: titleDuration + 0.6,
         ease: "power3.out",
       });
+    });
 
-      gsap.from(img2Ref.current, {
-        y: 30,
-        opacity: 0,
-        duration: 1,
-        delay: titleDuration + 0.5,
-        ease: "power3.out",
-      });
-
-      gsap.from(img3Ref.current, {
-        y: 30,
-        opacity: 0,
-        duration: 1,
-        delay: titleDuration + 0.5,
-        ease: "power3.out",
-      });
-
-      gsap.from(img4Ref.current, {
-        y: 30,
-        opacity: 0,
-        duration: 1,
-        delay: titleDuration + 0.5,
-        ease: "power3.out",
-      });
 
       gsap.from(subtitleRef.current, {
         y: 50,
@@ -85,6 +66,50 @@ export const Hero = () => {
         delay: titleDuration + 0.3,
         ease: "power3.out",
       });
+
+      const tl = gsap.timeline();
+
+      tl.from(mouse.current, {
+        y: 30,
+        opacity: 0,
+        duration: 1,
+        delay: titleDuration + 0.5,
+        ease: "power3.out",
+      });
+
+      tl.to(mouse.current, {
+        opacity: 0.2,
+        duration: 0.6,
+        yoyo: true,
+        repeat: -1,
+        ease: "power1.inOut",
+      }, ">");
+
+    const images = [img1Ref.current, img2Ref.current, img3Ref.current, img4Ref.current];
+
+    const quickX = images.map((img) => gsap.quickTo(img, "x", { duration: 0.6, ease: "power3.out" }));
+    const quickY = images.map((img) => gsap.quickTo(img, "y", { duration: 0.6, ease: "power3.out" }));
+
+    const handleMouseMove = (e: MouseEvent) => {
+      const { innerWidth, innerHeight } = window;
+      const x = e.clientX - innerWidth / 2;
+      const y = e.clientY - innerHeight / 2;
+
+      images.forEach((img, i) => {
+        if (!img) return;
+        const strength = i * 0.01 + 0.01;
+        quickX[i](x * strength);
+        quickY[i](y * strength);
+      });
+    };
+
+    window.addEventListener("mousemove", handleMouseMove);
+
+    // cleanup
+    return () => {
+      window.removeEventListener("mousemove", handleMouseMove);
+    };
+
     }, heroRef);
 
     return () => ctx.revert();
@@ -120,8 +145,10 @@ export const Hero = () => {
           ref={subsubtitleRef}
           className="text-xl text-muted-foreground max-w-2xl mx-auto mb-8"
         >
-         Scroll to know me better<br/><br/> <p className = "visible md:invisible">👇</p>
+         Scroll to know me better
         </p>
+
+        <Mouse ref={mouse} className="text-xl text-muted-foreground mx-auto"></Mouse>
       </div>
     </section>
   );

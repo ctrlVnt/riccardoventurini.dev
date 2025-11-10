@@ -8,11 +8,11 @@ import { SocialIcon } from 'react-social-icons'
 gsap.registerPlugin(ScrollTrigger);
 
 const socialLinks = [
-  { href: "https://github.com/ctrlVnt", network: "GitHub" },
   { href: "https://www.linkedin.com/in/riccardo-venturini-14b6b7261/", network: "LinkedIn" },
-  { href: "https://x.com/CtrlVnt", network: "Twitter" },
   { href: "https://mastodon.social/@ctrlVnt", network: "Mastodon" },
-  { href: "https://medium.com/@riccardoventurini.dev", network: "Medium" }
+  { href: "https://github.com/ctrlVnt", network: "GitHub" },
+  { href: "https://medium.com/@riccardoventurini.dev", network: "Medium" },
+  { href: "https://x.com/CtrlVnt", network: "Twitter" }
 ];
 
 export const Contact = () => {
