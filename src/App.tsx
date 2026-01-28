@@ -9,6 +9,8 @@ import WebsitePrivacy from "./pages/riccardoventurini";
 import FlashAppPrivacy from "./pages/flashapp";
 import RytmPrivacy from "./pages/rytm";
 import AddressKeeperPolicy from "./pages/addresskeeper";
+import { Blog } from "./pages/Blog";
+import { BlogPost } from "./pages/BlogPost";
 
 const queryClient = new QueryClient();
 
@@ -20,6 +22,8 @@ const App = () => (
       <BrowserRouter>
       <Routes>
           <Route path="/" element={<Index />} />
+          <Route path="/blog" element={<Blog />} />
+          <Route path="/blog/:slug" element={<BlogPost />} />
           <Route path="privacy/flashapp" element={<FlashAppPrivacy />} />
           <Route path="privacy/riccardoventurini" element={<WebsitePrivacy />} />
           <Route path="privacy/rytm" element={<RytmPrivacy />} />
