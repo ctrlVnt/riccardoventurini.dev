@@ -13,9 +13,9 @@ export const BlogPost = () => {
     return (
       <div className="min-h-screen flex items-center justify-center">
         <div className="text-center">
-          <h1 className="text-4xl font-bold mb-4">Articolo non trovato</h1>
+          <h1 className="text-4xl font-bold mb-4">Article not found</h1>
           <Link to="/blog" className="text-primary hover:underline">
-            Torna al blog
+            Back to blog
           </Link>
         </div>
       </div>
@@ -29,7 +29,7 @@ export const BlogPost = () => {
           to="/blog" 
           className="text-primary hover:underline mb-8 inline-block"
         >
-          ← Torna al blog
+          ← Back to blog
         </Link>
         
         {post.image && (
@@ -58,8 +58,8 @@ export const BlogPost = () => {
           <span>{new Date(post.date).toLocaleDateString('it-IT')}</span>
         </div>
         
-        <div className="prose prose-lg dark:prose-invert max-w-none">
-          <ReactMarkdown 
+        <div className="prose prose-lg prose-invert max-w-none">
+          <ReactMarkdown
             remarkPlugins={[remarkGfm]}
             rehypePlugins={[rehypeHighlight]}
           >

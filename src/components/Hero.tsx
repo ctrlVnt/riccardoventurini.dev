@@ -16,6 +16,7 @@ export const Hero = () => {
   const subsubtitleRef = useRef<HTMLParagraphElement>(null);
   const mouse = useRef<SVGSVGElement>(null);
   const backgroundRef = useRef<HTMLDivElement>(null);
+  const buttonRef = useRef<HTMLAnchorElement>(null);
 
   const TITLE_TEXT = "Riccardo Venturini";
 
@@ -68,6 +69,13 @@ export const Hero = () => {
         opacity: 0,
         duration: 1,
         delay: titleDuration + 0.5,
+        ease: "power3.out",
+      });
+
+      gsap.from(buttonRef.current, {
+        opacity: 0,
+        duration: 1,
+        delay: titleDuration + 0.7,
         ease: "power3.out",
       });
 
@@ -168,8 +176,13 @@ export const Hero = () => {
         >
           Scroll to know me better
         </p>
-
-        <Mouse ref={mouse} className="text-xl text-muted-foreground mx-auto"></Mouse>
+        <Mouse ref={mouse} className="text-xl text-muted-foreground mx-auto mb-8"></Mouse>
+        <a 
+        ref={buttonRef}
+        href="/blog"
+        className="items-center gap-4 bg-white/10 hover:bg-white/20 px-4 py-2 rounded-lg">
+          Blog
+        </a>
       </div>
     </section>
   );

@@ -184,7 +184,7 @@ export const ProjectsTimeline = () => {
                       className="flex items-center gap-2 bg-white/10 hover:bg-white/20 px-4 py-2 rounded-lg transition-all duration-300"
                     >
                       <Github className="w-4 h-4" />
-                      Codice
+                      Code
                     </a>
                   )}
                   {project.liveUrl && (
@@ -192,9 +192,9 @@ export const ProjectsTimeline = () => {
                       href={project.liveUrl}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="flex items-center gap-2 bg-primary hover:bg-primary/80 px-4 py-2 rounded-lg transition-all duration-300"
+                      className="flex items-center gap-2 bg-primary hover:bg-primary/80 px-4 py-2 rounded-lg transition-all duration-300 text-black"
                     >
-                      <ExternalLink className="w-4 h-4" />
+                      <ExternalLink className="w-4 h-4 text-black" />
                       Live
                     </a>
                   )}
@@ -203,7 +203,7 @@ export const ProjectsTimeline = () => {
                       href={project.platstoreUrl}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="flex items-center gap-2 bg-accent hover:bg-accent/80 px-4 py-2 rounded-lg transition-all duration-300"
+                      className="flex items-center gap-2 bg-accent hover:bg-accent/80 px-4 py-2 rounded-lg transition-all duration-300 text-black"
                     >
                       <Play className="w-4 h-4" />
                       PlayStore
