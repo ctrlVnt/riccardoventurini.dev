@@ -55,12 +55,12 @@ const projects = [
     platstoreUrl:"https://play.google.com/store/apps/details?id=com.ctrlvnt.rytm"
   },
   {
-    year: "2023 - Ongoing",
+    year: "2023 - 2026",
     title: "CineMit",
     description: "I wanted to learn something in a creative way. My friend had this idea, and I used my knowledge to bring it to life",
     githubUrl: "",
     liveUrl: "https://www.cinemit.app/",
-    platstoreUrl:"https://play.google.com/store/apps/details?id=com.ctrlvnt.cinemit"
+    platstoreUrl:""
   },
   {
     year: 2024,
