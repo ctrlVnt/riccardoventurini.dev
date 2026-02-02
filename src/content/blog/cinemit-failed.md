@@ -4,7 +4,7 @@ date: "2026-01-28"
 excerpt: "CineMit is a cinema dating app that I worked on for 2 years, published and had to shut down, in this article I look at the reasons why"
 author: "Riccardo Venturini"
 tags: ["Social-based App", "Side project", "Failed"]
-image: "/src/content/images/cinemitfailed.png"
+image: "../images/cinemitfailed.png"
 ---
 
 ## What is CineMit ?
