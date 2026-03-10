@@ -58,9 +58,9 @@ const projects = [
     year: "2023 - 2026",
     title: "CineMit",
     description: "I wanted to learn something in a creative way. My friend had this idea, and I used my knowledge to bring it to life",
-    githubUrl: "",
+    githubUrl: "https://github.com/ctrlVnt/cinemit_showtimes-app",
     liveUrl: "https://www.cinemit.app/",
-    platstoreUrl:""
+    platstoreUrl:"https://play.google.com/store/apps/details?id=com.ctrlvnt.cinemit"
   },
   {
     year: 2024,
