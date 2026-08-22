@@ -111,7 +111,7 @@ export const ProjectsTimeline = () => {
   useEffect(() => {
     const projectsEls = gsap.utils.toArray<HTMLElement>(".timeline-project");
 
-    // Animazione dei progetti che appaiono
+    
     projectsEls.forEach((el) => {
       gsap.from(el, {
         opacity: 0,
@@ -126,7 +126,7 @@ export const ProjectsTimeline = () => {
       });
     });
 
-    // Animazione linea verticale
+    
     if (lineRef.current) {
       gsap.fromTo(
         lineRef.current,
@@ -178,7 +178,7 @@ export const ProjectsTimeline = () => {
                 <span className="text-primary font-bold text-xl">
                   {project.year}
                 </span>
-                <h3 className="text-2xl md:text-3xl font-bold mt-2">
+                <h3 className="text-2xl md:text-3xl font-bold mt-2 w-60">
                   {project.title}
                 </h3>
                 <p className="mt-2 mb-4 w-60 text-white/80">{project.description}</p>

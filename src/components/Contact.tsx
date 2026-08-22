@@ -74,7 +74,7 @@ export const Contact = () => {
       </div>
       
       <footer className="mt-20 pt-8 border-t border-border text-center text-muted-foreground">
-        <p>© 2025 Full-Stack Developer. All rights reserved.</p>
+        <p>© 2025 riccardoventurini.dev. All rights reserved.</p>
       </footer>
     </section>
   );
