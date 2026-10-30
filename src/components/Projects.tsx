@@ -8,8 +8,8 @@ gsap.registerPlugin(ScrollTrigger);
 const projects = [
   {
     year: 2018,
-    title: "Bachelor",
-    description: "Bachelor in Plastics Technology",
+    title: "Bachelor's degree",
+    description: "Bachelor's degree in Plastics Technology",
     githubUrl: "",
     liveUrl: "",
     playstore:""
@@ -17,15 +17,15 @@ const projects = [
   {
     year: "2018 - 2021",
     title: "Studio MegeM",
-    description: "I worked for 3 years in mechanical design field for a little studio",
+    description: "I spent three years working in mechanical design for a small studio.",
     githubUrl: "",
     liveUrl: "",
     playstore:""
   },
   {
     year: "2020-2023",
-    title: "Bachelor degree",
-    description: "Bachelor degree in computer science at University of Turin",
+    title: "Bachelor's degree",
+    description: "Bachelor's degree in Computer Science at the University of Turin.",
     githubUrl: "https://github.com/ctrlVnt/Thesis-for-the-Bachelor-s-Degree",
     liveUrl: "",
     playstore:""
@@ -33,7 +33,7 @@ const projects = [
   {
     year: 2023,
     title: "Emerge Mobile",
-    description: "Internship at the National Forest Office (ONF) focused on restoring the front-end and back-end of their tree data collection system",
+    description: "Internship at the National Forest Office (ONF), focused on restoring the front-end and back-end of their tree data collection system.",
     githubUrl: "",
     liveUrl: "",
     playstore:""
@@ -41,7 +41,7 @@ const projects = [
   {
     year: 2023,
     title: "FlashApp",
-    description: "My inaugural Android application, which started as a university assignment. I chose to push its development further, eager to fully discover the mobile development landscape",
+    description: "My first Android app, created as a university assignment. I kept developing it because I wanted to explore mobile development more deeply.",
     githubUrl: "https://github.com/ctrlVnt/FlashApp",
     liveUrl: "",
     playstore:"https://play.google.com/store/apps/details?id=com.ctrlvnt.flashapp"
@@ -49,7 +49,7 @@ const projects = [
   {
     year: "2023 - Ongoing",
     title: "Real YT Music",
-    description: "My flatmate used YouTube to listen music in background from pc and I ask my self: why he can't do that with the mobile?",
+    description: "An open-source, ad-free Android music player powered by the YouTube API, focused on background playback and a clean user experience.",
     githubUrl: "https://github.com/ctrlVnt/Real-YT-Music",
     liveUrl: "",
     playstore:"https://play.google.com/store/apps/details?id=com.ctrlvnt.rytm"
@@ -57,7 +57,7 @@ const projects = [
   {
     year: "2023 - 2026",
     title: "CineMit",
-    description: "I wanted to learn something in a creative way. My friend had this idea, and I used my knowledge to bring it to life",
+    description: "I wanted to learn something in a more creative way. A friend had the idea, and I used my skills to turn it into reality.",
     githubUrl: "https://github.com/ctrlVnt/cinemit_showtimes-app",
     liveUrl: "https://www.cinemit.app/",
     platstoreUrl:"https://play.google.com/store/apps/details?id=com.ctrlvnt.cinemit"
@@ -65,7 +65,7 @@ const projects = [
   {
     year: 2024,
     title: "Skeleton Race",
-    description: "The world of video games has always intrigued me, so I started studying Godot and brought a small game to life",
+    description: "The world of video games has always fascinated me, so I started learning Godot and built a small game.",
     githubUrl: "https://github.com/ctrlVnt/skeleton-race",
     liveUrl: "https://skeleton-race.netlify.app/",
     playstore:""
@@ -73,7 +73,7 @@ const projects = [
   {
     year: "2024 - 2025",
     title: "HelpDesk",
-    description: "You know, in life you also have to live, so I discovered this world. I worked for Hermes",
+    description: "I discovered this field while learning to balance work and life. I worked for Hermes.",
     githubUrl: "",
     liveUrl: "",
     playstore:""
@@ -81,24 +81,24 @@ const projects = [
   {
     year: "2025 - Ongoing",
     title: "Address Keeper",
-    description: "One day, my Snapchat account, which was linked to an inherited phone number, was stolen. On another occasion, I didn't receive my voting card because I had forgotten to change my address. These incidents made me wonder: what if I had a single place to note down all the services where I needed to update my information whenever something changed?",
+    description: "One day, my Snapchat account, which was linked to an inherited phone number, was stolen. On another occasion, I missed my voting card because I forgot to update my address. Those experiences made me wonder: what if I had one place to keep track of all the services where I needed to update my information after a change?",
     githubUrl: "https://github.com/ctrlVnt/addresskeeper",
     liveUrl: "",
     playstore:"https://play.google.com/store/apps/details?id=com.ctrlvnt.addresskeeper"
   },
   {
     year: "2025 - Ongoing",
-    title: "Master Degree",
-    description: "I'm doing a master degree in visual computing at University of Nantes, let's hope",
+    title: "Master's degree",
+    description: "I’m pursuing a Master’s degree in Visual Computing at the University of Nantes — hopefully.",
     githubUrl: "",
     liveUrl: "",
     playstore:""
   },
   {
-    year: "2026 - Ongoing",
+    year: "Apr 2026 - Oct 2026",
     title: "Google Summer of Code 2026",
-    description: "I'll work on a project for the GSoC 2026 to FOSSASIA project, focused on improving 3 flutter apps",
-    githubUrl: "",
+    description: "I worked on a project for the FOSSASIA program as part of Google Summer of Code 2026.",
+    githubUrl: "https://gist.github.com/ctrlVnt/76aea0ed1c98e368979eefe5d381492f",
     liveUrl: "https://summerofcode.withgoogle.com/programs/2026/projects/4mtLHcWw",
     playstore:""
   },

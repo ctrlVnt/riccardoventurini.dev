@@ -174,7 +174,7 @@ export const Hero = () => {
           ref={subsubtitleRef}
           className="text-xl text-muted-foreground max-w-2xl mx-auto mb-8"
         >
-          Scroll to know me better
+          Scroll to learn more about me
         </p>
         <Mouse ref={mouse} className="text-xl text-muted-foreground mx-auto mb-8"></Mouse>
         <a 

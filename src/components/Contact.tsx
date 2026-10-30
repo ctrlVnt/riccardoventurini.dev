@@ -43,7 +43,7 @@ export const Contact = () => {
         <div ref={contentRef} className="text-center">
          
           <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-            Do you have a project in mind? Do you want to report any bugs in my apps? Write to me! I'll be happy to hear from you
+            Have a project in mind? Want to report a bug in one of my apps? Reach out — I’d love to hear from you.
           </p>
           
           <Button
